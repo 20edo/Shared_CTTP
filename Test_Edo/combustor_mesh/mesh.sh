@@ -1,7 +1,7 @@
 # This contains the commands needed to mesh the combustor
 
 # Define variables
-np = 4	# Number of processors
+np='4'	# Number of processors
 
 # Lauch routine
 

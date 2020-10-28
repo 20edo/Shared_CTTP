@@ -16,8 +16,8 @@ FoamFile
 
 // Which of the steps to run
 castellatedMesh 1;
-snap            0;
-addLayers       0;
+snap            1;
+addLayers       1;
 
 
 // Geometry. Definition of all surfaces. All surfaces are of class
@@ -37,8 +37,8 @@ geometry
     refinementBox
     {
         type searchableBox;
-        min (-1.0 -0.7 0.0);
-        max ( 8.0  0.7 2.5);
+        min (-0.075	-0.05 	-0.025);
+        max ( 0.075	0.35	0.025);
     }
 };
 
@@ -92,7 +92,7 @@ castellatedMeshControls
     (
         {
             file "combustor.eMesh";
-            level 6;
+            level 3;
         }
     );
 
@@ -109,17 +109,17 @@ castellatedMeshControls
 
     refinementSurfaces
     {
-        motorBike
+        combustor 
         {
             // Surface-wise min and max refinement level
-            level (5 6);
+            level (4 4);
 
             // Optional specification of patch type (default is wall). No
             // constraint types (cyclic, symmetry) etc. are allowed.
             patchInfo
             {
                 type wall;
-                inGroups (motorBikeGroup);
+                inGroups (walls);
             }
         }
     }
@@ -146,7 +146,7 @@ castellatedMeshControls
         refinementBox
         {
             mode inside;
-            levels ((1E15 4));
+            levels ((3 3));
         }
     }
 
@@ -159,13 +159,13 @@ castellatedMeshControls
     // section reachable from the locationInMesh is kept.
     // NOTE: This point should never be on a face, always inside a cell, even
     // after refinement.
-    locationInMesh (3.0001 3.0001 0.43);
+    locationInMesh (0 0.2 0);
 
 
     // Whether any faceZones (as specified in the refinementSurfaces)
     // are only on the boundary of corresponding cellZones or also allow
     // free-standing zone faces. Not used if there are no faceZones.
-    allowFreeStandingZoneFaces true;
+    allowFreeStandingZoneFaces false;
 }
 
 
@@ -175,7 +175,7 @@ snapControls
 {
     //- Number of patch smoothing iterations before finding correspondence
     //  to surface
-    nSmoothPatch 3;
+    nSmoothPatch 10;
 
     //- Relative distance for points to be attracted by surface feature point
     //  or edge. True distance is this factor times local
@@ -183,17 +183,17 @@ snapControls
     tolerance 2.0;
 
     //- Number of mesh displacement relaxation iterations.
-    nSolveIter 30;
+    nSolveIter 20;
 
     //- Maximum number of snapping relaxation iterations. Should stop
     //  before upon reaching a correct mesh.
-    nRelaxIter 5;
+    nRelaxIter 10;
 
     // Feature snapping
 
         //- Number of feature edge snapping iterations.
         //  Leave out altogether to disable.
-        nFeatureSnapIter 10;
+        nFeatureSnapIter 20;
 
         //- Detect (geometric only) features by sampling the surface
         //  (default=false).
@@ -218,14 +218,14 @@ addLayersControls
     // Per final patch (so not geometry!) the layer information
     layers
     {
-        "(lowerWall|motorBike).*"
+        "(combustor_splitter*).*"
         {
-            nSurfaceLayers 1;
+            nSurfaceLayers 3;
         }
     }
 
     // Expansion factor for layer mesh
-    expansionRatio 1.0;
+    expansionRatio 0.95;
 
     // Wanted thickness of final added cell layer. If multiple layers
     // is the thickness of the layer furthest away from the wall.
@@ -242,7 +242,7 @@ addLayersControls
     // also not grown. This helps convergence of the layer addition process
     // close to features.
     // Note: changed(corrected) w.r.t 17x! (didn't do anything in 17x)
-    nGrow 0;
+    nGrow 5;
 
     // Advanced settings
 
@@ -256,7 +256,7 @@ addLayersControls
 
     // Maximum number of snapping relaxation iterations. Should stop
     // before upon reaching a correct mesh.
-    nRelaxIter 3;
+    nRelaxIter 5;
 
     // Number of smoothing iterations of surface normals
     nSmoothSurfaceNormals 1;
