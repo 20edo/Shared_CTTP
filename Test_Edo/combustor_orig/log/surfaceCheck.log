@@ -7,12 +7,12 @@
 \*---------------------------------------------------------------------------*/
 Build  : 8-9b73cf21a682
 Exec   : surfaceCheck constant/triSurface/combustor_mm.stl
-Date   : Oct 27 2020
-Time   : 08:53:21
-Host   : "1b67f1245282"
-PID    : 296
+Date   : Oct 29 2020
+Time   : 09:30:01
+Host   : "14601c640c61"
+PID    : 4873
 I/O    : uncollated
-Case   : /home/student/OpenFOAM/student-8/run/Shared_CTTP/Test_Edo/combustor_mesh
+Case   : /home/student/OpenFOAM/student-8/run/Shared_CTTP/Test_Edo/combustor_orig
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
