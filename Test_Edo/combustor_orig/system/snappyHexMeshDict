@@ -32,6 +32,38 @@ geometry
     {
         type triSurfaceMesh;
         file "combustor.stl";
+	
+	regions
+	{
+		splitterFront
+		{
+			name splitterFront;
+		}
+		splitterRight
+		{
+			name splitterRight;
+		}
+		splitterRear
+		{
+			name splitterRear;
+		}
+		splitterLeft
+		{
+			name splitterLeft;
+		}
+		splitterBottom
+		{
+			name splitterBottom;
+		}
+		splitterTop
+		{
+			name splitterTop;
+		}
+		outerWalls
+		{
+			name outerWalls;
+		}
+	}
     }
 
     refinementBox
@@ -112,7 +144,21 @@ castellatedMeshControls
         combustor 
         {
             // Surface-wise min and max refinement level
-            level (4 4);
+            level (0 0);
+
+		regions
+		{
+
+			"(splitter*)"
+			{
+				level (4 4);
+			}
+			
+			*Waals
+			{
+				level (2 2);
+			}
+
 
             // Optional specification of patch type (default is wall). No
             // constraint types (cyclic, symmetry) etc. are allowed.
@@ -218,7 +264,7 @@ addLayersControls
     // Per final patch (so not geometry!) the layer information
     layers
     {
-        "(combustor_splitter*).*"
+        splitter*
         {
             nSurfaceLayers 3;
         }
