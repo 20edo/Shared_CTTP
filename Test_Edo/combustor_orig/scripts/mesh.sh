@@ -21,5 +21,5 @@ decomposePar 2>&1 | tee log/decomposePar.log
 
 mpirun -np $np snappyHexMesh -parallel 2>&1 | tee log/snappyHexMesh.log
 
-checkMesh 2>&1 | tee log/checkMesh.log
+mpirun -np $np checkMesh -parallel 2>&1 | tee log/checkMesh.log
 
