@@ -11,14 +11,12 @@ runApplication surfaceTransformPoints -scale "(1e-3 1e-3 1e-3)" \
 
 runApplication blockMesh
 
-runApplication checkMesh
-
 runApplication surfaceFeatures
 
 runApplication decomposePar
 
 runParallel snappyHexMesh
 
-runApplication checkMesh
+runParallel checkMesh
 
 # end-of-file

@@ -38,12 +38,29 @@ geometry
         }
     }
 
-    refinementBox
+    refinementBoxSplitter
     {
         type searchableBox;
-        min (-0.06 -0.1 -0.03);
-        max (0.06 0.25 0.03);
+        min (	-0.06 	-0.015 	-0.035	);
+        max ( 	0.06 	0.335 	0.035	);
     }
+
+    refinementBoxFront
+    {
+        type searchableBox;
+        min (	-0.03 	-0.065 	-0.0175	);
+        max (	0.03 	-0.015 	0.0175	);
+    }
+
+    refinementBoxRear
+    {
+        type searchableBox;
+        min (	-0.03 	0.335 	-0.0175	);
+        max (	0.03 	0.385 	0.0175	);
+    }
+
+
+
 };
 
 
@@ -52,13 +69,13 @@ geometry
 castellatedMeshControls
 {
 
-    maxLocalCells 100000;
+    maxLocalCells 	1000000;
 
-    maxGlobalCells 2000000;
+    maxGlobalCells 	2000000;
 
-    minRefinementCells 10;
+    minRefinementCells	0;
 
-    maxLoadUnbalance 0.10;
+    maxLoadUnbalance 	0.10;
 
     nCellsBetweenLevels 3;
 
@@ -107,11 +124,22 @@ castellatedMeshControls
 
     refinementRegions
     {
-        refinementBox
+        refinementBoxSplitter
         {
             mode inside; //outside, distance
             levels ((1e15 3 ));
         }
+        refinementBoxFront
+        {
+            mode inside; //outside, distance
+            levels ((1e15 2 ));
+        }
+        refinementBoxRear
+        {
+            mode inside; //outside, distance
+            levels ((1e15 2 ));
+        }
+ 
     }
 
     // NOTE: This point should never be on a face, always inside a cell, even
@@ -171,7 +199,7 @@ addLayersControls
 	{
 	     nSurfaceLayers 0;
 	}
-        "splitter.*"
+        "(splitterFront|splitterLeft|splitterRight|splitterTop|splitterBottom)"
         {
             // firstLayerThickness 1e-4;
             // expansionRatio 1.2;
@@ -180,7 +208,7 @@ addLayersControls
     }
 
     firstLayerThickness 1e-4;
-    expansionRatio 1.2;
+    expansionRatio 	1.2;
 
     
     // Expansion factor for layer mesh
