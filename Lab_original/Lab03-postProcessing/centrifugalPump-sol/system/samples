@@ -1,0 +1,98 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+outletChannel
+{
+    type    sets;
+    functionObjectLibs ("libsampling.so");
+    writeControl   outputTime;
+
+    setFormat     raw; //csv,vtk,xmgr,gnu
+    fields        (p U);
+
+    interpolationScheme cellPoint; //cell, cellPointFace, pointMVC, cellPatchConstrained
+    sets
+    (
+        lineX1
+        {
+            type uniform; // face, midPoint, midPointAndFace, polyLine, cloud, triSurfaceMeshPointSet
+            axis distance;
+            start (-1.25 -0.33 0.055);
+            end (0 -0.33 0.055);
+            nPoints 100;
+        }
+    );
+}
+
+
+cuttingPlane
+{
+    type            surfaces;
+    functionObjectLibs ("libsampling.so");
+    writeControl   outputTime;
+
+    surfaceFormat   vtk;
+    fields          (p U Q);
+
+    interpolationScheme cellPoint;
+
+    surfaces
+    (
+        zNormal
+        {
+            type            cuttingPlane; 
+            planeType       pointAndNormal;
+            pointAndNormalDict
+            {
+                basePoint       (0 0 0.03);
+                normalVector    (0 0 1);
+            }
+            interpolate     true;
+        }
+        yNormal
+        {
+            type            cuttingPlane;
+            planeType       pointAndNormal;
+            pointAndNormalDict
+            {
+                basePoint       (0 0 0.0);
+                normalVector    (0 1 0);
+            }
+            interpolate     true;
+        }
+    );
+}
+
+
+impeller
+{
+    type            surfaces;
+    functionObjectLibs ("libsampling.so");
+    writeControl   outputTime;
+
+    surfaceFormat   vtk;
+    fields          ( p U );
+
+    interpolationScheme cellPoint;
+
+    surfaces
+    (
+        impeller
+        {
+            type            patch;
+            patches
+            (
+                impeller
+            );
+            interpolate     true;
+        }
+    );
+}
+
+
+// ************************************************************************* //

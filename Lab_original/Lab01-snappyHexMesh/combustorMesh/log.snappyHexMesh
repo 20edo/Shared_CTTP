@@ -1,0 +1,54 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : snappyHexMesh
+Date   : Nov 02 2020
+Time   : 22:48:48
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 12081
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/Lab_original/Lab01-snappyHexMesh/combustorMesh
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Read mesh in = 0 s
+
+Overall mesh bounding box  : (-0.12 -0.2995 -0.12) (0.12 0.4995 0.12)
+Relative tolerance         : 1e-06
+Absolute matching distance : 8.68102e-07
+
+Reading refinement surfaces.
+Read refinement surfaces in = 0.01 s
+
+Reading refinement shells.
+Refinement level 3 for all cells inside refinementBox
+Read refinement shells in = 0 s
+
+Setting refinement level of surface to be consistent with shells.
+Checked shell refinement in = 0 s
+
+Reading features.
+
+
+--> FOAM FATAL IO ERROR: 
+Could not open "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/Lab_original/Lab01-snappyHexMesh/combustorMesh/constant/triSurface/combustor.eMesh"
+
+file: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/Lab_original/Lab01-snappyHexMesh/combustorMesh/system/snappyHexMeshDict/castellatedMeshControls/features from line 69 to line 70.
+
+    From function void Foam::refinementFeatures::read(const Foam::objectRegistry&, const Foam::PtrList<Foam::dictionary>&)
+    in file refinementFeatures/refinementFeatures.C at line 95.
+
+FOAM exiting
+
