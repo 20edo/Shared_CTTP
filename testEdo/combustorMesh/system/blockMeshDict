@@ -1,0 +1,114 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+convertToMeters 1;
+
+R    0.12; // Raggio del combustore
+l    0.06; // Lato del quadrato interno
+
+v4x     #calc "($R*cos(degToRad(225)))";
+v4z     #calc "($R*sin(degToRad(225)))";
+v5x     #calc "($R*cos(degToRad(315)))";
+v5z     #calc "($R*sin(degToRad(315)))";
+v6x     #calc "($R*cos(degToRad(45)))";
+v6z     #calc "($R*sin(degToRad(45)))";
+v7x     #calc "($R*cos(degToRad(135)))";
+v7z     #calc "($R*sin(degToRad(135)))";
+
+vertices
+(
+    (-0.06	 -0.3		-0.06	)
+    (0.06	-0.3 		-0.06	)
+    (0.06	-0.3  		0.06 	)
+    (-0.06 	-0.3		0.06 	)
+    ($v4x 	-0.3 		$v4z	)
+    ($v5x 	-0.3 		$v5z	)
+    ($v6x 	-0.3 		$v6z	)
+    ($v7x 	-0.3		$v7z	)
+    (-0.06 	0.5 		-0.06	)
+    (0.06	0.5 		-0.06	)
+    (0.06	0.5 		0.06	)
+    (-0.06	0.5 		0.06	)
+    ($v4x 	0.5 		$v4z	)
+    ($v5x 	0.5 		$v5z	)
+    ($v6x 	0.5 		$v6z	)
+    ($v7x 	0.5 		$v7z	)
+);
+
+blocks
+(
+    hex (0 1 9 8 3 2 10 11) 	(	12 	80 	12	) 	simpleGrading (1 1 1)  // Quadrato centrale
+    hex (4 5 13 12 0 1 9 8) 	(	12 	80 	7	) 	simpleGrading (1 1 1)
+    hex (1 5 13 9 2 6 14 10) 	(	7 	80 	12	) 	simpleGrading (1 1 1)
+    hex (3 2 10 11 7 6 14 15) 	(	12 	80 	7	) 	simpleGrading (1 1 1)
+    hex (4 0 8 12 7 3 11 15) 	(	7 	80 	12	) 	simpleGrading (1 1 1)
+);
+
+
+edges
+(
+ arc 4 5 90 (0 -1 0)
+ arc 5 6 90 (0 -1 0)
+ arc 6 7 90 (0 -1 0)
+ arc 7 4 90 (0 -1 0)
+ arc 12 13 90 (0 -1 0)
+ arc 13 14 90 (0 -1 0)
+ arc 14 15 90 (0 -1 0)
+ arc 15 12 90 (0 -1 0)
+);
+
+boundary
+(
+    inlet
+    {
+        type patch;
+        faces
+        (
+           (0 1 2 3)
+           (4 5 1 0)
+	   (1 5 6 2)
+	   (3 2 6 7)
+	   (4 0 3 7)
+        );
+    }
+    outlet
+    {
+        type patch;
+        faces
+        (
+
+            (11 10 9 8)
+	    (14 13 9 10)
+	    (8 9 13 12)
+	    (15 14 10 11)
+	    (15 11 8 12)
+        );
+    }
+    outerWalls
+    {
+        type wall;
+        faces
+        (
+            (7 6 14 15)
+            (4 7 15 12)
+            (5 4 12 13)
+            (6 5 13 14)
+        );
+    }
+);
+
+// ************************************************************************* //
