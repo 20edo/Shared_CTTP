@@ -14,18 +14,16 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-surfaces ("combustor.stl");
+surfaces
+(
+    "combustor.stl"
+);
 
-// Identify a feature when angle between faces < includedAngle
-includedAngle       150;
+includedAngle	150;
 
-subsetFeatures
-{
-    // Keep nonManifold edges (edges with >2 connected faces)
-    nonManifoldEdges       no;
-
-    // Keep open edges (edges with 1 connected face)
-    openEdges      yes;
-}
+// Write features to obj format for visualisation
+writeObj	true;
+verboseObj	false;
+writeVTK	true;
 
 // ************************************************************************* //
