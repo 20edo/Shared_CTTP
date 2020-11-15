@@ -17,7 +17,7 @@ FoamFile
 
 application     simpleFoam;
 
-startFrom       startTime;
+startFrom       latestTime;
 
 startTime       0;
 
@@ -35,7 +35,7 @@ purgeWrite      0;
 
 writeFormat     ascii;
 
-writePrecision  6;
+writePrecision  8;
 
 writeCompression off;
 
@@ -55,7 +55,7 @@ functions
 		enabled		yes;
 		libs		("libforces.so");
 		log		yes;
-		patches		(splitter back fuel_inlet);
+		patches		("(splitter.*)");
 		rho		rhoInf;
 		rhoInf		1.18;
 
@@ -84,4 +84,26 @@ functions
 
 		libs		("libfieldFunctionObjects.so");
 	}
+
+	yPlus
+	{
+    	// Mandatory entries
+    	type            yPlus;
+    	libs            ("fieldFunctionObjects.so");
+
+    	// Optional (inherited) entries
+    	writePrecision  10;
+    	writeToFile     true;
+    	useUserTime     true;
+
+    	enabled         true;
+    	log             true;
+    	executeControl  timeStep;
+    	executeInterval 1;
+    	writeControl    writeTime;
+    	writeInterval   -1;
+	}
+}
+
+
 }

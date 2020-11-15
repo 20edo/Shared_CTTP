@@ -1,2 +1,2 @@
-./mesh
-./solve
+./scripts/mesh.sh
+./scripts/solve.sh

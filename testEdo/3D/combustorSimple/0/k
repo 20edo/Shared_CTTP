@@ -31,7 +31,7 @@ boundaryField
     {
         type            zeroGradient;
     }
-    splitter*
+    "(splitter.*)"
     {
         type            kqRWallFunction;
         value           uniform 0.375;

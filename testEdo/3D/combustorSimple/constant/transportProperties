@@ -9,39 +9,14 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volScalarField;
-    location    "0";
-    object      epsilon;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 2 -3 0 0 0 0];
+transportModel  Newtonian;
 
-internalField   uniform 2;
-
-boundaryField
-{
-    inlet
-    {
-        type            turbulentMixingLengthDissipationRateInlet;
-        mixingLength    0.02;
-        value           uniform 2;
-    }
-    outlet
-    {
-        type            zeroGradient;
-    }
-    "(splitter.*)"
-    {
-        type            epsilonWallFunction;
-        value           uniform 2;
-    }
-    outerWalls
-    {
-        type            epsilonWallFunction;
-        value           uniform 2;
-    }
-}
-
+nu              [0 2 -1 0 0 0 0] 1e-05;
 
 // ************************************************************************* //

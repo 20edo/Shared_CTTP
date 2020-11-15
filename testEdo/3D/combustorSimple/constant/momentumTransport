@@ -9,38 +9,23 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volScalarField;
-    location    "0";
-    object      epsilon;
+    class       dictionary;
+    location    "constant";
+    object      momentumTransport;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 2 -3 0 0 0 0];
+simulationType  RAS;
 
-internalField   uniform 2;
-
-boundaryField
+RAS
 {
-    inlet
-    {
-        type            turbulentMixingLengthDissipationRateInlet;
-        mixingLength    0.02;
-        value           uniform 2;
-    }
-    outlet
-    {
-        type            zeroGradient;
-    }
-    "(splitter.*)"
-    {
-        type            epsilonWallFunction;
-        value           uniform 2;
-    }
-    outerWalls
-    {
-        type            epsilonWallFunction;
-        value           uniform 2;
-    }
+    // Tested with kEpsilon, realizableKE, kOmega, kOmegaSST, v2f,
+    // ShihQuadraticKE, LienCubicKE.
+    model           kEpsilon;
+
+    turbulence      on;
+
+    printCoeffs     on;
 }
 
 

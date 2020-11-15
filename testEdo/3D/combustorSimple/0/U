@@ -30,7 +30,7 @@ boundaryField
     {
         type            zeroGradient;
     }
-    splitter*
+    "(splitter.*)"
     {
         type            noSlip;
     }

@@ -31,7 +31,7 @@ boundaryField
         type            calculated;
         value           uniform 0;
     }
-    splitter*
+    "(splitter.*)"
     {
         type            nutkWallFunction;
         value           uniform 0;

@@ -8,7 +8,7 @@
 FoamFile
 {
     version     2.0;
-    format      binary;
+    format      ascii;
     class       polyBoundaryMesh;
     location    "constant/polyMesh";
     object      boundary;
@@ -22,19 +22,19 @@ FoamFile
         type            wall;
         inGroups        List<word> 1(wall);
         nFaces          2560;
-        startFace       75200;
+        startFace       105792;
     }
     outlet
     {
         type            outlet;
-        nFaces          320;
-        startFace       77760;
+        nFaces          448;
+        startFace       108352;
     }
     inlet
     {
         type            inlet;
-        nFaces          320;
-        startFace       78080;
+        nFaces          448;
+        startFace       108800;
     }
 )
 
