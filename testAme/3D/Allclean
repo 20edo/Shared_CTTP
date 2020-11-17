@@ -1,0 +1,8 @@
+# remove features
+#
+rm -rf constant/extendedFeatureEdgeMesh                          ;
+rm -f constant/triSurface/{problemFaces,*.obj,*.vtk,*.eMesh}     ;
+rm -r constant/polyMesh                                          ;
+rm -rf processor* log/* dynamicCode                              ;
+#
+cleanCase
