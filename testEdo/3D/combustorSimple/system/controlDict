@@ -48,44 +48,13 @@ runTimeModifiable true;
 functions
 {
 	#includeFunc	residuals(p,U,k,epsilon)
-	
-	force
-	{
-		type		forces;
-		enabled		yes;
-		libs		("libforces.so");
-		log		yes;
-		patches		("(splitter.*)");
-		rho		rhoInf;
-		rhoInf		1.18;
-
-		writeControl	timeStep;
-		writeInterval	1;
-
-		liftDir		(1 0 0);
-		dragDir		(0 1 0);
-		CofR		(0 0 0);
-	}
-	
-	pInlet
-	{
-		type		surfaceFieldValue;
-		enabled		yes;
-		log		true;
-				
-		writeControl	timeStep;
-		writeInterval	1;
-
-		regionType	patch;
-		writeFields	no;
-		name		inlet;
-		operation	average;
-		fields		(p);
-
-		libs		("libfieldFunctionObjects.so");
-	}
-
-	yPlus
+	#include	"functionObjects/internalMesh"
+	#include	"functionObjects/splitter"
+	// #include 	"functionObjects/boundaryLayer"
+	#include 	"functionObjects/inlet"
+	#include	"functionObjects/outlet"
+//	#include	"functionObjects/fuelInlet"
+		yPlus
 	{
     	// Mandatory entries
     	type            yPlus;
