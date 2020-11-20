@@ -24,7 +24,7 @@ surfaces
         {
             type            isoSurface;
             isoField        k;
-            isoValue        400;
+            isoValue        5;
             interpolate     true;
         }
 

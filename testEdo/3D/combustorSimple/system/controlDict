@@ -23,7 +23,7 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         2000;
+endTime         700;
 
 deltaT          1;
 
@@ -48,13 +48,11 @@ runTimeModifiable true;
 functions
 {
 	#includeFunc	residuals(p,U,k,epsilon)
-	#include	"functionObjects/internalMesh"
-	#include	"functionObjects/splitter"
+	#include	"functionObjects/forces"
+	#include	"functionObjects/surfaces"
 	// #include 	"functionObjects/boundaryLayer"
-	#include 	"functionObjects/inlet"
-	#include	"functionObjects/outlet"
-//	#include	"functionObjects/fuelInlet"
-		yPlus
+	#include 	"functionObjects/integralValues"
+	yPlus
 	{
     	// Mandatory entries
     	type            yPlus;
