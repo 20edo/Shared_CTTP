@@ -1,9 +1,9 @@
 /*--------------------------------*- C++ -*----------------------------------*\
-| =========                 |                                                 |
-| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  5                                     |
-|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
-|    \\/     M anipulation  |                                                 |
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
 FoamFile
 {
@@ -23,22 +23,22 @@ ddtSchemes
 gradSchemes
 {
     default         Gauss linear;
-    grad(U) cellLimited Gauss linear 1;
+    grad(U)	cellLimited	Gauss	linear	1;
 }
 
 divSchemes
 {
-    default        			none;
-    div(phi,U)       			Gauss linearUpwind grad(U);
-    div(phi,K)				Gauss linear;
-    div(phi,k)       			Gauss limitedLinear 1;
-    div(phi,h)				Gauss linear;
-    div(phi,epsilon)  			Gauss limitedLinear 1;
-    div(phi,omega)   			Gauss limitedLinear 1;
-    div(phi,v2)      			Gauss limitedLinear 1;
+    default         			none;
+    div(phi,U)      			Gauss linearUpwind grad(U);
+    div(phi,k)      			Gauss limitedLinear 1;
+    div(phi,epsilon) 			Gauss limitedLinear 1;
+    div(phi,omega)  			Gauss limitedLinear 1;
+    div(phi,v2)     			Gauss limitedLinear 1;
     div((nuEff*dev2(T(grad(U))))) 	Gauss linear;
     div(nonlinearStress) 		Gauss linear;
-    div(((rho*nuEff)*dev2(T(grad(U))))) Gauss linear;
+    div(phi,h)				Gauss limitedLinear 1;	// Convection of enthalpy
+    div(phi,K)				Gauss limitedLinear 1;	// Convection of kinetic energy
+    div(((rho*nuEff)*dev2(T(grad(U))))) Gauss linear;		// Compressible stress tensor
 }
 
 laplacianSchemes

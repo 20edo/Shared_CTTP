@@ -1,9 +1,9 @@
 /*--------------------------------*- C++ -*----------------------------------*\
-| =========                 |                                                 |
-| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
-|  \\    /   O peration     | Version:  5                                     |
-|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
-|    \\/     M anipulation  |                                                 |
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
 \*---------------------------------------------------------------------------*/
 FoamFile
 {
@@ -15,17 +15,17 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     simpleFoam;
+application     pimpleFoam;
 
 startFrom       latestTime;
 
 startTime       0;
 
+deltaT		1e-5;
+
 stopAt          endTime;
 
-endTime         0.05;
-
-deltaT          1e-5;
+endTime         0.10;
 
 writeControl    adjustableRunTime;
 
@@ -45,190 +45,15 @@ timePrecision   6;
 
 runTimeModifiable true;
 
-adjustTimeStep yes;
+adjustTimeStep  yes;
 
-maxCo 5;
+maxCo           5;
 
 functions
 {
-  residuals
-    {
-      type residuals;
-      enabled yes;
-      fields (p U k epsilon);
-      libs ("libutilityFunctionObjects.so");
-    }
-
-  Mach
-    {
-        type MachNo;
-        enabled yes;
-        libs ("libfieldFunctionObjects.so");
-        writeControl writeTime;
-        writeInterval 1;
-    }
-
-  pInlet
-    {
-      type surfaceFieldValue;
-      enabled yes;
-      log true;
-      writeControl timeStep;
-      writeInterval 1;
-      regionType patch;
-      writeFields no;
-      name inlet;
-      operation average;
-      fields (p);
-      libs ("libfieldFunctionObjects.so");
-    }
-
-  force
-    {
-      type forces;
-      enabled yes;
-      libs ("libforces.so");
-      log yes;
-      patches (splitter back fuel_inlet);
-      rho rhoInf;
-      rhoInf 1.18;
-
-      writeControl timeStep;
-      writeInterval 1;
-
-      liftDir (1 0 0);
-      dragDir (0 1 0);
-      CofR  (0 0 0);
-    }
-  
-	probes1
-	{
-		type probes;
-		enabled yes;
-		writeControl timeStep;
-		writeInterval 1;
-		
-		fields (p U);
-		probeLocations
-		(
-			(0 0.04 5e-4)
-			(0 -0.04 5e-4)
-		);
-	}
-
-	axialLine
-	{
-		type sets;
-		enabled yes;
-		writeControl timeStep;
-		writeInterval 1;
-
-		fields (p U);
-		setFormat raw; // other options...
-		interpolationScheme cellPointFace; // other options
-
-		sets
-		(
-			line
-			{
-				type lineCell; // other options
-				axis x; //x; //z; //xyz //distance
-				start (-0.12 0.2 0);
-				end (0.12 0.2 0);
-			}
-		);
-	}
- 
-	yPlane
-	{
-		type surfaces;
-		enabled yes;
-		writeControl timeStep;
-		writeInterval 1;
-
-		fields (p U);
-		interpolationScheme cellPoint;
-		surfaceFormat vtk;
-		
-		surfaces
-		(
-			section1
-			{
-				type cuttingPlane;
-				planeType pointAndNormal;
-				pointAndNormalDict
-				{
-					point (0 0.05 1e-4);
-					normal (0 1 0);
-				}
-				interpolate true;
-			}
-		);
-	}
-
-	obstacle
-	{
-		type surfaces;
-		enabled yes;
-		writeControl timeStep;
-		writeInterval 1;
-
-		fields (p);
-		interpolationScheme cellPoint;
-		surfaceFormat vtk;
-		
-		surfaces
-		(
-			obstacle
-			{
-				type patch;
-				patches ("splitter" "back" "fuel_inlet");
-				interpolate true;
-			}
-		);
-	}
-	isoP
-	{
-		type surfaces;
-		enabled yes;
-		writeControl timeStep;
-		writeInterval 1;
-
-		fields (p U);
-		interpolationScheme cellPoint;
-		surfaceFormat vtk;
-		
-		surfaces
-		(
-			isoP
-			{
-				type isoSurface;
-				isoField p;
-				isoValue 0;
-				interpolate true;
-			}
-		);
-	}
-
-
+	#includeFunc	residuals(p,U,k,epsilon)
+	#include	"functionObjects/forces"
+	#include	"functionObjects/integralValues"
+	#include	"functionObjects/surfaces"
+	#include	"functionObjects/boundaryLayer"
 }
-
-
-// ************************************************************************* //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
