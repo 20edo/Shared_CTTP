@@ -34,6 +34,7 @@ boundaryField
     splitter
     {
         type            compressible::alphatWallFunction;
+	Prt		0.85;
         value           uniform 0;
     }
     fuel_inlet
@@ -44,12 +45,14 @@ boundaryField
     back
     {
         type            compressible::alphatWallFunction;
-        value           uniform 0;
+        Prt		0.85;
+	value           uniform 0;
     }
     sides
     {
-        type            nutkWallFunction;
-        value           uniform 0;
+        type            compressible::alphatWallFunction;
+        Prt		0.85;
+	value           uniform 0;
     }
     frontAndBack
     {

@@ -9,24 +9,13 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       dictionary;
-    location    "constant";
-    object      momentumTransport;
+    class       regIOobject;
+    location    "constant/polyMesh";
+    object      cellZones;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-simulationType  RAS;
-
-RAS
-{
-    // Tested with kEpsilon, realizableKE, kOmega, kOmegaSST, v2f,
-    // ShihQuadraticKE, LienCubicKE.
-    model           kEpsilon;
-
-    turbulence      on;
-
-    printCoeffs     on;
-}
-
+0
+()
 
 // ************************************************************************* //

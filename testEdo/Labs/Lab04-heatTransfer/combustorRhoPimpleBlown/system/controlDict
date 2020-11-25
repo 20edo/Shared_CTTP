@@ -27,7 +27,7 @@ stopAt          endTime;
 
 endTime         0.5;
 
-adjustTimestep	yes;
+adjustTimeStep	yes;
 
 maxCo		5;
 
