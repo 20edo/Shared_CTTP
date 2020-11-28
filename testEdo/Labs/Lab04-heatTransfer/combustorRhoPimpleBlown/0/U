@@ -23,11 +23,8 @@ boundaryField
 {
     inlet
     {
-        type		uniformFixedValue;
-	uniformValue
-	{	type            tableFile;
-		file		"constant/TXT/U_inlet.txt";
-	}
+        type            fixedValue;
+        value           uniform (0 10 0);
     }
     outlet
     {
