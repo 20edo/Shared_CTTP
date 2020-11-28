@@ -39,8 +39,10 @@ surfaces
         {
             type            cuttingPlane;
             planeType       pointAndNormal;
-            point           (0 0 0);
-            normal          (0 0 1);
+            pointAndNormalDict {
+		point     	(0 0 0);
+            	normalVector   	(0 0 1);
+	    }
             interpolate     true;
         }
 
@@ -48,8 +50,10 @@ surfaces
         {
             type            cuttingPlane;
             planeType       pointAndNormal;
-            point           (0 0 0);
-            normal          (1 0 0);
+            pointAndNormalDict {
+		point		(0 0 0);
+            	normalVector	(1 0 0);
+	    }
             interpolate     true;
         }
 
