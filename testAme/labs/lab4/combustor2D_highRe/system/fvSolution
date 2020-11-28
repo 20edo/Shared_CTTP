@@ -20,9 +20,9 @@ solvers
     p
     {
         solver          GAMG;
-        smoother	GaussSeidel;
-	tolerance       1e-05;
+        tolerance       1e-05;
         relTol          0.01;
+        smoother        GaussSeidel;
     }
 
     pFinal
@@ -31,14 +31,14 @@ solvers
 	    reltol	0;
     }
 
-    "(rho|U|k|epsilon)Final"
+    "(U|k|epsilon)Final"
     {
         solver          smoothSolver;
         smoother        symGaussSeidel;
         tolerance       1e-05;
         relTol          0;
     }
-    "(rho|U|k|epsilon)"
+    "(U|k|epsilon)"
     {
         solver          smoothSolver;
         smoother        symGaussSeidel;
@@ -46,29 +46,36 @@ solvers
         relTol          0.1;
     }
 
-   "h.*"
-   {
-	$U;
-	tolerance	1e-6;
-	relTol		0;
-   }
+	"rho.*"
+	{
+		solver			diagonal;
+		tolerance 		1e-9;
+		relTol			0;
+	}
+
+	"h.*"
+	{
+		$U;
+		tolerance 		1e-6;
+		relTol			0;
+	}
 		
 }
 
 PIMPLE
 {
-	nCorrectors			1;
-	nOuterCorrectors		100; 
-	turbOnFinalIterOnly		no;
+	nCorrectors		1;
+	nOuterCorrectors	30; 
+	turbOnFinalIterOnly	no;
 	nNonOrthogonalCorrectors	0;
-	consistent			no;
+	consistent		no;
 
 	outerCorrectorResidualControl
 	{
 		"(U|k|epsilon|p|h|e)"
 		{
-			relTol		0;
-			tolerance	1e-5;
+			relTol	0;
+			tolerance	1e-4;
 		}
 	}
 }
@@ -77,7 +84,7 @@ relaxationFactors
 {
 	fields
 	{
-		"p.*"			0.3;
+		"p.*"	0.3;
 	}
 
 	equations

@@ -9,46 +9,43 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volScalarField;
+    class       volVectorField;
     location    "0";
-    object      p;
+    object      U;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [1 -1 -2 0 0 0 0];
+dimensions      [0 1 -1 0 0 0 0];
 
-internalField   uniform 101325;
+internalField   uniform (0 0 0);
 
 boundaryField
 {
     inlet
     {
-        type            zeroGradient;
+        type            fixedValue;
+        value           uniform (0 10 0);
     }
     outlet
     {
-        type            waveTransmissive;
-	rho		rho;
-	gamma		1.4;
-	fieldInf	101325;
-	lInf		10;
-        value           $internalField;
+        type            zeroGradient;
     }
     splitter
     {
-        type            zeroGradient;
+        type            noSlip;
     }
     fuel_inlet
     {
-        type            zeroGradient;
+        type            fixedValue;
+        value           uniform (0 15 0);
     }
     back
     {
-        type            zeroGradient;
+        type            noSlip;
     }
     sides
     {
-        type            zeroGradient;
+        type            noSlip;
     }
     frontAndBack
     {
