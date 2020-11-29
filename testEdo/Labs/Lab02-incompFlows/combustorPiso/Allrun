@@ -1,12 +1,9 @@
-#!/bin/sh
-cd ${0%/*} || exit 1    # Run from this directory
+np=2
 
-# Source tutorial run functions
-. $WM_PROJECT_DIR/bin/tools/RunFunctions
-
-application="$(getApplication)"
-
-runApplication blockMesh -dict $FOAM_TUTORIALS/resources/blockMesh/pitzDaily
-runApplication $application
-
-#------------------------------------------------------------------------------
+touch	combustor.foam
+mkdir log
+blockMesh	2>&1	| tee log/blockMesh.log
+checkMesh	2>&1	| tee log/checkMesh.log
+decomposePar	2>&1	| tee log/decomposePar.log
+mpirun -np $np pimpleFoam -parallel	| tee log/pimpleFoam.log
+reconstructPar	2>&1	| tee log/reconstructPar.log
