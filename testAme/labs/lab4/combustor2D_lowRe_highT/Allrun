@@ -5,7 +5,7 @@ cd ${0%/*} || exit 1    # run from this directory
 . $WM_PROJECT_DIR/bin/tools/RunFunctions
 
 mkdir log
-touch combustor2D_highRe.foam
+touch combustor2D_lowRe_highT.foam
 
 runApplication blockMesh
 runApplication checkMesh

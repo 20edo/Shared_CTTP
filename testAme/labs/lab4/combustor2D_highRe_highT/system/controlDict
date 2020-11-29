@@ -19,13 +19,13 @@ application     rhoPimpleFoam;
 
 startFrom       latestTime;
 
-startTime       0;
+startTime       0.15;
 
 deltaT		1e-7;
 
 stopAt          endTime;
 
-endTime         0.25;
+endTime         0.30;
 
 writeControl    adjustableRunTime;
 

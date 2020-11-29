@@ -9,43 +9,47 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volVectorField;
+    class       volScalarField;
     location    "0";
-    object      U;
+    object      nut;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 -1 0 0 0 0];
+dimensions      [0 2 -1 0 0 0 0];
 
-internalField   uniform (0 0 0);
+internalField   uniform 0;
 
 boundaryField
 {
     inlet
     {
-        type            fixedValue;
-        value           uniform (0 100 0);
+        type            calculated;
+        value           uniform 0;
     }
     outlet
     {
-        type            zeroGradient;
+        type            calculated;
+        value           uniform 0;
     }
     splitter
     {
-        type            noSlip;
+        type            nutkWallFunction;
+        value           uniform 0;
     }
     fuel_inlet
     {
-        type            fixedValue;
-        value           uniform (0 150 0);
+        type            calculated;
+        value           uniform 0;
     }
     back
     {
-        type            noSlip;
+        type            nutkWallFunction;
+        value           uniform 0;
     }
     sides
     {
-        type            noSlip;
+        type            nutkWallFunction;
+        value           uniform 0;
     }
     frontAndBack
     {

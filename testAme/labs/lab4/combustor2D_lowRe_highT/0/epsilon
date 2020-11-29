@@ -9,22 +9,23 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volVectorField;
+    class       volScalarField;
     location    "0";
-    object      U;
+    object      epsilon;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 -1 0 0 0 0];
+dimensions      [0 2 -3 0 0 0 0];
 
-internalField   uniform (0 0 0);
+internalField   uniform 2;
 
 boundaryField
 {
     inlet
     {
-        type            fixedValue;
-        value           uniform (0 100 0);
+        type            turbulentMixingLengthDissipationRateInlet;
+        mixingLength    0.02;
+        value           uniform 2;
     }
     outlet
     {
@@ -32,20 +33,24 @@ boundaryField
     }
     splitter
     {
-        type            noSlip;
+        type            epsilonWallFunction;
+        value           uniform 2;
     }
     fuel_inlet
     {
-        type            fixedValue;
-        value           uniform (0 150 0);
+        type            turbulentMixingLengthDissipationRateInlet;
+        mixingLength    0.02;
+        value           uniform 2;
     }
     back
     {
-        type            noSlip;
+        type            epsilonWallFunction;
+        value           uniform 2;
     }
     sides
     {
-        type            noSlip;
+        type            epsilonWallFunction;
+        value           uniform 2;
     }
     frontAndBack
     {

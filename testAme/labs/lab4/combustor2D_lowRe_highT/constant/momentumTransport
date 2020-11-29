@@ -10,20 +10,23 @@ FoamFile
     version     2.0;
     format      ascii;
     class       dictionary;
-    location    "0/uniform";
-    object      time;
+    location    "constant";
+    object      momentumTransport;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-value           0;
+simulationType  RAS;
 
-name            "0";
+RAS
+{
+    // Tested with kEpsilon, realizableKE, kOmega, kOmegaSST, v2f,
+    // ShihQuadraticKE, LienCubicKE.
+    model           kEpsilon;
 
-index           0;
+    turbulence      on;
 
-deltaT          1e-05;
-
-deltaT0         1e-05;
+    printCoeffs     on;
+}
 
 
 // ************************************************************************* //

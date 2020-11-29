@@ -9,47 +9,41 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volVectorField;
-    location    "0";
-    object      U;
+    class       dictionary;
+    location    "constant";
+    object      thermophysicalProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 1 -1 0 0 0 0];
-
-internalField   uniform (0 0 0);
-
-boundaryField
+thermoType
 {
-    inlet
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleEnthalpy;
+}
+
+dpdt	yes;
+
+mixture
+{
+    specie
     {
-        type            fixedValue;
-        value           uniform (0 100 0);
+        molWeight   	28.9;
     }
-    outlet
+    thermodynamics
     {
-        type            zeroGradient;
+	Cp		1004;
+        Cv          	712;
+        Hf          	0;
     }
-    splitter
+    transport
     {
-        type            noSlip;
-    }
-    fuel_inlet
-    {
-        type            fixedValue;
-        value           uniform (0 150 0);
-    }
-    back
-    {
-        type            noSlip;
-    }
-    sides
-    {
-        type            noSlip;
-    }
-    frontAndBack
-    {
-        type            empty;
+        mu          	1.8e-05;
+        Pr          	0.7;
     }
 }
 
