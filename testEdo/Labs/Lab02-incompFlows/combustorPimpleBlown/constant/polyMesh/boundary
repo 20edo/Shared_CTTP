@@ -38,8 +38,7 @@ FoamFile
     }
     fuel_inlet
     {
-        type            wall;
-        inGroups        List<word> 1(wall);
+        type            patch;
         nFaces          20;
         startFace       31344;
     }
