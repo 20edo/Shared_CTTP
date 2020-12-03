@@ -63,7 +63,7 @@ functions
 		rho		rhoInf;
 		rhoInf		1.18;
 
-		writeControl	timeStep;
+		writeControl	writeTime;
 		writeInterval	1;
 
 		liftDir		(1 0 0);
@@ -77,7 +77,7 @@ functions
 		enabled		yes;
 		log		true;
 				
-		writeControl	timeStep;
+		writeControl	writeTime;
 		writeInterval	1;
 
 		regionType	patch;
@@ -88,4 +88,15 @@ functions
 
 		libs		("libfieldFunctionObjects.so");
 	}
+        yPlus
+        {
+                type            yPlus;
+                libs            ("libfieldFunctionObjects.so");
+                wrtiePrecision  6;
+		writeControl	writeTime;
+		writeInterval	1;
+                writeToFile     false;
+                log             true;
+        }
+
 }

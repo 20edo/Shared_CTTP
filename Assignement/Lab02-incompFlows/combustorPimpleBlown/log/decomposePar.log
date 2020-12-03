@@ -7,12 +7,12 @@
 \*---------------------------------------------------------------------------*/
 Build  : 8
 Exec   : decomposePar
-Date   : Nov 29 2020
-Time   : 12:00:08
+Date   : Dec 03 2020
+Time   : 12:16:16
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 36300
+PID    : 10834
 I/O    : uncollated
-Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab02-incompFlows/combustorPimpleBlown
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/Assignement/Lab02-incompFlows/combustorPimpleBlown
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
@@ -30,7 +30,7 @@ Create mesh
 Calculating distribution of cells
 Selecting decompositionMethod scotch
 
-Finished decomposition in 0 s
+Finished decomposition in 0.01 s
 
 Calculating original mesh data
 
@@ -64,7 +64,9 @@ Max number of faces between processors = 131 (0% above average 131)
 Time = 0
 
 Processor 0: field transfer
+Detected additional non-decomposed files in "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/Assignement/Lab02-incompFlows/combustorPimpleBlown/0/uniform"
 Processor 1: field transfer
+Detected additional non-decomposed files in "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/Assignement/Lab02-incompFlows/combustorPimpleBlown/0/uniform"
 
 End
 

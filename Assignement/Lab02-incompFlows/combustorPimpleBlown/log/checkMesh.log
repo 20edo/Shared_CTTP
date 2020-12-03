@@ -7,12 +7,12 @@
 \*---------------------------------------------------------------------------*/
 Build  : 8
 Exec   : checkMesh
-Date   : Nov 29 2020
-Time   : 12:00:08
+Date   : Dec 03 2020
+Time   : 12:16:15
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 36298
+PID    : 10832
 I/O    : uncollated
-Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab02-incompFlows/combustorPimpleBlown
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/Assignement/Lab02-incompFlows/combustorPimpleBlown
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)

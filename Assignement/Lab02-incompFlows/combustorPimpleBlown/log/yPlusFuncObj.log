@@ -1,0 +1,1723 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : pimpleFoam -postProcess -func yPlus
+Date   : Dec 03 2020
+Time   : 12:24:06
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 11379
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/Assignement/Lab02-incompFlows/combustorPimpleBlown
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+PIMPLE: No convergence criteria found
+
+
+PIMPLE: Corrector convergence criteria found
+        p: tolerance 0.001, relTol 1
+        "(U|k|epsilon)": tolerance 0.0001, relTol 0
+        Calculations will do 100 corrections if the convergence criteria are not met
+
+
+PIMPLE: Operating solver in transient mode with 100 outer correctors
+
+
+Time = 0
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 11.5152, max = 14.4425, average = 11.9322
+    patch back y+ : min = 7.88779, max = 10.1931, average = 7.99964
+    patch sides y+ : min = 11.2238, max = 11.2268, average = 11.2253
+
+
+Time = 0.01
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 32.5091, max = 56.1464, average = 36.6266
+    patch back y+ : min = 7.15219, max = 12.7905, average = 10.604
+    patch sides y+ : min = 9.67014, max = 28.304, average = 16.4821
+
+
+Time = 0.02
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.06, max = 56.8024, average = 37.1444
+    patch back y+ : min = 10.0821, max = 13.4497, average = 11.6545
+    patch sides y+ : min = 9.70473, max = 28.9146, average = 18.7255
+
+
+Time = 0.03
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.2385, max = 57.0891, average = 37.3244
+    patch back y+ : min = 9.97452, max = 13.0474, average = 11.4225
+    patch sides y+ : min = 9.70462, max = 28.5791, average = 21.215
+
+
+Time = 0.04
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.3368, max = 57.242, average = 37.4471
+    patch back y+ : min = 9.37407, max = 12.4521, average = 11.1812
+    patch sides y+ : min = 9.70461, max = 28.442, average = 21.9148
+
+
+Time = 0.05
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4778, max = 57.4253, average = 37.5994
+    patch back y+ : min = 8.7459, max = 12.1665, average = 10.9359
+    patch sides y+ : min = 9.70461, max = 28.3999, average = 22.1717
+
+
+Time = 0.06
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4833, max = 57.4244, average = 37.6046
+    patch back y+ : min = 8.28502, max = 11.9468, average = 10.7398
+    patch sides y+ : min = 9.70462, max = 28.3211, average = 22.3425
+
+
+Time = 0.07
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4819, max = 57.4231, average = 37.6027
+    patch back y+ : min = 7.93427, max = 11.7108, average = 10.5713
+    patch sides y+ : min = 9.70462, max = 28.328, average = 22.4328
+
+
+Time = 0.08
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4812, max = 57.4225, average = 37.6017
+    patch back y+ : min = 7.66649, max = 11.7687, average = 10.4389
+    patch sides y+ : min = 9.70462, max = 28.3523, average = 22.4686
+
+
+Time = 0.09
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.481, max = 57.4221, average = 37.6012
+    patch back y+ : min = 7.48059, max = 11.7892, average = 10.3441
+    patch sides y+ : min = 9.70462, max = 28.3719, average = 22.4656
+
+
+Time = 0.1
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4807, max = 57.4219, average = 37.6008
+    patch back y+ : min = 7.33921, max = 11.6686, average = 10.2757
+    patch sides y+ : min = 9.70462, max = 28.3834, average = 22.4571
+
+
+Time = 0.11
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4805, max = 57.4219, average = 37.6006
+    patch back y+ : min = 7.18339, max = 11.8901, average = 10.1847
+    patch sides y+ : min = 9.70462, max = 28.3897, average = 22.4546
+
+
+Time = 0.12
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4805, max = 57.4218, average = 37.6004
+    patch back y+ : min = 7.05595, max = 11.6373, average = 10.0903
+    patch sides y+ : min = 9.70462, max = 28.3974, average = 22.4569
+
+
+Time = 0.13
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4804, max = 57.4216, average = 37.6002
+    patch back y+ : min = 6.9458, max = 11.8022, average = 10.0179
+    patch sides y+ : min = 9.70462, max = 28.4054, average = 22.4608
+
+
+Time = 0.14
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4801, max = 57.4216, average = 37.6
+    patch back y+ : min = 6.85155, max = 11.8585, average = 9.96956
+    patch sides y+ : min = 9.70462, max = 28.4069, average = 22.4643
+
+
+Time = 0.15
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4801, max = 57.4216, average = 37.5999
+    patch back y+ : min = 6.77894, max = 11.6408, average = 9.9353
+    patch sides y+ : min = 9.70462, max = 28.4101, average = 22.4668
+
+
+Time = 0.16
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4802, max = 57.4214, average = 37.5998
+    patch back y+ : min = 6.71667, max = 11.7509, average = 9.90899
+    patch sides y+ : min = 9.70462, max = 28.4174, average = 22.4686
+
+
+Time = 0.17
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4801, max = 57.4213, average = 37.5997
+    patch back y+ : min = 6.66081, max = 11.688, average = 9.85431
+    patch sides y+ : min = 9.70462, max = 28.4192, average = 22.47
+
+
+Time = 0.18
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4799, max = 57.4215, average = 37.5996
+    patch back y+ : min = 6.60526, max = 11.7335, average = 9.79563
+    patch sides y+ : min = 9.70462, max = 28.4166, average = 22.4713
+
+
+Time = 0.19
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.48, max = 57.4214, average = 37.5996
+    patch back y+ : min = 6.55445, max = 11.6186, average = 9.76995
+    patch sides y+ : min = 9.70462, max = 28.422, average = 22.4724
+
+
+Time = 0.2
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.48, max = 57.4212, average = 37.5995
+    patch back y+ : min = 6.50945, max = 11.5345, average = 9.73843
+    patch sides y+ : min = 9.70462, max = 28.4287, average = 22.4735
+
+
+Time = 0.21
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4797, max = 57.4212, average = 37.5994
+    patch back y+ : min = 6.46735, max = 11.6058, average = 9.68037
+    patch sides y+ : min = 9.70462, max = 28.4238, average = 22.4744
+
+
+Time = 0.22
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4797, max = 57.4214, average = 37.5994
+    patch back y+ : min = 6.42301, max = 11.6593, average = 9.70386
+    patch sides y+ : min = 9.70462, max = 28.4243, average = 22.4753
+
+
+Time = 0.23
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4801, max = 57.4212, average = 37.5993
+    patch back y+ : min = 6.38208, max = 11.6147, average = 9.64903
+    patch sides y+ : min = 9.70462, max = 28.436, average = 22.476
+
+
+Time = 0.24
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4796, max = 57.4211, average = 37.5993
+    patch back y+ : min = 6.34516, max = 11.5864, average = 9.61674
+    patch sides y+ : min = 9.70462, max = 28.4286, average = 22.4766
+
+
+Time = 0.25
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4796, max = 57.4214, average = 37.5992
+    patch back y+ : min = 6.3111, max = 11.6426, average = 9.61699
+    patch sides y+ : min = 9.70462, max = 28.4301, average = 22.4772
+
+
+Time = 0.26
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4801, max = 57.4213, average = 37.5992
+    patch back y+ : min = 6.27792, max = 11.5895, average = 9.57682
+    patch sides y+ : min = 9.70462, max = 28.4462, average = 22.4777
+
+
+Time = 0.27
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4792, max = 57.4213, average = 37.5992
+    patch back y+ : min = 6.24862, max = 11.5875, average = 9.54678
+    patch sides y+ : min = 9.70462, max = 28.4381, average = 22.4782
+
+
+Time = 0.28
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4801, max = 57.4212, average = 37.5992
+    patch back y+ : min = 6.2278, max = 11.599, average = 9.51179
+    patch sides y+ : min = 9.70462, max = 28.4359, average = 22.4785
+
+
+Time = 0.29
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4796, max = 57.4215, average = 37.5992
+    patch back y+ : min = 6.21106, max = 11.6565, average = 9.52556
+    patch sides y+ : min = 9.70462, max = 28.4485, average = 22.4787
+
+
+Time = 0.3
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4792, max = 57.422, average = 37.5991
+    patch back y+ : min = 6.19564, max = 11.6432, average = 9.51038
+    patch sides y+ : min = 9.70462, max = 28.4539, average = 22.479
+
+
+Time = 0.31
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4804, max = 57.4219, average = 37.5992
+    patch back y+ : min = 6.1831, max = 11.5751, average = 9.49929
+    patch sides y+ : min = 9.70462, max = 28.4664, average = 22.4791
+
+
+Time = 0.32
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4782, max = 57.4218, average = 37.5992
+    patch back y+ : min = 6.1698, max = 11.5466, average = 9.4769
+    patch sides y+ : min = 9.70462, max = 28.4542, average = 22.4788
+
+
+Time = 0.33
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.48, max = 57.4212, average = 37.5992
+    patch back y+ : min = 6.1605, max = 11.6503, average = 9.49237
+    patch sides y+ : min = 9.70462, max = 28.4448, average = 22.4785
+
+
+Time = 0.34
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4787, max = 57.4223, average = 37.5994
+    patch back y+ : min = 6.1521, max = 11.6997, average = 9.51979
+    patch sides y+ : min = 9.70461, max = 28.4764, average = 22.478
+
+
+Time = 0.35
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4799, max = 57.4239, average = 37.5996
+    patch back y+ : min = 6.14725, max = 11.5643, average = 9.4939
+    patch sides y+ : min = 9.70464, max = 28.5002, average = 22.4771
+
+
+Time = 0.36
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4803, max = 57.4249, average = 37.5998
+    patch back y+ : min = 6.14675, max = 11.5892, average = 9.43535
+    patch sides y+ : min = 9.70461, max = 28.5204, average = 22.4755
+
+
+Time = 0.37
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4769, max = 57.4256, average = 37.6002
+    patch back y+ : min = 6.1453, max = 11.6971, average = 9.51311
+    patch sides y+ : min = 9.70464, max = 28.5114, average = 22.4729
+
+
+Time = 0.38
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4775, max = 57.4249, average = 37.6007
+    patch back y+ : min = 6.14842, max = 11.5998, average = 9.48988
+    patch sides y+ : min = 9.70462, max = 28.4956, average = 22.469
+
+
+Time = 0.39
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4754, max = 57.4235, average = 37.6014
+    patch back y+ : min = 6.1549, max = 11.5049, average = 9.45655
+    patch sides y+ : min = 9.70461, max = 28.4937, average = 22.4628
+
+
+Time = 0.4
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4784, max = 57.426, average = 37.6027
+    patch back y+ : min = 6.16964, max = 11.632, average = 9.53244
+    patch sides y+ : min = 9.70466, max = 28.5615, average = 22.4539
+
+
+Time = 0.41
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4798, max = 57.431, average = 37.6043
+    patch back y+ : min = 6.18747, max = 11.6954, average = 9.52561
+    patch sides y+ : min = 9.70457, max = 28.5943, average = 22.4415
+
+
+Time = 0.42
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4837, max = 57.4369, average = 37.6066
+    patch back y+ : min = 6.21169, max = 11.6294, average = 9.55867
+    patch sides y+ : min = 9.70468, max = 28.5634, average = 22.425
+
+
+Time = 0.43
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4821, max = 57.4414, average = 37.6095
+    patch back y+ : min = 6.25287, max = 11.6413, average = 9.59578
+    patch sides y+ : min = 9.70457, max = 28.5123, average = 22.4046
+
+
+Time = 0.44
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4767, max = 57.4442, average = 37.613
+    patch back y+ : min = 6.31791, max = 11.6896, average = 9.65028
+    patch sides y+ : min = 9.70466, max = 28.4214, average = 22.3801
+
+
+Time = 0.45
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4762, max = 57.4433, average = 37.6169
+    patch back y+ : min = 6.42816, max = 11.6623, average = 9.75415
+    patch sides y+ : min = 9.70462, max = 28.4673, average = 22.3526
+
+
+Time = 0.46
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.475, max = 57.4395, average = 37.6208
+    patch back y+ : min = 6.59271, max = 11.7142, average = 9.87049
+    patch sides y+ : min = 9.70457, max = 28.5037, average = 22.3233
+
+
+Time = 0.47
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4819, max = 57.4431, average = 37.625
+    patch back y+ : min = 6.82843, max = 11.7792, average = 10.0218
+    patch sides y+ : min = 9.70471, max = 28.4655, average = 22.2945
+
+
+Time = 0.48
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.49, max = 57.4558, average = 37.6287
+    patch back y+ : min = 7.11006, max = 11.7265, average = 10.2307
+    patch sides y+ : min = 9.7045, max = 28.4043, average = 22.2691
+
+
+Time = 0.49
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4963, max = 57.4659, average = 37.6317
+    patch back y+ : min = 7.45984, max = 11.9614, average = 10.4651
+    patch sides y+ : min = 9.70475, max = 28.322, average = 22.2491
+
+
+Time = 0.5
+Reading field p
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Selecting incompressible transport model Newtonian
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    model           kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+No MRF models present
+
+No finite volume options present
+yPlus yPlus write:
+    writing object yPlus
+    patch splitter y+ : min = 33.4863, max = 57.4688, average = 37.6336
+    patch back y+ : min = 7.86758, max = 12.165, average = 10.6496
+    patch sides y+ : min = 9.70454, max = 28.323, average = 22.2349
+
+
+End
+

@@ -70,7 +70,11 @@ PIMPLE
 
 	outerCorrectorResidualControl
 	{
-		"(U|k|epsilon|p)"
+		p
+		{	relTol	1;
+			tolerance	1e-3;
+		}
+		"(U|k|epsilon)"
 		{
 			relTol	0;
 			tolerance	1e-4;
