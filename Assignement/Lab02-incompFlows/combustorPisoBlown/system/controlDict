@@ -21,7 +21,7 @@ startFrom       startTime;
 
 startTime       0;
 
-deltaT		1e-5;
+deltaT		1e-6;
 
 stopAt          endTime;
 
@@ -29,7 +29,7 @@ endTime         0.5;
 
 adjustTimeStep	yes;
 
-maxCo		0.88888888;
+maxCo		0.8;
 
 writeControl    adjustableRunTime;
 
@@ -88,4 +88,15 @@ functions
 
 		libs		("libfieldFunctionObjects.so");
 	}
+	yPlus
+        {
+                type            yPlus;
+                libs            ("libfieldFunciotnObjects");
+                wrtiePrecision  6;
+                writeControl    writeTime;
+                writeInterval   1;
+                writeToFile     false;
+                log             true;
+        }
+
 }

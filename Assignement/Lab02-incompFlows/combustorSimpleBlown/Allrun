@@ -1,0 +1,6 @@
+mkdir log
+
+blockMesh	2>&1	| tee log/blockMesh.log
+simpleFoam	2>&1	| tee log/simpleFoam.log
+simpleFoam -postProcess -func yPlus -latestTime 2>&1	| tee log/yPlusFuncObj.log
+touch combustor.foam

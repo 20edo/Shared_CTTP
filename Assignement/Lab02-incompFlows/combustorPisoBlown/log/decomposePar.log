@@ -7,12 +7,12 @@
 \*---------------------------------------------------------------------------*/
 Build  : 8
 Exec   : decomposePar
-Date   : Nov 29 2020
-Time   : 11:25:35
+Date   : Dec 03 2020
+Time   : 12:17:30
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 34801
+PID    : 10930
 I/O    : uncollated
-Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab02-incompFlows/combustorPisoBlown
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/Assignement/Lab02-incompFlows/combustorPisoBlown
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
