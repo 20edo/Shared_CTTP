@@ -1,0 +1,46 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+
+Q
+{
+    type Q;
+    writeControl outputTime;
+}
+
+W
+{
+    type vorticity;
+    writeControl outputTime;
+}
+
+
+surfaces
+{
+    type            surfaces;
+    functionObjectLibs ("libsampling.so");
+    writeControl   outputTime;
+
+    surfaceFormat   vtk;
+    fields          (p U Q vorticity);
+
+    interpolationScheme cellPoint;
+
+    surfaces
+    (
+        isoQ1
+        {
+            type            isoSurface;
+            isoField        Q;
+            isoValue        5e4;
+            interpolate     true;
+        }
+    );
+}
+
+
+
