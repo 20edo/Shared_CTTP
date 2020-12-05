@@ -25,7 +25,7 @@ deltaT		1e-6;
 
 stopAt          endTime;
 
-endTime         0.5;
+endTime         1;
 
 adjustTimeStep	yes;
 
@@ -91,7 +91,7 @@ functions
 	yPlus
         {
                 type            yPlus;
-                libs            ("libfieldFunciotnObjects");
+                libs            ("libfieldFunciotnObjects.so");
                 wrtiePrecision  6;
                 writeControl    writeTime;
                 writeInterval   1;
