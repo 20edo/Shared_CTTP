@@ -17,13 +17,6 @@ FoamFile
 
 solvers
 {
-	Phi	// Potential Foam 
-	{
-		solver		GAMG;
-		smoother	DIC;
-		tolerance	1e-6;
-		reltol		0.01;
-	}
     p
     {
         solver          GAMG;
@@ -35,7 +28,7 @@ solvers
     pFinal
     {
 	    $p;
-	    reltol	0;
+	    relTol	0;
     }
 
     "(U|k|epsilon)Final"
@@ -50,7 +43,7 @@ solvers
         solver          smoothSolver;
         smoother        symGaussSeidel;
         tolerance       1e-05;
-        relTol          0.1;
+        relTol          0;
     }
     
     "rho.*"
@@ -58,7 +51,7 @@ solvers
 		solver		smoothSolver;
 		smoother	symGaussSeidel;
 		tolerance	1e-5;
-		reltol		0;
+		relTol		0;
     }
     
     h
@@ -66,7 +59,7 @@ solvers
 	    solver	smoothSolver;
 	    smoother	symGaussSeidel;
 	    tolerance	1e-5;
-	    reltol	0.1;
+	    relTol	0;
     }
     
     hFinal
@@ -74,11 +67,6 @@ solvers
 	    $h;
 	    relTol	0;
     }
-}
-
-potentialFlow
-{
-	nNonOrthogonalCorrectors	3;
 }
 
 PIMPLE
@@ -103,14 +91,14 @@ relaxationFactors
 {
 	fields
 	{
-		"p.*"	0.3;
+		"p.*"	0.5;
 	}
 
 	equations
        	{
-        	"U.*"               	0.7;
-       		"(k|epsilon).*"         0.5;
-		"(h|e).*"         0.5;
+        	"U.*"               	0.75;
+       		"(k|epsilon).*"         0.65;
+		"(h|e).*"         	0.65;
    
     	}
 }
