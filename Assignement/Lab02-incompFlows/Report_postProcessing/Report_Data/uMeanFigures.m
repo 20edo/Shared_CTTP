@@ -18,7 +18,7 @@ plot(x,Umean)
 plot(x,var)
 xlabel('x $[m]$','Interpreter','Latex')
 ylabel('Velocities $[m/s]$','Interpreter','Latex')
-legend('Uy','Uy,mean','var','Location','SouthEast')
+legend('Uy','Uy,mean','var','Location','Best')
 xlim([-0.12 0.12])
 
 %% uMeanPiso
@@ -37,7 +37,7 @@ plot(x_P,Umean_P)
 plot(x_P,var_P)
 xlabel('x $[m]$','Interpreter','Latex')
 ylabel('Velocities $[m/s]$','Interpreter','Latex')
-legend('Uy','Uy,mean','var','Location','SouthEast')
+legend('Uy','Uy,mean','var','Location','Best')
 xlim([-0.12 0.12])
 
 %% uMeanSimple
@@ -46,13 +46,11 @@ data = load('simple_U-y100_2000.csv');
 
 x_S = data(:,12);
 Uy_S = data(:,3);
-var_S = data(:,9);
 
 figure()
 hold on, grid on
 plot(x_S,Uy_S)
-plot(x_S,var_S)
 xlabel('x $[m]$','Interpreter','Latex')
-ylabel('Velocities $[m/s]$','Interpreter','Latex')
-legend('Uy','var','Location','SouthEast')
+ylabel('Meridional Velocity $[m/s]$','Interpreter','Latex')
+legend('Uy','Location','Best')
 xlim([-0.12 0.12])
