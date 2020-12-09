@@ -1,0 +1,28 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # run from this directory
+
+# Source tutorial run functions
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+runApplication blockMesh
+
+cp -r 0.bak 0
+
+# mapFields
+oldCase=../../Lab04-heatTransfer/combustor2D_RPF
+curCase=.
+runApplication mapFields $oldCase -case $curCase -sourceTime latestTime
+
+# rename splitter to region0_to_wallFilmRegion_wallFilmFaces 
+for i in 0/*; do 
+    if [ -f $i ]; then
+        sed -i s/splitter/region0_to_wallFilmRegion_wallFilmFaces/g $i
+    fi
+done
+
+runApplication topoSet
+
+# createWallFilm
+runApplication extrudeToRegionMesh -overwrite
+
+# ----------------------------------------------------------------- end-of-file
