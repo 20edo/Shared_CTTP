@@ -1,0 +1,9 @@
+np=2
+
+mkdir log
+blockMesh	2>&1	| tee log/blockMesh.log
+checkMesh	2>&1	| tee log/checkMesh.log
+decomposePar	2>&1	| tee log/decomposePar.log
+mpirun -np $np pimpleFoam -parallel	| tee log/pimpleFoam.log
+reconstructPar	2>&1	| tee log/reconstructPar.log
+pimpleFoam	-postProcess -func yPlus 2>&1	| tee log/yPlusFuncObj.log
