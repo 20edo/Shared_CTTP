@@ -15,8 +15,8 @@ hold on
 plot(t,drag_pres)
 plot(t,drag_tot)
 xlabel('Time $[s]$','Interpreter','Latex')
-ylabel('Drag $[N]$','Interpreter','Latex')
-legend('Drag','Total Force','Location','SouthEast','Interpreter','Latex')
+ylabel('Forces $[N]$','Interpreter','Latex')
+legend('Pressure Force','Total Force','Location','SouthEast','Interpreter','Latex')
 
 %% pisoDrag
 
@@ -31,8 +31,8 @@ hold on
 plot(t_P,drag_pres_P)
 plot(t_P,drag_tot_P)
 xlabel('Time $[s]$','Interpreter','Latex')
-ylabel('Drag $[N]$','Interpreter','Latex')
-legend('Drag','Total Force','Location','SouthEast','Interpreter','Latex')
+ylabel('Forces $[N]$','Interpreter','Latex')
+legend('Pressure Force','Total Force','Location','SouthEast','Interpreter','Latex')
 ylim([-0.04 0.04])
 
 %% simpleDrag
@@ -48,5 +48,5 @@ hold on
 plot(t_S,drag_pres_S)
 plot(t_S,drag_tot_S)
 xlabel('Iteration Number $[-]$','Interpreter','Latex')
-ylabel('Drag $[N]$','Interpreter','Latex')
-legend('Drag','Total Force','Location','SouthEast','Interpreter','Latex')
+ylabel('Forces $[N]$','Interpreter','Latex')
+legend('Pressure Force','Total Force','Location','SouthEast','Interpreter','Latex')

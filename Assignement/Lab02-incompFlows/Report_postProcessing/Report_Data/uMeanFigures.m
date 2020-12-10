@@ -18,7 +18,7 @@ plot(x,Umean)
 plot(x,var)
 xlabel('x $[m]$','Interpreter','Latex')
 ylabel('Velocities $[m/s]$','Interpreter','Latex')
-legend('Uy','Uy,mean','var','Location','Best')
+legend('Uy','Uy,mean','var(Uy)','Location','Best')
 xlim([-0.12 0.12])
 
 %% uMeanPiso
@@ -37,7 +37,7 @@ plot(x_P,Umean_P)
 plot(x_P,var_P)
 xlabel('x $[m]$','Interpreter','Latex')
 ylabel('Velocities $[m/s]$','Interpreter','Latex')
-legend('Uy','Uy,mean','var','Location','Best')
+legend('Uy','Uy,mean','var(Uy)','Location','Best')
 xlim([-0.12 0.12])
 
 %% uMeanSimple
