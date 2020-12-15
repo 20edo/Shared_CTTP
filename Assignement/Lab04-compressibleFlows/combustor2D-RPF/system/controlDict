@@ -51,7 +51,7 @@ runTimeModifiable true;
 
 functions
 {
-	#includeFunc	residuals(p,U,k,epsilon,T)
+	#includeFunc	residuals(p,U,k,epsilon,h)
 	#include	"functionObjects/fieldAverage.cpp"
 	#include 	"functionObjects/forces.cpp"
 	#include	"functionObjects/machNumber.cpp"
