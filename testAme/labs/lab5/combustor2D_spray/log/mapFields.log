@@ -1,0 +1,95 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8-9b73cf21a682
+Exec   : mapFields ../../lab4/combustor2D_RPF/ -case . -parallelSource -sourceTime latestTime
+Date   : Dec 14 2020
+Time   : 14:16:54
+Host   : "f750ba4247e9"
+PID    : 441
+I/O    : uncollated
+Case   : /home/student/OpenFOAM/student-8/run/Shared_CTTP/testAme/labs/lab5/combustor2D_spray
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Source: "/home/student/OpenFOAM/student-8/run/Shared_CTTP/testAme/labs/lab4/combustor2D_RPF" ""
+Target: "/home/student/OpenFOAM/student-8/run/Shared_CTTP/testAme/labs/lab5" "combustor2D_spray"
+
+Create databases as time
+Create target mesh
+
+Target mesh size: 15677
+
+Source processor 0
+
+Source time: 0.5
+Target time: 0
+mesh size: 3919
+
+Mapping fields for time 0.5
+
+    interpolating alphat
+    interpolating nut
+    interpolating p
+    interpolating T
+    interpolating k
+    interpolating epsilon
+    interpolating U
+
+Source processor 1
+
+Source time: 0.5
+Target time: 0
+mesh size: 3910
+
+Mapping fields for time 0.5
+
+    interpolating alphat
+    interpolating nut
+    interpolating p
+    interpolating T
+    interpolating k
+    interpolating epsilon
+    interpolating U
+
+Source processor 2
+
+Source time: 0.5
+Target time: 0
+mesh size: 3919
+
+Mapping fields for time 0.5
+
+    interpolating alphat
+    interpolating nut
+    interpolating p
+    interpolating T
+    interpolating k
+    interpolating epsilon
+    interpolating U
+
+Source processor 3
+
+Source time: 0.5
+Target time: 0
+mesh size: 3929
+
+Mapping fields for time 0.5
+
+    interpolating alphat
+    interpolating nut
+    interpolating p
+    interpolating T
+    interpolating k
+    interpolating epsilon
+    interpolating U
+
+End
+
