@@ -32,12 +32,13 @@ boundaryField
     }
     wall
     {
-	    type	zeroGradient;
+	    type	fixedValue;
+	    value	uniform 1500;
     }
     fuel_inlet
     {
         type            fixedValue;
-        value           uniform 350;
+        value           uniform 700;
     }
     frontAndBack
     {
