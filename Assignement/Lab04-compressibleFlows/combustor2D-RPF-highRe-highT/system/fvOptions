@@ -18,7 +18,7 @@ limitT
 {
     type       limitTemperature;
     min        250;
-    max        1000;
+    max        1500;
     selectionMode all;
 }
 

@@ -3,7 +3,12 @@ pInlet
 	type		surfaceFieldValue;
 	enabled		yes;
 	log		true;
-			
+	
+	    
+        executeControl  timeStep;
+        executeInterval 1;
+        graphFormat     raw;
+
 	writeControl	writeTime;
 	writeInterval	1;
 
@@ -20,7 +25,12 @@ pOutlet
 	type		surfaceFieldValue;
 	enabled		yes;
 	log		true;
-			
+	
+
+        executeControl  timeStep;
+        executeInterval 1;
+        graphFormat     raw;
+
 	writeControl	writeTime;
 	writeInterval	1;
 

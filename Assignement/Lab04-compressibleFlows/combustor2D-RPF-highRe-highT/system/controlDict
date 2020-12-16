@@ -53,6 +53,7 @@ functions
 {
 	#includeFunc    residuals(p,U,k,epsilon,h)
 	#include	"functionObjects/machNumber.cpp"
+	#include	"functionObjects/heatFlux.cpp"
 	#include	"functionObjects/fieldAverage.cpp"
 	#include	"functionObjects/pressure.cpp"
 	#include	"functionObjects/temperature.cpp"

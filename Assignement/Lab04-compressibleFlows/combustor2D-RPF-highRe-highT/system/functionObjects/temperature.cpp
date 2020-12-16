@@ -2,8 +2,11 @@ TInlet
 {
 	type		surfaceFieldValue;
 	enabled		yes;
-	log		true;
-			
+	log		false;
+	
+	executeControl	timeStep;
+	executeInterval	1;
+	graphFormat	raw;
 	writeControl	writeTime;
 	writeInterval	1;
 
@@ -19,8 +22,11 @@ TOutlet
 {
 	type		surfaceFieldValue;
 	enabled		yes;
-	log		true;
-			
+	log		false;
+		
+	executeControl	timeStep;
+	executeInterval	1;
+	graphFormat	raw;		
 	writeControl	writeTime;
 	writeInterval	1;
 
@@ -31,4 +37,27 @@ TOutlet
 	fields		(T);
 	libs		("libfieldFunctionObjects.so");
 }
+/*
+TouterWalls
+{
+	type		surfaceFieldValue;
+	enabled		yes;
+	log		false;
+	executeControl	timeStep;
+	executeInterval	1;
+	graphFormat	raw;
+	
+	executeControl	timeStep;
+	executeInterval	1;
+	writeControl	writeTime;
+	writeInterval	1;
 
+	regionType	patch;
+	writeFields	no;
+	name		sides;
+	operation	max;
+	fields		(T);
+	libs		("libfieldFunctionObjects.so");
+}
+
+*/
