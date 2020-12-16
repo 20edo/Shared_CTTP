@@ -24,6 +24,10 @@ zmin		-0.3;	// Minimum z coordinate
 zmax		0.5;	// Maximum z coordinate
 rgrading	((0.9 0.7 0.9) (0.1 0.3 0.8));// ((0.2 0.25 2) (0.6 0.5 1) (0.2 0.25 0.125));	// Grading in the radial direction
 
+nr		9;	// Old 12; 	// Number of cells in the radial direction
+nth		6;	// Old 12	// Number of cells in the angular direction(/4)
+nz		60;	// Number of cells along the cylinder axis
+
 
 // Coordinates of the 0 block : The central square
 l	0.04;
@@ -82,11 +86,11 @@ vertices
 
 blocks
 (
-    hex (0 1 2 3 4 5 6 7)	(8 8 80) 	simpleGrading (1 		1 		1)	// 0: central square
-    hex (1 9 10 2 5 13 14 6)	(12 8 80)	simpleGrading ($rgrading 	1		1)	// 1: external right
-    hex (2 10 11 3 6 14 15 7)	(12 8 80)	simpleGrading ($rgrading	1		1)	// 2: extrenal top
-    hex (3 11 8 0 7 15 12 4)	(12 8 80)	simpleGrading ($rgrading 	1		1)	// 3: external left
-    hex (0 8 9 1 4 12 13 5)	(12 8 80)	simpleGrading ($rgrading 	1		1)	// 4: external bottom
+    hex (0 1 2 3 4 5 6 7)	($nth	$nth	$nz) 	simpleGrading (1 		1 		1)	// 0: central square
+    hex (1 9 10 2 5 13 14 6)	($nr	$nth	$nz)	simpleGrading ($rgrading 	1		1)	// 1: external right
+    hex (2 10 11 3 6 14 15 7)	($nr	$nth	$nz)	simpleGrading ($rgrading	1		1)	// 2: extrenal top
+    hex (3 11 8 0 7 15 12 4)	($nr	$nth	$nz)	simpleGrading ($rgrading 	1		1)	// 3: external left
+    hex (0 8 9 1 4 12 13 5)	($nr	$nth	$nz)	simpleGrading ($rgrading 	1		1)	// 4: external bottom
 
 
 );
