@@ -7,3 +7,5 @@ checkMesh	2>&1	| tee log/checkMesh.log
 decomposePar	2>&1	| tee log/decomposePar.log
 mpirun -np $np rhoPimpleFoam -parallel	| tee log/rhoPimpleFoam.log
 reconstructPar	2>&1	| tee log/reconstructPar.log
+
+shutdown 60
