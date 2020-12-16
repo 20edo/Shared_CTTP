@@ -19,7 +19,7 @@ h = res(:,7);
 figure()
 semilogy(t,p,t,Ux,t,Uy,t,k,t,eps,t,h)
 
-legend('p','Ux','Uy','k','eps','h','Location','Best','Interpreter','Latex')
+legend('p','Ux','Uy','k','eps','h','Location','SouthEast','Interpreter','Latex')
 xlabel('time $[s]$','Interpreter','Latex')
 ylabel('residuals $[-]$','Interpreter','Latex')
 
@@ -40,7 +40,7 @@ h_hl = res_hl(:,7);
 figure()
 semilogy(t_hl,p_hl,t_hl,Ux_hl,t_hl,Uy_hl,t_hl,k_hl,t_hl,eps_hl,t_hl,h_hl)
 
-legend('p','Ux','Uy','k','eps','h','Location','Best','Interpreter','Latex')
+legend('p','Ux','Uy','k','eps','h','Location','SouthEast','Interpreter','Latex')
 xlabel('time $[s]$','Interpreter','Latex')
 ylabel('residuals $[-]$','Interpreter','Latex')
 
@@ -61,7 +61,7 @@ h_hh = res_hh(:,7);
 figure()
 semilogy(t_hh,p_hh,t_hh,Ux_hh,t_hh,Uy_hh,t_hh,k_hh,t_hh,eps_hh,t_hh,h_hh)
 
-legend('p','Ux','Uy','k','eps','h','Location','Best','Interpreter','Latex')
+legend('p','Ux','Uy','k','eps','h','Location','NorthEast','Interpreter','Latex')
 xlabel('time $[s]$','Interpreter','Latex')
 ylabel('residuals $[-]$','Interpreter','Latex')
 
@@ -82,6 +82,12 @@ h_lh = res_lh(:,7);
 figure()
 semilogy(t_lh,p_lh,t_lh,Ux_lh,t_lh,Uy_lh,t_lh,k_lh,t_lh,eps_lh,t_lh,h_lh)
 
-legend('p','Ux','Uy','k','eps','h','Location','Best','Interpreter','Latex')
+legend('p','Ux','Uy','k','eps','h','Location','SouthEast','Interpreter','Latex')
 xlabel('time $[s]$','Interpreter','Latex')
 ylabel('residuals $[-]$','Interpreter','Latex')
+
+%% Single Plot
+
+figure()
+semilogy(t,p,'r-',t,Uy,'r',t,h,'r-.',t,p,'r-',t,Uy,'r',t,h,'r-.',...
+    t,p,'r-',t,Uy,'r',t,h,'r-.',t,p,'r-',t,Uy,'r',t,h,'r-.')
