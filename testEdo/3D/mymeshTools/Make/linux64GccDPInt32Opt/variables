@@ -1,0 +1,1 @@
+LIB = $(HOME)/student/OpenFOAM/student-8/run/Shared_CTTP/testEdo/3D/mymeshTools/searchableSurfaces/searchableConemymeshTools
