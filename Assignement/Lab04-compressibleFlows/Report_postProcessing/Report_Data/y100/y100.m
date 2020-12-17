@@ -141,7 +141,7 @@ legend('T','pressure','Location','Best','Interpreter','Latex')
 
 data = load('RPF-lowRe-highT.txt');
 
-x = data(:,30);
+x = data(:,31);
 T = data(:,2);
 Ux = data(:,5);
 Uy = data(:,6);
