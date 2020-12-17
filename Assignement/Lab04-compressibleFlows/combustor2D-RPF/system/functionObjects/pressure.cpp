@@ -2,14 +2,14 @@ pInlet
 {
 	type		surfaceFieldValue;
 	enabled		yes;
-	log		true;
+	log		false;
 	
 	    
         executeControl  timeStep;
         executeInterval 1;
         graphFormat     raw;
 
-	writeControl	writeTime;
+	writeControl	timeStep;
 	writeInterval	1;
 
 	regionType	patch;
@@ -24,14 +24,14 @@ pOutlet
 {
 	type		surfaceFieldValue;
 	enabled		yes;
-	log		true;
+	log		false;
 	
 
         executeControl  timeStep;
         executeInterval 1;
         graphFormat     raw;
 
-	writeControl	writeTime;
+	writeControl	timeStep;
 	writeInterval	1;
 
 	regionType	patch;
