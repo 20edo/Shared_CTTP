@@ -5,7 +5,7 @@ wallHeatFlux1
     libs            ("libfieldFunctionObjects.so");
 
     // Optional entries (runtime modifiable)
-    patches     (sides); // (wall1 "(wall2|wall3)");
+    patches     (sides); // default is all  // (wall1 "(wall2|wall3)");
 
     // Optional (inherited) entries
     writePrecision  8;
@@ -21,4 +21,26 @@ wallHeatFlux1
     writeControl    writeTime;
     writeInterval   1;
     graphFormat     raw;
+}
+
+SpaceAverageHeatFlux
+{
+        type            surfaceFieldValue;
+        enabled         yes;
+        log             false;
+    
+    
+        executeControl  timeStep;
+        executeInterval 1;
+        graphFormat     raw;
+
+        writeControl    timeStep;
+        writeInterval   1;  
+
+        regionType      patch;
+        writeFields     no; 
+        name            sides;
+        operation       average;
+        fields          (wallHeatFlux);
+        libs            ("libfieldFunctionObjects.so");
 }

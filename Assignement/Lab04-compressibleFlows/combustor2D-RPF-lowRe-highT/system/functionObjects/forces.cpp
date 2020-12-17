@@ -3,12 +3,12 @@ force
 	type		forces;
 	enabled		yes;
 	libs		("libforces.so");
-	log		yes;
+	log		no;
 	patches		(splitter back fuel_inlet);
 	rho		rhoInf;
 	rhoInf		1.18;
 
-	writeControl	writeTime;
+	writeControl	timeStep;
 	writeInterval	1;
 
 	liftDir		(1 0 0);
