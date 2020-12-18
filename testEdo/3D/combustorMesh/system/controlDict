@@ -44,5 +44,9 @@ timePrecision   6;
 
 runTimeModifiable true;
 
-
+// Add libraries compiled by the user
+libs
+(
+ 	"searchableCone.so"
+);
 // ************************************************************************* //

@@ -13,6 +13,11 @@ FoamFile
     object      snappyHexMeshDict;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+//===========================Macros definition
+
+r 	0.04; // Radius of the refinement cylinder
+
+//========================================
 
 // Which of the steps to run
 castellatedMesh 1;
@@ -65,27 +70,54 @@ geometry
 		}
 	}
     }
-
+/*
     refinementBoxSplitter
     {
         type searchableBox;
         min (	-0.06 	-0.015 	-0.035	);
         max ( 	0.06 	0.335 	0.035	);
     }
-
-    refinementBoxFront
+*/
+    refinementCylinderSplitter
+    {
+	    type	searchableCylinder;
+	    point1	( 0	-0.015	0);
+	    point2	( 0	0.335	0);
+	    radius	$r;
+    }
+/*    refinementBoxFront
     {
         type searchableBox;
         min (	-0.03 	-0.065 	-0.0175	);
         max (	0.03 	-0.015 	0.0175	);
     }
-
-    refinementBoxRear
+*/
+    refinementConeFront
+    {
+	    type            searchableCone;
+	    point1          (0	-0.295 	0);
+	    radius1         1e-4;
+	    innerRadius1    0;
+	    point2          (0	-0.015 	0);
+	    radius2         $r;
+	    innerRadius2    0;
+    }
+/*    refinementBoxRear
     {
         type searchableBox;
         min (	-0.03 	0.335 	-0.0175	);
         max (	0.03 	0.385 	0.0175	);
     }
+*/
+    refinementCylinderRear
+    {
+            type        searchableCylinder;
+            point1      ( 0	0.335	0);
+            point2      ( 0	5	0);
+            radius      $r;
+    }
+
+
 };
 
 
@@ -203,22 +235,39 @@ castellatedMeshControls
 
     refinementRegions
     {
+	    /*
         refinementBoxSplitter
         {
             mode inside; //outside, distance
             levels ((1e15 3 ));
+        } */
+	refinementCylinderSplitter	
+	{
+            mode inside; //outside, distance
+            levels ((1e15 3 ));
         }
-        refinementBoxFront
+        /*refinementBoxFront
+        {
+            mode inside; //outside, distance
+            levels ((1e15 2 ));
+        }*/
+	refinementConeFront
         {
             mode inside; //outside, distance
             levels ((1e15 2 ));
         }
+	refinementCylinderRear
+        {
+            mode inside; //outside, distance
+            levels ((1e15 2 ));
+        }
+/*
         refinementBoxRear
         {
             mode inside; //outside, distance
             levels ((1e15 2 ));
         }
-        
+  */      
     }
 
 
