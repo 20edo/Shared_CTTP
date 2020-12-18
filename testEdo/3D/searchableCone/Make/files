@@ -1,0 +1,3 @@
+searchableSurfaces/searchableCone/searchableCone.C
+
+LIB = $(FOAM_USER_LIBBIN)/searchableCone
