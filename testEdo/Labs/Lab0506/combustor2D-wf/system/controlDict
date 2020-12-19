@@ -30,7 +30,7 @@ endTime         0.5;
 
 adjustTimeStep	yes;
 
-maxCo		0.9;
+maxCo		5;
 
 writeControl    adjustableRunTime;
 

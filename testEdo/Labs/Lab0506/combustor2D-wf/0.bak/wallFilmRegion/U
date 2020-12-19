@@ -25,9 +25,14 @@ boundaryField
     {
         type            slip;
     }
-    "(inlet|outlet)"
+    inlet
     {
-    	type		zeroGradient;
+    	type		fixedValue;
+	value		uniform (0 0 0);
+    }
+    outlet
+    {
+	    type	zeroGradient;
     }
     region0_to_wallFilmRegion_wallFilmFaces
     {

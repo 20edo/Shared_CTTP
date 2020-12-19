@@ -10,47 +10,27 @@ FoamFile
     version     2.0;
     format      ascii;
     class       volScalarField;
-    location    "0";
-    object      nut;
+    location    "0/wallFilmRegion";
+    object      deltaf;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 2 -1 0 0 0 0];
+dimensions      [0 1 0 0 0 0 0];
 
 internalField   uniform 0;
 
 boundaryField
 {
-    inlet
+    "(wallFilmFaces_top|inlet|outlet)"
     {
-        type            calculated;
-        value           uniform 0;
+        type            zeroGradient;
     }
-    outlet
+
+    region0_to_wallFilmRegion_wallFilmFaces
     {
-        type            calculated;
-        value           uniform 0;
+        type            zeroGradient;
     }
-    splitter
-    {
-        type            nutkWallFunction;
-        value           uniform 0;
-    }
-    fuel_inlet
-    {
-        type            calculated;
-        value           uniform 0;
-    }
-    back
-    {
-        type            nutkWallFunction;
-        value           uniform 0;
-    }
-    sides
-    {
-        type            nutkWallFunction;
-        value           uniform 0;
-    }
+
     frontAndBack
     {
         type            empty;

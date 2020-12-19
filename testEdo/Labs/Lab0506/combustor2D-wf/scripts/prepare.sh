@@ -13,13 +13,13 @@ wmake	2>&1	| tee $cwd/log/wmake.log
 cd $cwd
 pwd
 # Initialize opportunely all the fields
-
+rm -r 0
 cp -r 0.bak 0
 
 # Generate mesh
 blockMesh	2>&1	| tee log/blockMesh.log
 # Map fields from previous case
-mapFields	../combustor2D_RPF -case . -sourceTime latestTime 2>&1	| tee log/mapFields.log
+mapFields	../combustor2D-RPF -case . -sourceTime latestTime 2>&1	| tee log/mapFields.log
 
 # Set the coupling bc for the wall film (based on the splitter bcs used before)
 for i in 0/*; do
@@ -40,7 +40,7 @@ touch combustor.foam
 
 # Decompose Mesh
 decomposePar	2>&1	| tee log/decomposePar.log
-cp system/decomposeParDict system/wallFilmRegion/decomposeParDict
-decomposePar -region wallFilmRegion	| tee lod/decomposePar_wallFilmRegion.log
+# cp system/decomposeParDict system/wallFilmRegion/decomposeParDict
+decomposePar -region wallFilmRegion	| tee log/decomposePar_wallFilmRegion.log
 # Check the two meshes
 checkMesh	2>&1	| tee log/checkMesh.log

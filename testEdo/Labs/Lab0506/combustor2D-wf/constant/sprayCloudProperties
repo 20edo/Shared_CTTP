@@ -90,14 +90,21 @@ subModels
             position        (0 -0.295 0);
             direction       (0 1 0);
             parcelsPerSecond 20000000;
-            flowRateProfile sine;//table
+	    flowRateProfile	table
+		    ((0		1)
+		     (0.1	0.5)
+		     (0.2	0)
+		    );
+
+	    /*flowRateProfile sine;
 	    flowRateProfileCoeffs
 	    {
 		    frequency	10;
-		    amplitude	2;
+		    amplitude	1;
 		    scale	1;
 		    level	0;
-	    }
+		    t0		0.1;
+	    }*/
             Cd              constant 0.9;
 
             thetaInner      constant 0.0;

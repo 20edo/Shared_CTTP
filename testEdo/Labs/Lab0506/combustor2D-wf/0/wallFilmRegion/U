@@ -21,11 +21,19 @@ internalField   uniform (0 0 0);
 
 boundaryField
 {
-    "(wallFilmFaces_top|fuel_inlet)"
+    "(wallFilmFaces_top)"
     {
         type            slip;
     }
-
+    inlet
+    {
+    	type		fixedValue;
+	value		uniform (0 0 0);
+    }
+    outlet
+    {
+	    type	zeroGradient;
+    }
     region0_to_wallFilmRegion_wallFilmFaces
     {
         type            noSlip;
