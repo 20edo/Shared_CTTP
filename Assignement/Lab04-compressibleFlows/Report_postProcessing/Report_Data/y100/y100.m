@@ -16,8 +16,8 @@ p = data(:,22);
 % plot
 figure()
 hold on, grid on
-plot(x,Ux)
-plot(x,Uy)
+plot(x,Ux,'m')
+plot(x,Uy,'k')
 xlim([-0.12 0.12])
 xlabel('x $[m]$','Interpreter','Latex')
 ylabel('flow velocity $[m/s]$','Interpreter','Latex')
@@ -61,8 +61,8 @@ p = data(:,23);
 % plot
 figure()
 hold on, grid on
-plot(x,Ux)
-plot(x,Uy)
+plot(x,Ux,'m')
+plot(x,Uy,'k')
 xlim([-0.12 0.12])
 xlabel('x $[m]$','Interpreter','Latex')
 ylabel('flow velocity $[m/s]$','Interpreter','Latex')
@@ -106,8 +106,8 @@ p = data(:,23);
 % plot
 figure()
 hold on, grid on
-plot(x,Ux)
-plot(x,Uy)
+plot(x,Ux,'m')
+plot(x,Uy,'k')
 xlim([-0.12 0.12])
 xlabel('x $[m]$','Interpreter','Latex')
 ylabel('flow velocity $[m/s]$','Interpreter','Latex')
@@ -151,8 +151,8 @@ p = data(:,23);
 % plot
 figure()
 hold on, grid on
-plot(x,Ux)
-plot(x,Uy)
+plot(x,Ux,'m')
+plot(x,Uy,'k')
 xlim([-0.12 0.12])
 xlabel('x $[m]$','Interpreter','Latex')
 ylabel('flow velocity $[m/s]$','Interpreter','Latex')
