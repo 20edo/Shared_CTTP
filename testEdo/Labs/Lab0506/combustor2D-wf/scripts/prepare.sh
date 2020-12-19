@@ -33,7 +33,7 @@ topoSet		2>&1	| tee log/topoSet.log
 extrudeToRegionMesh	-overwrite	2>&1	| tee log/extrudeToRegion.log
 
 # Generate thermo files 
-chemkinToFoam	chemkin/chem.inp	chemkin/therm.dat	chemkin/transportProperties	constant/reactions	constant/spieciesThermo 2>&1	| tee log/chemkinToFoam.log
+chemkinToFoam	chemkin/chem.inp	chemkin/therm.dat	chemkin/transportProperties	constant/reactions	constant/speciesThermo 2>&1	| tee log/chemkinToFoam.log
 
 # Generate foam file
 touch combustor.foam

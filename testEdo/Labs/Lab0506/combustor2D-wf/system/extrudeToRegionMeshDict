@@ -32,7 +32,7 @@ adaptMesh       yes; // apply mapped to both regions
 
 linearNormalCoeffs
 {
-    thickness       1e-4;
+    thickness       0.001;
 }
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
