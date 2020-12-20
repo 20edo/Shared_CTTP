@@ -89,7 +89,7 @@ subModels
             duration        0.1;
             position        (0 -0.295 0);
             direction       (0 1 0);
-            parcelsPerSecond 20000000;
+            parcelsPerSecond 2e4;
             /*flowRateProfile table	// Funziona ma non è quello che voglio
             (
                 (0               0)
@@ -103,7 +103,7 @@ subModels
             flowRateProfile // Funziona solo se level è "sufficientemente lontano" da 0
 	    {
 		    type	sine;
-		    frequency	0.5;
+		    frequency	5;
 		    amplitude	1;
 		    scale	1;
 		    level	1e-4;
