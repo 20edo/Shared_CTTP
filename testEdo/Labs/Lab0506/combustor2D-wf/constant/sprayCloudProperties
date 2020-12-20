@@ -90,7 +90,7 @@ subModels
             position        (0 -0.295 0);
             direction       (0 1 0);
             parcelsPerSecond 20000000;
-            flowRateProfile table
+            /*flowRateProfile table	// Funziona ma non è quello che voglio
             (
                 (0               0)
                 (0.001         0.5)
@@ -99,17 +99,37 @@ subModels
                 (0.05            1)
                 (0.09            1)
                 (0.1             0)
-            );
-            /*flowRateProfile sine;
-            flowRateProfileCoeffs
+            );*/
+            flowRateProfile // Funziona solo se level è "sufficientemente lontano" da 0
 	    {
-		    frequency	10;
+		    type	sine;
+		    frequency	0.5;
 		    amplitude	1;
 		    scale	1;
-		    level	0;
-		    t0		0;
-	    };*/
-	    
+		    level	1e-4;
+	    };
+	    /*flowRateProfile	// Funziona ma non è quello che voglio (penso)
+	    {
+		    type	scale;
+		    scale	quarterSineRamp;
+		    start	0;
+		    duration	0.1;
+		    value	1;
+	    }*/
+	    /*flowRateProfile	coded; // Not finished
+	    name		mysin;
+	    codeInclude
+		#{
+			#include "mathematicalConstants.H"
+		#};
+		code
+		#{
+			return scalar
+				(
+				 	sin(constant::mathematical::twoPi*time)
+				);
+		#};
+		*/
             Cd              constant 0.9;
 
             thetaInner      constant 0.0;
