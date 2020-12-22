@@ -41,6 +41,6 @@ touch combustor.foam
 # Decompose Mesh
 decomposePar	2>&1	| tee log/decomposePar.log
 # cp system/decomposeParDict system/wallFilmRegion/decomposeParDict
-decomposePar -region wallFilmRegion	| tee log/decomposePar_wallFilmRegion.log
+decomposePar -region wallFilmRegion 	2>&1	| tee log/decomposePar_wallFilmRegion.log
 # Check the two meshes
 checkMesh	2>&1	| tee log/checkMesh.log

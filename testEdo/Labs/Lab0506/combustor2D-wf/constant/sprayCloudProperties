@@ -89,7 +89,7 @@ subModels
             duration        0.1;
             position        (0 -0.295 0);
             direction       (0 1 0);
-            parcelsPerSecond 2e4;
+            parcelsPerSecond 2e6;
             /*flowRateProfile table	// Funziona ma non è quello che voglio
             (
                 (0               0)
@@ -238,75 +238,11 @@ subModels
 
 cloudFunctions
 {   
-	FacePostProcessing // Non ho capito a cosa serve, dovrebbe mostrare la massa totale di particelle sulla faceZone e il mass flux ma non lo fa...
-	{
-		type		facePostProcessing;
-		surfaceFormat	vtk;
-		resetOnWrite	false;
-		log		yes;
-		writeFile	yes;
-		faceZones	(wallFilmiFaceSet);
-		writeControl	writeTime;
-		writeInterval	1;
-
-	};
-	particleCollector1	// Dovrebbe mostrare infor sulle particelle che attraversano certe superfici, ma per il momento le superfici sono definite male (nonostante questo sembra fare qualcosa)
-	{
-		type            particleCollector;
-
-		mode            concentricCircle;
-		origin          (0	0 	0);
-		radius          (0.01 0.025 0.05);
-		nSector         10;
-		refDir          (1 0 0);
-		normal          (0 1 0);
-
-		negateParcelsOppositeNormal no;
-		removeCollected no;
-		surfaceFormat   vtk;
-		resetOnWrite    no;
-		log             yes;
-	};
-        particleErosion1	// Vedo il campo sprayCloud:Q (ma c'era anche prima? cosa fa?)
-	{
-                type            particleErosion;
-                surfaceFormat   vtk;
-                resetOnWrite    false;
-                log             yes;
-		p		1;
-		patches		(splitter);
-        };
-	particleTrack1
-	{
-                type            particleTracks;
-		trackInterval	1;
-		maxSamples	10;
-		resetOnWrite	no;
-		log             yes;
-        };
-	voidFraction1	
-	{
-		type		voidFraction;
-	};/*
-	particleTrap1
-	{
-		type        particleTrap;
-		alphaName   nut;      // name volume fraction field Da sostituire con void Fraction Da sostituire con void Fraction
-		threshold   0.95;       // alpha value below which model is active Da sostituire con void Fraction
-	};
-	/*cloudSplitter
-	{
-		type			patchPostProcessing;
-		maxStoredParcels	1e3;
-		patches			("sides");
-	};
-*/
-	/*ParticleErosion;
-	ParticleTracks;
-	ParticleTrap;
-	PatchPostProcessing;
-	VoidFraction;
-	*/
+#include	"cloudFunctionObjects/facePostProcessing.cpp"
+#include	"cloudFunctionObjects/particleCollector.cpp"
+#include	"cloudFunctionObjects/particleTrack.cpp"
+#include	"cloudFunctionObjects/voidFraction.cpp"
+#include	"cloudFunctionObjects/patchPostProcessing.cpp"
 }
 
 
