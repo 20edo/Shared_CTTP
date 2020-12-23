@@ -1,0 +1,12 @@
+facePostProcessing
+	{
+		type		facePostProcessing;
+		surfaceFormat	vtk;
+		resetOnWrite	false;
+		log		yes;
+		writeFile	yes;
+		faceZones	(wallFilmFaces);
+		writeControl	writeTime;
+		writeInterval	1;
+
+	};

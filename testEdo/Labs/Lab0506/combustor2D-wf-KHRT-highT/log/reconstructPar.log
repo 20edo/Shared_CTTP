@@ -1,0 +1,1320 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : reconstructPar
+Date   : Dec 22 2020
+Time   : 21:01:52
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 29811
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Reconstructing fields for mesh region0
+
+Time = 0.01
+
+Reconstructing FV fields
+
+    Reconstructing volScalarField::Internals
+
+        sprayCloud:hsTrans
+        sprayCloud:UCoeff
+        sprayCloud:rhoTrans_CO2
+        sprayCloud:hsCoeff
+        sprayCloud:rhoTrans_H2O
+        sprayCloud:rhoTrans_N2
+        sprayCloud:rhoTrans_C7H16
+        sprayCloud:rhoTrans_O2
+
+    Reconstructing volVectorField::Internals
+
+        sprayCloud:UTrans
+
+    Reconstructing volScalarFields
+
+        C7H16
+        Ma
+        sprayCloudTheta
+        rho
+        CO2
+        k
+        H2O
+        alphat
+        nut
+        N2
+        O2
+        p
+        T
+        epsilon
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+Reconstructing lagrangian fields for cloud sprayCloudTracks
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Reconstructing lagrangian fields for cloud sprayCloud
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Time = 0.02
+
+Reconstructing FV fields
+
+    Reconstructing volScalarField::Internals
+
+        sprayCloud:hsTrans
+        sprayCloud:UCoeff
+        sprayCloud:rhoTrans_CO2
+        sprayCloud:hsCoeff
+        sprayCloud:rhoTrans_H2O
+        sprayCloud:rhoTrans_N2
+        sprayCloud:rhoTrans_C7H16
+        sprayCloud:rhoTrans_O2
+
+    Reconstructing volVectorField::Internals
+
+        sprayCloud:UTrans
+
+    Reconstructing volScalarFields
+
+        C7H16
+        Ma
+        sprayCloudTheta
+        rho
+        CO2
+        k
+        H2O
+        alphat
+        nut
+        N2
+        O2
+        p
+        T
+        epsilon
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+Reconstructing lagrangian fields for cloud sprayCloudTracks
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Reconstructing lagrangian fields for cloud sprayCloud
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Time = 0.03
+
+Reconstructing FV fields
+
+    Reconstructing volScalarField::Internals
+
+        sprayCloud:hsTrans
+        sprayCloud:UCoeff
+        sprayCloud:rhoTrans_CO2
+        sprayCloud:hsCoeff
+        sprayCloud:rhoTrans_H2O
+        sprayCloud:rhoTrans_N2
+        sprayCloud:rhoTrans_C7H16
+        sprayCloud:rhoTrans_O2
+
+    Reconstructing volVectorField::Internals
+
+        sprayCloud:UTrans
+
+    Reconstructing volScalarFields
+
+        C7H16
+        Ma
+        sprayCloudTheta
+        rho
+        CO2
+        k
+        H2O
+        alphat
+        nut
+        N2
+        O2
+        p
+        T
+        epsilon
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+Reconstructing lagrangian fields for cloud sprayCloudTracks
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Reconstructing lagrangian fields for cloud sprayCloud
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Time = 0.04
+
+Reconstructing FV fields
+
+    Reconstructing volScalarField::Internals
+
+        sprayCloud:hsTrans
+        sprayCloud:UCoeff
+        sprayCloud:rhoTrans_CO2
+        sprayCloud:hsCoeff
+        sprayCloud:rhoTrans_H2O
+        sprayCloud:rhoTrans_N2
+        sprayCloud:rhoTrans_C7H16
+        sprayCloud:rhoTrans_O2
+
+    Reconstructing volVectorField::Internals
+
+        sprayCloud:UTrans
+
+    Reconstructing volScalarFields
+
+        C7H16
+        Ma
+        sprayCloudTheta
+        rho
+        CO2
+        k
+        H2O
+        alphat
+        nut
+        N2
+        O2
+        p
+        T
+        epsilon
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+Reconstructing lagrangian fields for cloud sprayCloudTracks
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Reconstructing lagrangian fields for cloud sprayCloud
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Time = 0.05
+
+Reconstructing FV fields
+
+    Reconstructing volScalarField::Internals
+
+        sprayCloud:hsTrans
+        sprayCloud:UCoeff
+        sprayCloud:rhoTrans_CO2
+        sprayCloud:hsCoeff
+        sprayCloud:rhoTrans_H2O
+        sprayCloud:rhoTrans_N2
+        sprayCloud:rhoTrans_C7H16
+        sprayCloud:rhoTrans_O2
+
+    Reconstructing volVectorField::Internals
+
+        sprayCloud:UTrans
+
+    Reconstructing volScalarFields
+
+        C7H16
+        Ma
+        sprayCloudTheta
+        rho
+        CO2
+        k
+        H2O
+        alphat
+        nut
+        N2
+        O2
+        p
+        T
+        epsilon
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+Reconstructing lagrangian fields for cloud sprayCloudTracks
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Reconstructing lagrangian fields for cloud sprayCloud
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Time = 0.06
+
+Reconstructing FV fields
+
+    Reconstructing volScalarField::Internals
+
+        sprayCloud:hsTrans
+        sprayCloud:UCoeff
+        sprayCloud:rhoTrans_CO2
+        sprayCloud:hsCoeff
+        sprayCloud:rhoTrans_H2O
+        sprayCloud:rhoTrans_N2
+        sprayCloud:rhoTrans_C7H16
+        sprayCloud:rhoTrans_O2
+
+    Reconstructing volVectorField::Internals
+
+        sprayCloud:UTrans
+
+    Reconstructing volScalarFields
+
+        C7H16
+        Ma
+        sprayCloudTheta
+        rho
+        CO2
+        k
+        H2O
+        alphat
+        nut
+        N2
+        O2
+        p
+        T
+        epsilon
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+Reconstructing lagrangian fields for cloud sprayCloudTracks
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Reconstructing lagrangian fields for cloud sprayCloud
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Time = 0.07
+
+Reconstructing FV fields
+
+    Reconstructing volScalarField::Internals
+
+        sprayCloud:hsTrans
+        sprayCloud:UCoeff
+        sprayCloud:rhoTrans_CO2
+        sprayCloud:hsCoeff
+        sprayCloud:rhoTrans_H2O
+        sprayCloud:rhoTrans_N2
+        sprayCloud:rhoTrans_C7H16
+        sprayCloud:rhoTrans_O2
+
+    Reconstructing volVectorField::Internals
+
+        sprayCloud:UTrans
+
+    Reconstructing volScalarFields
+
+        C7H16
+        Ma
+        sprayCloudTheta
+        rho
+        CO2
+        k
+        H2O
+        alphat
+        nut
+        N2
+        O2
+        p
+        T
+        epsilon
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+Reconstructing lagrangian fields for cloud sprayCloudTracks
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Reconstructing lagrangian fields for cloud sprayCloud
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Time = 0.08
+
+Reconstructing FV fields
+
+    Reconstructing volScalarField::Internals
+
+        sprayCloud:hsTrans
+        sprayCloud:UCoeff
+        sprayCloud:rhoTrans_CO2
+        sprayCloud:hsCoeff
+        sprayCloud:rhoTrans_H2O
+        sprayCloud:rhoTrans_N2
+        sprayCloud:rhoTrans_C7H16
+        sprayCloud:rhoTrans_O2
+
+    Reconstructing volVectorField::Internals
+
+        sprayCloud:UTrans
+
+    Reconstructing volScalarFields
+
+        C7H16
+        Ma
+        sprayCloudTheta
+        rho
+        CO2
+        k
+        H2O
+        alphat
+        nut
+        N2
+        O2
+        p
+        T
+        epsilon
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+Reconstructing lagrangian fields for cloud sprayCloudTracks
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Reconstructing lagrangian fields for cloud sprayCloud
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Time = 0.09
+
+Reconstructing FV fields
+
+    Reconstructing volScalarField::Internals
+
+        sprayCloud:hsTrans
+        sprayCloud:UCoeff
+        sprayCloud:rhoTrans_CO2
+        sprayCloud:hsCoeff
+        sprayCloud:rhoTrans_H2O
+        sprayCloud:rhoTrans_N2
+        sprayCloud:rhoTrans_C7H16
+        sprayCloud:rhoTrans_O2
+
+    Reconstructing volVectorField::Internals
+
+        sprayCloud:UTrans
+
+    Reconstructing volScalarFields
+
+        C7H16
+        Ma
+        sprayCloudTheta
+        rho
+        CO2
+        k
+        H2O
+        alphat
+        nut
+        N2
+        O2
+        p
+        T
+        epsilon
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+Reconstructing lagrangian fields for cloud sprayCloudTracks
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Reconstructing lagrangian fields for cloud sprayCloud
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Time = 0.1
+
+Reconstructing FV fields
+
+    Reconstructing volScalarField::Internals
+
+        sprayCloud:hsTrans
+        sprayCloud:UCoeff
+        sprayCloud:rhoTrans_CO2
+        sprayCloud:hsCoeff
+        sprayCloud:rhoTrans_H2O
+        sprayCloud:rhoTrans_N2
+        sprayCloud:rhoTrans_C7H16
+        sprayCloud:rhoTrans_O2
+
+    Reconstructing volVectorField::Internals
+
+        sprayCloud:UTrans
+
+    Reconstructing volScalarFields
+
+        C7H16
+        Ma
+        sprayCloudTheta
+        rho
+        CO2
+        k
+        H2O
+        alphat
+        nut
+        N2
+        O2
+        p
+        T
+        epsilon
+        yPlus
+
+    Reconstructing volVectorFields
+
+        U
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+Reconstructing lagrangian fields for cloud sprayCloudTracks
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+Reconstructing lagrangian fields for cloud sprayCloud
+
+    Reconstructing lagrangian labelFields
+
+        origProcId
+        origId
+        typeId
+        active
+
+    Reconstructing lagrangian scalarFields
+
+        tMom
+        d
+        tc
+        dTarget
+        KHindex
+        nParticle
+        rho
+        d0
+        age
+        tTurb
+        yDot
+        injector
+        sigma
+        Cp
+        mu
+        mass0
+        ms
+        T
+        user
+        YC7H16(l)
+        y
+        liquidCore
+
+    Reconstructing lagrangian vectorFields
+
+        UTurb
+        U
+        position0
+
+
+End
+

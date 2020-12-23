@@ -1,0 +1,249 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  dev
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    class       dictionary;
+    location    "constant";
+    object      SprayCloudProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solution
+{
+    active          true;
+    coupled         true;
+    transient       yes;
+    cellValueSourceCorrection on;
+    maxCo           0.3;
+
+    sourceTerms
+    {
+        schemes
+        {
+            rho             explicit 1;
+            U               explicit 1;
+            Yi              explicit 1;
+            h               explicit 1;
+            radiation       explicit 1;
+        }
+    }
+
+    interpolationSchemes
+    {
+        rho             cell;
+        U               cellPoint;
+        thermo:mu       cell;
+        T               cell;
+        Cp              cell;
+        kappa           cell;
+        p               cell;
+    }
+
+    integrationSchemes
+    {
+        U               Euler;
+        T               analytical;
+    }
+}
+
+
+constantProperties
+{
+    T0              320;
+
+    // place holders for rho0 and Cp0
+    // - reset from liquid properties using T0
+    rho0            1000;
+    Cp0             4187;
+
+    constantVolume  false;
+}
+
+
+subModels
+{
+    particleForces
+    {
+        sphereDrag;
+    }
+
+    injectionModels
+    {
+        model1
+        {
+            type            coneInjection;
+            SOI             0;
+            massTotal       1e-4;
+            parcelBasisType mass;
+            injectionMethod disc;
+            flowType        flowRateAndDischarge;
+            dInner          0;
+            dOuter          1.9e-4;
+            duration        0.1;
+            position        (0 -0.295 0);
+            direction       (0 1 0);
+            parcelsPerSecond 2e6;
+            /*flowRateProfile table	// Funziona ma non è quello che voglio
+            (
+                (0               0)
+                (0.001         0.5)
+                (0.002           1)
+                (0.005           1)
+                (0.05            1)
+                (0.09            1)
+                (0.1             0)
+            );*/
+            flowRateProfile // Funziona solo se level è "sufficientemente lontano" da 0
+	    {
+		    type	sine;
+		    frequency	5;
+		    amplitude	1;
+		    scale	1;
+		    level	1e-4;
+	    };
+	    /*flowRateProfile	// Funziona ma non è quello che voglio (penso)
+	    {
+		    type	scale;
+		    scale	quarterSineRamp;
+		    start	0;
+		    duration	0.1;
+		    value	1;
+	    }*/
+	    /*flowRateProfile	coded; // Not finished
+	    name		mysin;
+	    codeInclude
+		#{
+			#include "mathematicalConstants.H"
+		#};
+		code
+		#{
+			return scalar
+				(
+				 	sin(constant::mathematical::twoPi*time)
+				);
+		#};
+		*/
+            Cd              constant 0.9;
+
+            thetaInner      constant 0.0;
+            thetaOuter      constant 10.0;
+
+            sizeDistribution
+            {
+                type        RosinRammler;
+
+                RosinRammlerDistribution
+                {
+                    minValue        1e-06;
+                    maxValue        0.00015;
+                    d               0.00015;
+                    n               3;
+                }
+            }
+        }
+    }
+
+    dispersionModel none;
+
+    patchInteractionModel standardWallInteraction;
+
+    heatTransferModel RanzMarshall;
+
+    compositionModel singlePhaseMixture;
+
+    phaseChangeModel liquidEvaporationBoil;
+
+    surfaceFilmModel thermoSurfaceFilm;
+
+    thermoSurfaceFilmCoeffs
+    {
+        active on;
+        interactionType absorb;
+    };
+
+    atomizationModel none;
+
+    breakupModel    ReitzDiwakar; // ReitzKHRT;
+
+    stochasticCollisionModel none;
+
+    radiation       off;
+
+    standardWallInteractionCoeffs
+    {
+        type            rebound;
+    }
+
+    RanzMarshallCoeffs
+    {
+        BirdCorrection  true;
+    }
+
+    singlePhaseMixtureCoeffs
+    {
+        phases
+        (
+            liquid
+            {
+                C7H16               1;
+            }
+        );
+    }
+
+    liquidEvaporationBoilCoeffs
+    {
+        enthalpyTransfer enthalpyDifference;
+
+        activeLiquids    ( C7H16 );
+    }
+
+    ReitzDiwakarCoeffs
+    {
+        solveOscillationEq yes;
+        Cbag            6;
+        Cb              0.785;
+        Cstrip          0.5;
+        Cs              10;
+    }
+
+/*
+    ReitzKHRTCoeffs
+    {
+        solveOscillationEq yes;
+        B0              0.61;
+        B1              40;
+        Ctau            1;
+        CRT             0.1;
+        msLimit         0.2;
+        WeberLimit      6;
+    }
+*/
+    TABCoeffs
+    {
+        y0              0;
+        yDot0           0;
+        Cmu             10;
+        Comega          8;
+        WeCrit          12;
+    }
+}
+
+
+cloudFunctions
+{   
+#include	"cloudFunctionObjects/facePostProcessing.cpp"
+//#include	"cloudFunctionObjects/particleCollector.cpp"
+#include	"cloudFunctionObjects/particleTrack.cpp"
+#include	"cloudFunctionObjects/voidFraction.cpp"
+#include	"cloudFunctionObjects/patchPostProcessing.cpp"
+}
+
+
+// ************************************************************************* //

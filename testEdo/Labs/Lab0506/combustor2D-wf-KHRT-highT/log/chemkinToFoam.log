@@ -1,0 +1,33 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : chemkinToFoam chemkin/chem.inp chemkin/therm.dat chemkin/transportProperties constant/reactions constant/speciesThermo
+Date   : Dec 22 2020
+Time   : 19:45:57
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 28956
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+--> FOAM FATAL IO ERROR: 
+file "chemkin/transportProperties" does not exist
+
+file: chemkin/transportProperties at line 1.
+
+    From function Foam::IFstream& Foam::IFstream::operator()() const
+    in file db/IOstreams/Fstreams/IFstream.C at line 185.
+
+FOAM exiting
+

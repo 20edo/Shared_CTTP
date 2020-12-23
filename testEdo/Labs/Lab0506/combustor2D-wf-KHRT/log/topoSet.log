@@ -1,0 +1,40 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : topoSet
+Date   : Dec 22 2020
+Time   : 17:36:34
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 25558
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Reading topoSetDict
+
+Time = 0
+    mesh not changed.
+Created faceSet wallFilmFaceSet
+    Applying source patchToFace
+    Adding all faces of patch sides ...
+    Found matching patch sides with 260 faces.
+    faceSet wallFilmFaceSet now size 260
+Created faceZoneSet wallFilmFaces
+    Applying source setToFaceZone
+    Adding all faces from faceSet wallFilmFaceSet ...
+    faceZoneSet wallFilmFaces now size 260
+End
+

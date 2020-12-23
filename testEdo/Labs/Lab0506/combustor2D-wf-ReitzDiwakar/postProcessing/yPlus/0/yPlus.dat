@@ -1,0 +1,35 @@
+# y+ ()       
+# Time        	patch         	min           	max           	average       
+0             	splitter	2.158787e+01	3.676520e+01	2.423689e+01
+0             	back	5.428496e+00	9.881030e+00	8.213848e+00
+0             	region0_to_wallFilmRegion_wallFilmFaces	5.948607e+00	2.005343e+01	1.135544e+01
+0.01          	splitter	1.998585e+01	3.238689e+01	2.260759e+01
+0.01          	back	5.259773e+00	1.046171e+01	7.992915e+00
+0.01          	region0_to_wallFilmRegion_wallFilmFaces	5.893424e+00	1.942344e+01	1.138012e+01
+0.02          	splitter	2.028838e+01	3.314320e+01	2.297438e+01
+0.02          	back	5.204368e+00	1.025245e+01	7.904588e+00
+0.02          	region0_to_wallFilmRegion_wallFilmFaces	5.997974e+00	2.044090e+01	1.139982e+01
+0.03          	splitter	3.436470e+01	9.241559e+01	4.647613e+01
+0.03          	back	5.342508e+00	1.007896e+01	8.169322e+00
+0.03          	region0_to_wallFilmRegion_wallFilmFaces	5.992873e+00	2.064397e+01	1.112736e+01
+0.04          	splitter	5.268665e+01	1.226462e+02	6.777327e+01
+0.04          	back	6.501538e+00	1.157207e+01	9.737356e+00
+0.04          	region0_to_wallFilmRegion_wallFilmFaces	5.992083e+00	2.863848e+01	1.395448e+01
+0.05          	splitter	5.780311e+01	1.391789e+02	7.624068e+01
+0.05          	back	6.088056e+00	1.054556e+01	8.763870e+00
+0.05          	region0_to_wallFilmRegion_wallFilmFaces	5.988708e+00	2.860308e+01	1.324969e+01
+0.06          	splitter	4.965328e+01	1.183673e+02	6.788833e+01
+0.06          	back	4.311567e+00	8.239841e+00	6.547792e+00
+0.06          	region0_to_wallFilmRegion_wallFilmFaces	5.831876e+00	3.320980e+01	1.463282e+01
+0.07          	splitter	4.969632e+01	1.073442e+02	6.234440e+01
+0.07          	back	3.930147e+00	9.170706e+00	6.488634e+00
+0.07          	region0_to_wallFilmRegion_wallFilmFaces	5.811255e+00	3.421631e+01	1.515791e+01
+0.08          	splitter	4.343722e+01	9.223490e+01	5.399458e+01
+0.08          	back	4.376485e+00	9.219227e+00	7.100030e+00
+0.08          	region0_to_wallFilmRegion_wallFilmFaces	5.996229e+00	3.919613e+01	1.548116e+01
+0.09          	splitter	3.721167e+01	7.010831e+01	4.300739e+01
+0.09          	back	4.910115e+00	1.005837e+01	7.738335e+00
+0.09          	region0_to_wallFilmRegion_wallFilmFaces	5.982091e+00	3.641374e+01	1.569473e+01
+0.1           	splitter	2.625789e+01	4.987665e+01	3.173817e+01
+0.1           	back	5.217321e+00	1.010396e+01	8.022816e+00
+0.1           	region0_to_wallFilmRegion_wallFilmFaces	5.923485e+00	2.962054e+01	1.403096e+01

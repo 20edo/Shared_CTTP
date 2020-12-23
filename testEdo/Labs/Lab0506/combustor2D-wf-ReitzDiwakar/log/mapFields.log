@@ -1,0 +1,45 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : mapFields ../combustor2D-RPF -case . -sourceTime latestTime
+Date   : Dec 22 2020
+Time   : 14:36:31
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 19049
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Source: "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506" "combustor2D-RPF"
+Target: "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506" "combustor2D-wf"
+
+Create databases as time
+
+Source time: 0.5
+Target time: 0
+Create meshes
+
+Source mesh size: 15677	Target mesh size: 15677
+
+
+Mapping fields for time 0.5
+
+    interpolating k
+    interpolating alphat
+    interpolating nut
+    interpolating p
+    interpolating T
+    interpolating epsilon
+    interpolating U
+
+End
+

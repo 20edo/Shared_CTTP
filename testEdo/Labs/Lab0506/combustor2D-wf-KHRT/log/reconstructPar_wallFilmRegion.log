@@ -1,0 +1,340 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : reconstructPar -region wallFilmRegion
+Date   : Dec 23 2020
+Time   : 09:34:52
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 8079
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Reconstructing fields for mesh wallFilmRegion
+
+Time = 0.01
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        sigma
+        Cp
+        mu
+        kappa
+        delta
+        rho
+        coverage
+        alpha
+        T
+
+    Reconstructing volVectorFields
+
+        U
+        contactForce:contactAngle
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 0.02
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        sigma
+        Cp
+        mu
+        kappa
+        delta
+        rho
+        coverage
+        alpha
+        T
+
+    Reconstructing volVectorFields
+
+        U
+        contactForce:contactAngle
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 0.03
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        sigma
+        Cp
+        mu
+        kappa
+        delta
+        rho
+        coverage
+        alpha
+        T
+
+    Reconstructing volVectorFields
+
+        U
+        contactForce:contactAngle
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 0.04
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        sigma
+        Cp
+        mu
+        kappa
+        delta
+        rho
+        coverage
+        alpha
+        T
+
+    Reconstructing volVectorFields
+
+        U
+        contactForce:contactAngle
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 0.05
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        sigma
+        Cp
+        mu
+        kappa
+        delta
+        rho
+        coverage
+        alpha
+        T
+
+    Reconstructing volVectorFields
+
+        U
+        contactForce:contactAngle
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 0.06
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        sigma
+        Cp
+        mu
+        kappa
+        delta
+        rho
+        coverage
+        alpha
+        T
+
+    Reconstructing volVectorFields
+
+        U
+        contactForce:contactAngle
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 0.07
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        sigma
+        Cp
+        mu
+        kappa
+        delta
+        rho
+        coverage
+        alpha
+        T
+
+    Reconstructing volVectorFields
+
+        U
+        contactForce:contactAngle
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 0.08
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        sigma
+        Cp
+        mu
+        kappa
+        delta
+        rho
+        coverage
+        alpha
+        T
+
+    Reconstructing volVectorFields
+
+        U
+        contactForce:contactAngle
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 0.09
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        sigma
+        Cp
+        mu
+        kappa
+        delta
+        rho
+        coverage
+        alpha
+        T
+
+    Reconstructing volVectorFields
+
+        U
+        contactForce:contactAngle
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+Time = 0.1
+
+Reconstructing FV fields
+
+    Reconstructing volScalarFields
+
+        sigma
+        Cp
+        mu
+        kappa
+        delta
+        rho
+        coverage
+        alpha
+        T
+
+    Reconstructing volVectorFields
+
+        U
+        contactForce:contactAngle
+
+    Reconstructing surfaceScalarFields
+
+        phi
+
+Reconstructing point fields
+
+No point fields
+
+No lagrangian fields
+
+
+End
+

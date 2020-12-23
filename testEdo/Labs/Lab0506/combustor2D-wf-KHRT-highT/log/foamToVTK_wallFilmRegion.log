@@ -1,0 +1,149 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : foamToVTK -region wallFilmRegion
+Date   : Dec 22 2020
+Time   : 21:12:35
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 29857
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh wallFilmRegion for time = 0
+
+Time: 0
+    volScalarFields            : T delta
+    volVectorFields            : U
+
+    Internal  : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/combustor2D-wf-KHRT-highT_0.vtk"
+    Original cells:260 points:1048   Additional cells:0  additional points:0
+
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/inlet/inlet_0.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/outlet/outlet_0.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/frontAndBack/frontAndBack_0.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/wallFilmFaces_top/wallFilmFaces_top_0.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/region0_to_wallFilmRegion_wallFilmFaces/region0_to_wallFilmRegion_wallFilmFaces_0.vtk"
+Time: 0.01
+    volScalarFields            : sigma Cp mu kappa delta rho coverage alpha T
+    volVectorFields            : U contactForce:contactAngle
+
+    Internal  : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/combustor2D-wf-KHRT-highT_455.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/inlet/inlet_455.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/outlet/outlet_455.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/frontAndBack/frontAndBack_455.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/wallFilmFaces_top/wallFilmFaces_top_455.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/region0_to_wallFilmRegion_wallFilmFaces/region0_to_wallFilmRegion_wallFilmFaces_455.vtk"
+    surfScalarFields  : phi
+Time: 0.02
+    volScalarFields            : sigma Cp mu kappa delta rho coverage alpha T
+    volVectorFields            : U contactForce:contactAngle
+
+    Internal  : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/combustor2D-wf-KHRT-highT_897.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/inlet/inlet_897.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/outlet/outlet_897.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/frontAndBack/frontAndBack_897.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/wallFilmFaces_top/wallFilmFaces_top_897.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/region0_to_wallFilmRegion_wallFilmFaces/region0_to_wallFilmRegion_wallFilmFaces_897.vtk"
+    surfScalarFields  : phi
+Time: 0.03
+    volScalarFields            : sigma Cp mu kappa delta rho coverage alpha T
+    volVectorFields            : U contactForce:contactAngle
+
+    Internal  : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/combustor2D-wf-KHRT-highT_1361.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/inlet/inlet_1361.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/outlet/outlet_1361.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/frontAndBack/frontAndBack_1361.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/wallFilmFaces_top/wallFilmFaces_top_1361.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/region0_to_wallFilmRegion_wallFilmFaces/region0_to_wallFilmRegion_wallFilmFaces_1361.vtk"
+    surfScalarFields  : phi
+Time: 0.04
+    volScalarFields            : sigma Cp mu kappa delta rho coverage alpha T
+    volVectorFields            : U contactForce:contactAngle
+
+    Internal  : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/combustor2D-wf-KHRT-highT_2093.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/inlet/inlet_2093.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/outlet/outlet_2093.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/frontAndBack/frontAndBack_2093.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/wallFilmFaces_top/wallFilmFaces_top_2093.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/region0_to_wallFilmRegion_wallFilmFaces/region0_to_wallFilmRegion_wallFilmFaces_2093.vtk"
+    surfScalarFields  : phi
+Time: 0.05
+    volScalarFields            : sigma Cp mu kappa delta rho coverage alpha T
+    volVectorFields            : U contactForce:contactAngle
+
+    Internal  : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/combustor2D-wf-KHRT-highT_2920.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/inlet/inlet_2920.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/outlet/outlet_2920.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/frontAndBack/frontAndBack_2920.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/wallFilmFaces_top/wallFilmFaces_top_2920.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/region0_to_wallFilmRegion_wallFilmFaces/region0_to_wallFilmRegion_wallFilmFaces_2920.vtk"
+    surfScalarFields  : phi
+Time: 0.06
+    volScalarFields            : sigma Cp mu kappa delta rho coverage alpha T
+    volVectorFields            : U contactForce:contactAngle
+
+    Internal  : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/combustor2D-wf-KHRT-highT_3773.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/inlet/inlet_3773.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/outlet/outlet_3773.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/frontAndBack/frontAndBack_3773.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/wallFilmFaces_top/wallFilmFaces_top_3773.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/region0_to_wallFilmRegion_wallFilmFaces/region0_to_wallFilmRegion_wallFilmFaces_3773.vtk"
+    surfScalarFields  : phi
+Time: 0.07
+    volScalarFields            : sigma Cp mu kappa delta rho coverage alpha T
+    volVectorFields            : U contactForce:contactAngle
+
+    Internal  : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/combustor2D-wf-KHRT-highT_4624.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/inlet/inlet_4624.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/outlet/outlet_4624.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/frontAndBack/frontAndBack_4624.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/wallFilmFaces_top/wallFilmFaces_top_4624.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/region0_to_wallFilmRegion_wallFilmFaces/region0_to_wallFilmRegion_wallFilmFaces_4624.vtk"
+    surfScalarFields  : phi
+Time: 0.08
+    volScalarFields            : sigma Cp mu kappa delta rho coverage alpha T
+    volVectorFields            : U contactForce:contactAngle
+
+    Internal  : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/combustor2D-wf-KHRT-highT_5438.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/inlet/inlet_5438.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/outlet/outlet_5438.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/frontAndBack/frontAndBack_5438.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/wallFilmFaces_top/wallFilmFaces_top_5438.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/region0_to_wallFilmRegion_wallFilmFaces/region0_to_wallFilmRegion_wallFilmFaces_5438.vtk"
+    surfScalarFields  : phi
+Time: 0.09
+    volScalarFields            : sigma Cp mu kappa delta rho coverage alpha T
+    volVectorFields            : U contactForce:contactAngle
+
+    Internal  : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/combustor2D-wf-KHRT-highT_6180.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/inlet/inlet_6180.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/outlet/outlet_6180.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/frontAndBack/frontAndBack_6180.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/wallFilmFaces_top/wallFilmFaces_top_6180.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/region0_to_wallFilmRegion_wallFilmFaces/region0_to_wallFilmRegion_wallFilmFaces_6180.vtk"
+    surfScalarFields  : phi
+Time: 0.1
+    volScalarFields            : sigma Cp mu kappa delta rho coverage alpha T
+    volVectorFields            : U contactForce:contactAngle
+
+    Internal  : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/combustor2D-wf-KHRT-highT_6818.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/inlet/inlet_6818.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/outlet/outlet_6818.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/frontAndBack/frontAndBack_6818.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/wallFilmFaces_top/wallFilmFaces_top_6818.vtk"
+    Patch     : "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT/VTK/wallFilmRegion/region0_to_wallFilmRegion_wallFilmFaces/region0_to_wallFilmRegion_wallFilmFaces_6818.vtk"
+    surfScalarFields  : phi
+End
+
