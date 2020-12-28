@@ -8,9 +8,9 @@
 Build  : 8
 Exec   : extrudeToRegionMesh -overwrite
 Date   : Dec 28 2020
-Time   : 21:32:00
+Time   : 22:07:25
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 324608
+PID    : 328381
 I/O    : uncollated
 Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf
 nProcs : 1
@@ -29,23 +29,23 @@ Testing:"/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combu
 Writing meshes to constant
 
 Zone wallFilmFaces has boundary faces
-extrudePatch : faces:5760 points:5808 edges:11568
+extrudePatch : faces:53402 points:56900 edges:110300
 
 Adding coupling patches:
 
 patchID	patch	type
 -------	-----	----
-3	wallFilmFaces_top	patch
-2	region0_to_wallFilmRegion_wallFilmFaces	mappedWall
-Added 1 inter-region patches.
+9	wallFilmFaces_top	patch
+10	region0_to_wallFilmRegion_wallFilmFaces	mappedWall
+Added 2 inter-region patches.
 
 Adding coupling patches:
 
 patchID	patch	type
 -------	-----	----
-3	wallFilmFaces_top	patch
-2	region0_to_wallFilmRegion_wallFilmFaces	mappedWall
-Added 1 inter-region patches.
+9	wallFilmFaces_top	patch
+10	region0_to_wallFilmRegion_wallFilmFaces	mappedWall
+Added 2 inter-region patches.
 
 Adding patches for sides on zones:
 
@@ -59,9 +59,23 @@ patchID	patch
 -------	-----
 Added 0 coupled patches.
 
+Deleting patch 0 name:outerWalls
+Deleting patch 3 name:splitterFront
+Deleting patch 4 name:splitterRight
+Deleting patch 5 name:splitterRear
+Deleting patch 6 name:splitterLeft
+Deleting patch 7 name:splitterBottom
+Deleting patch 8 name:splitterTop
 Writing mesh wallFilmRegion to "constant"
 
-Deleting patch 3 name:wallFilmFaces_top
+Deleting patch 0 name:outerWalls
+Deleting patch 3 name:splitterFront
+Deleting patch 4 name:splitterRight
+Deleting patch 5 name:splitterRear
+Deleting patch 6 name:splitterLeft
+Deleting patch 7 name:splitterBottom
+Deleting patch 8 name:splitterTop
+Deleting patch 9 name:wallFilmFaces_top
 Writing mesh region0 to "constant"
 
 End

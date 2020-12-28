@@ -8,18 +8,18 @@ Invalid MIT-MAGIC-COOKIE-1 key/*------------------------------------------------
 Build  : 8
 Exec   : checkMesh -parallel -latestTime
 Date   : Dec 28 2020
-Time   : 21:32:01
+Time   : 22:07:33
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 324624
+PID    : 328407
 I/O    : uncollated
 Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf
 nProcs : 4
 Slaves : 
 3
 (
-"edo20-HP-Pavilion-Notebook.324625"
-"edo20-HP-Pavilion-Notebook.324626"
-"edo20-HP-Pavilion-Notebook.324627"
+"edo20-HP-Pavilion-Notebook.328408"
+"edo20-HP-Pavilion-Notebook.328409"
+"edo20-HP-Pavilion-Notebook.328410"
 )
 
 Pstream initialized with:
@@ -39,24 +39,37 @@ Create polyMesh for time = 0
 Time = 0
 
 Mesh stats
-    points:           99220
-    faces:            271440
-    internal faces:   246960
-    cells:            86400
-    faces per cell:   6
+    points:           1255998
+    faces:            3484720
+    internal faces:   3344306
+    cells:            1117301
+    faces per cell:   6.11207
     boundary patches: 5
     point zones:      0
     face zones:       1
     cell zones:       0
 
 Overall number of cells of each type:
-    hexahedra:     86400
-    prisms:        0
+    hexahedra:     1038826
+    prisms:        19508
     wedges:        0
     pyramids:      0
-    tet wedges:    0
+    tet wedges:    8
     tetrahedra:    0
-    polyhedra:     0
+    polyhedra:     58959
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            4   1178
+            5   1752
+            6   14661
+            7   3528
+            8   2510
+            9   23982
+           10   316
+           11   184
+           12   10487
+           15   360
+           18   1
 
 Checking topology...
     Boundary definition OK.
@@ -67,24 +80,24 @@ Checking topology...
     Number of regions: 1 (OK).
 
 Checking basic patch addressing...
-    Patch               Faces    Points   
-    outlet              720      820      
-    inlet               720      820      
-    region0_to_wallFilmRegion_wallFilmFaces5760     6292     
+                   Patch    Faces   Points
+                  outlet     1392     1552
+                   inlet      720      820
+    region0_to_wallFilmRegion_wallFilmFaces    53402    58118
 
 Checking geometry...
     Overall domain bounding box (-0.12 -0.3 -0.12) (0.12 0.5 0.12)
     Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
     Mesh has 3 solution (non-empty) directions (1 1 1)
-    Boundary openness (-7.96015e-16 2.36594e-17 -8.16913e-16) OK.
-    Max cell openness = 3.60258e-16 OK.
-    Max aspect ratio = 5.62123 OK.
-    Minimum face area = 9.42319e-06. Maximum face area = 0.000121519.  Face area magnitudes OK.
-    Min volume = 1.51572e-07. Max volume = 8.10126e-07.  Total volume = 0.0360879.  Cell volumes OK.
-    Mesh non-orthogonality Max: 31.131 average: 5.92024
+    Boundary openness (-1.67454e-15 -6.98276e-17 2.22291e-16) OK.
+    Max cell openness = 7.39745e-16 OK.
+    Max aspect ratio = 21.7394 OK.
+    Minimum face area = 2.89468e-09. Maximum face area = 0.000121596.  Face area magnitudes OK.
+    Min volume = 4.98494e-13. Max volume = 8.12937e-07.  Total volume = 0.0360639.  Cell volumes OK.
+    Mesh non-orthogonality Max: 64.9909 average: 10.3324
     Non-orthogonality check OK.
     Face pyramids OK.
-    Max skewness = 0.578679 OK.
+    Max skewness = 3.66724 OK.
     Coupled point location match (average 0) OK.
 
 Mesh OK.

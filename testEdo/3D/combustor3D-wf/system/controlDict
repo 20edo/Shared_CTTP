@@ -53,12 +53,13 @@ runTimeModifiable true;
 functions
 {
 	#includeFunc	residuals(p,U,k,epsilon,h)
-	#include	"functionObjects/fieldAverage.cpp"
+/*	#include	"functionObjects/fieldAverage.cpp"
 	#include 	"functionObjects/forces.cpp"
 	#include	"functionObjects/machNumber.cpp"
 	#include	"functionObjects/pressure.cpp"
 	#include	"functionObjects/temperature.cpp"
 	#include	"functionObjects/yPlus.cpp"
+*/
 }
 
 

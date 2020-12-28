@@ -1,4 +1,6 @@
-cwd=$(pwd)
+# Save some variables used later
+np=4	# Number of processors
+cwd=$(pwd) # Current work directory
 pwd
 # Compile the solver
 cd ../applications/solvers/lagrangian/sprayFilmFoam
@@ -6,6 +8,15 @@ wmake	2>&1	| tee $cwd/log/wmake.log
 cd $cwd
 pwd
 
+# Reconstruct Mesh
+reconstructParMesh	-latestTime	2>&1	| tee log/reconstructParMesh.log
+
+# Copy the boundary conditions to the folder containing the mesh
+#cp -r 0.bak/* 3e-05
+#mv 3e-05 0
+cp -r 3e-05/polyMesh constant
+cp -r 0.bak	0
+rm -r 3e-05
 # Generate faceZones and faceSets and extrude to create the wallFilm region
 topoSet		2>&1	| tee log/topoSet.log
 extrudeToRegionMesh	-overwrite	2>&1	| tee log/extrudeToRegion.log
@@ -13,7 +24,7 @@ extrudeToRegionMesh	-overwrite	2>&1	| tee log/extrudeToRegion.log
 # Set the coupling bc for the wall film (based on the splitter bcs used before)
 for i in 0/*; do
     if [ -f $i ]; then
-        sed -i s/sides/region0_to_wallFilmRegion_wallFilmFaces/g $i
+        sed -i s/wall/region0_to_wallFilmRegion_wallFilmFaces/g $i
     fi
 done
 
@@ -24,8 +35,8 @@ chemkinToFoam	chemkin/chem.inp	chemkin/therm.dat	chemkin/transportProperties	con
 touch combustor.foam
 
 # Decompose Mesh
-decomposePar	2>&1	| tee log/decomposePar.log
-# cp system/decomposeParDict system/wallFilmRegion/decomposeParDict
-decomposePar -region wallFilmRegion 	2>&1	| tee log/decomposePar_wallFilmRegion.log
+decomposePar	-force	-latestTime	2>&1	| tee log/decomposePar2.log
+# Decompose wall film region
+decomposePar 	-region wallFilmRegion	-latestTime     2>&1    | tee log/decomposePar_wallFilmRegion.log
 # Check the two meshes
-checkMesh	2>&1	| tee log/checkMesh.log
+mpirun	-np	$np	checkMesh	-parallel	-latestTime	2>&1	| tee log/checkMesh2.log

@@ -8,9 +8,9 @@
 Build  : 8
 Exec   : decomposePar -force -latestTime
 Date   : Dec 28 2020
-Time   : 21:32:01
+Time   : 22:07:30
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 324613
+PID    : 328396
 I/O    : uncollated
 Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf
 nProcs : 1
@@ -31,7 +31,7 @@ Create mesh
 Calculating distribution of cells
 Selecting decompositionMethod simple
 
-Finished decomposition in 0.05 s
+Finished decomposition in 0.68 s
 
 Calculating original mesh data
 
@@ -44,41 +44,41 @@ Distributing points to processors
 Constructing processor meshes
 
 Processor 0
-    Number of cells = 21600
-    Number of faces shared with processor 1 = 2160
-    Number of faces shared with processor 2 = 2160
+    Number of cells = 279354
+    Number of faces shared with processor 1 = 10331
+    Number of faces shared with processor 2 = 10866
     Number of processor patches = 2
-    Number of processor faces = 4320
-    Number of boundary faces = 1800
+    Number of processor faces = 21197
+    Number of boundary faces = 13878
 
 Processor 1
-    Number of cells = 21600
-    Number of faces shared with processor 0 = 2160
-    Number of faces shared with processor 3 = 2160
+    Number of cells = 279297
+    Number of faces shared with processor 0 = 10331
+    Number of faces shared with processor 3 = 10893
     Number of processor patches = 2
-    Number of processor faces = 4320
-    Number of boundary faces = 1800
+    Number of processor faces = 21224
+    Number of boundary faces = 13868
 
 Processor 2
-    Number of cells = 21600
-    Number of faces shared with processor 0 = 2160
-    Number of faces shared with processor 3 = 2160
+    Number of cells = 279297
+    Number of faces shared with processor 0 = 10866
+    Number of faces shared with processor 3 = 10360
     Number of processor patches = 2
-    Number of processor faces = 4320
-    Number of boundary faces = 1800
+    Number of processor faces = 21226
+    Number of boundary faces = 13874
 
 Processor 3
-    Number of cells = 21600
-    Number of faces shared with processor 1 = 2160
-    Number of faces shared with processor 2 = 2160
+    Number of cells = 279353
+    Number of faces shared with processor 1 = 10893
+    Number of faces shared with processor 2 = 10360
     Number of processor patches = 2
-    Number of processor faces = 4320
-    Number of boundary faces = 1800
+    Number of processor faces = 21253
+    Number of boundary faces = 13894
 
-Number of processor faces = 8640
-Max number of cells = 21600 (0% above average 21600)
+Number of processor faces = 42450
+Max number of cells = 279354 (0.0102927% above average 279325)
 Max number of processor patches = 2 (0% above average 2)
-Max number of faces between processors = 4320 (0% above average 4320)
+Max number of faces between processors = 21253 (0.13192% above average 21225)
 
 Time = 0
 

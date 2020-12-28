@@ -8,9 +8,9 @@
 Build  : 8
 Exec   : topoSet
 Date   : Dec 28 2020
-Time   : 21:32:00
+Time   : 22:07:25
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 324606
+PID    : 328379
 I/O    : uncollated
 Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf
 nProcs : 1
@@ -30,11 +30,17 @@ Time = 0
 Created faceSet wallFilmFaceSet
     Applying source patchToFace
     Adding all faces of patch wall ...
-    Found matching patch region0_to_wallFilmRegion_wallFilmFaces with 5760 faces.
-    faceSet wallFilmFaceSet now size 5760
+    Found matching patch outerWalls with 5760 faces.
+    Found matching patch splitterFront with 16100 faces.
+    Found matching patch splitterRight with 1802 faces.
+    Found matching patch splitterRear with 17614 faces.
+    Found matching patch splitterLeft with 1802 faces.
+    Found matching patch splitterBottom with 5162 faces.
+    Found matching patch splitterTop with 5162 faces.
+    faceSet wallFilmFaceSet now size 53402
 Created faceZoneSet wallFilmFaces
     Applying source setToFaceZone
     Adding all faces from faceSet wallFilmFaceSet ...
-    faceZoneSet wallFilmFaces now size 5760
+    faceZoneSet wallFilmFaces now size 53402
 End
 

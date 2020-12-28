@@ -8,18 +8,18 @@ Invalid MIT-MAGIC-COOKIE-1 key/*------------------------------------------------
 Build  : 8
 Exec   : sprayFilmFoam -parallel
 Date   : Dec 28 2020
-Time   : 21:32:02
+Time   : 22:07:38
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 324642
+PID    : 328426
 I/O    : uncollated
 Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf
 nProcs : 4
 Slaves : 
 3
 (
-"edo20-HP-Pavilion-Notebook.324643"
-"edo20-HP-Pavilion-Notebook.324644"
-"edo20-HP-Pavilion-Notebook.324645"
+"edo20-HP-Pavilion-Notebook.328427"
+"edo20-HP-Pavilion-Notebook.328428"
+"edo20-HP-Pavilion-Notebook.328429"
 )
 
 Pstream initialized with:
@@ -140,11 +140,11 @@ Creating finite volume options from "system/fvOptions"
 Selecting finite volume options model type limitTemperature
     Source: limitT
     - selecting all cells
-    - selected 86400 cell(s) with volume 0.0360879
+    - selected 1117301 cell(s) with volume 0.0360639
 Selecting finite volume options model type limitVelocity
     Source: limitU
     - selecting all cells
-    - selected 86400 cell(s) with volume 0.0360879
+    - selected 1117301 cell(s) with volume 0.0360639
 
 Constructing surface film model
 Selecting surfaceFilmModel thermoSingleLayer
@@ -177,138 +177,138 @@ Selecting distribution model normal
     Selecting heatTransferModel constant
     Selecting phaseChangeModel standardPhaseChange
     Selecting radiationModel none
-[2] #0  [3] #0  Foam::error::printStack(Foam::Ostream&)Foam::error::printStack(Foam::Ostream&)[0] #0  Foam::error::printStack(Foam::Ostream&)[1] #0  Foam::error::printStack(Foam::Ostream&) at ??:?
+[3] #0  Foam::error::printStack(Foam::Ostream&)[0] #0  Foam::error::printStack(Foam::Ostream&)[1] #0  Foam::error::printStack(Foam::Ostream&)[2] #0  Foam::error::printStack(Foam::Ostream&) at ??:?
  at ??:?
  at ??:?
  at ??:?
-[0] #1  Foam::sigFpe::sigHandler(int)[3] #1  Foam::sigFpe::sigHandler(int)[2] #1  Foam::sigFpe::sigHandler(int)[1] #1  Foam::sigFpe::sigHandler(int) at ??:?
+[2] #1  Foam::sigFpe::sigHandler(int)[0] #1  Foam::sigFpe::sigHandler(int)[3] #1  Foam::sigFpe::sigHandler(int)[1] #1  Foam::sigFpe::sigHandler(int) at ??:?
 [2] #2  ? at ??:?
-[3] #2  ? at ??:?
-[1] #2  ? at ??:?
-[0] #2  ? in "/lib/x86_64-linux-gnu/libc.so.6"
-[3] #3  ? in "/lib/x86_64-linux-gnu/libc.so.6"
-[2] #3  ? in "/lib/x86_64-linux-gnu/libc.so.6"
+[3] #2   at ??:?
+?[0] #2  ? at ??:?
+[1] #2  ? in "/lib/x86_64-linux-gnu/libc.so.6"
+ in [0] #3  ?"/lib/x86_64-linux-gnu/libc.so.6"
 [1] #3  ? in "/lib/x86_64-linux-gnu/libc.so.6"
- in "/l[0] #3  ?ib/x86_64-linux-gnu/libm.so.6"
-[3] #4  powf64 in "/lib/x86_64-linux-gnu/libm.so.6"
-[2] #4  powf64 in "/lib/x86_64-linux-gnu/libm.so.6"
-[1] #4  powf64 in "/lib/x86_64-linux-gnu/libm.so.6"
+[2] #3  ? in "/lib/x86_64-linux-gnu/libc.so.6"
+[3] #3  ? in "/lib/x86_64-linux-gnu/libm.so.6"
 [0] #4  powf64 in "/lib/x86_64-linux-gnu/libm.so.6"
-[2] #5  Foam::C7H16::rho(double, double) const in "/lib/x86_64-linux-gnu/libm.so.6"
-[3] #5  Foam::C7H16::rho(double, double) const in "/lib/x86_64-linux-gnu/libm.so.6"
-[1] #5  Foam::C7H16::rho(double, double) const in "/lib/x86_64-linux-gnu/libm.so.6"
-[0] #5  Foam::C7H16::rho(double, double) const at ??:?
- at ??:?
- at ??:?
- at ??:?
-[3] #6  [1] #6  Foam::regionModels::surfaceFilmModels::liquidFilmThermo::rho() const[2] #6  Foam::regionModels::surfaceFilmModels::liquidFilmThermo::rho() constFoam::regionModels::surfaceFilmModels::liquidFilmThermo::rho() const[0] #6  Foam::regionModels::surfaceFilmModels::liquidFilmThermo::rho() const at ??:?
- at ??:?
- at ??:?
- at ??:?
-[3] #7[2] #  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::correctThermoFields()7  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::correctThermoFields()[0] #7  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::correctThermoFields()[1] #7  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::correctThermoFields() at ??:?
+[1] #4  powf64 in "/lib/x86_64-linux-gnu/libm.so.6"
+ in "/lib/x86_64-linux-g[2] #4  powf64nu/libm.so.6"
+[3] #4  powf64 in "/lib/x86_64-linux-gnu/libm.so.6"
+ in "/lib/x86_64-linux-gnu/libm.so[1] #5  .6"
+Foam::C7H16::rho(double, double) const[0] #5  Foam::C7H16::rho(double, double) const in "/lib/x86_64-linux-gnu/libm.so.6"
+ in "/lib/x86_64-linux-gnu/libm.so.6"
+[2] #5  Foam::C7H16::rho(double, double) const[3] #5  Foam::C7H16::rho(double, double) const at ??:?
+[0] #6  Foam::regionModels::surfaceFilmModels::liquidFilmThermo::rho() const at ??:?
+[1] #6  Foam::regionModels::surfaceFilmModels::liquidFilmThermo::rho() const at ??:?
+[3] #6  Foam::regionModels::surfaceFilmModels::liquidFilmThermo::rho() const at ??:?
+[2] #6  Foam::regionModels::surfaceFilmModels::liquidFilmThermo::rho() const at ??:?
+[3] #7  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::correctThermoFields() at ??:?
+[0] #7  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::correctThermoFields() at ??:?
+[1] #7  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::correctThermoFields() at ??:?
+[2] #7  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::correctThermoFields() at ??:?
+[0] #8  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::thermoSingleLayer(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&, bool) at ??:?
 [1] #8  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::thermoSingleLayer(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&, bool) at ??:?
- at ??:?
-[3] #8  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::thermoSingleLayer(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&, bool)[0] #8  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::thermoSingleLayer(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&, bool) at ??:?
+[3] #8  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::thermoSingleLayer(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&, bool) at ??:?
 [2] #8  Foam::regionModels::surfaceFilmModels::thermoSingleLayer::thermoSingleLayer(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&, bool) at ??:?
- at ??:?
- at ??:?
-[2] #9  [0] #9  [3] #9  Foam::regionModels::surfaceFilmModel::addmeshConstructorToTable<Foam::regionModels::surfaceFilmModels::thermoSingleLayer>::New(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&)Foam::regionModels::surfaceFilmModel::addmeshConstructorToTable<Foam::regionModels::surfaceFilmModels::thermoSingleLayer>::New(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&)Foam::regionModels::surfaceFilmModel::addmeshConstructorToTable<Foam::regionModels::surfaceFilmModels::thermoSingleLayer>::New(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&) at ??:?
 [1] #9  Foam::regionModels::surfaceFilmModel::addmeshConstructorToTable<Foam::regionModels::surfaceFilmModels::thermoSingleLayer>::New(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&) at ??:?
+[0] #9  Foam::regionModels::surfaceFilmModel::addmeshConstructorToTable<Foam::regionModels::surfaceFilmModels::thermoSingleLayer>::New(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&) at ??:?
+[3] #9  Foam::regionModels::surfaceFilmModel::addmeshConstructorToTable<Foam::regionModels::surfaceFilmModels::thermoSingleLayer>::New(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&) at ??:?
+[2] #9  Foam::regionModels::surfaceFilmModel::addmeshConstructorToTable<Foam::regionModels::surfaceFilmModels::thermoSingleLayer>::New(Foam::word const&, Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&) at ??:?
  at ??:?
-[3] #10  Foam::regionModels::surfaceFilmModel::New(Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&)[2] #10  Foam::regionModels::surfaceFilmModel::New(Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&) at ??:?
- at ??:?
-[1] #10  [0] #10  Foam::regionModels::surfaceFilmModel::New(Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&)Foam::regionModels::surfaceFilmModel::New(Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&) at ??:?
-[3] #11   at ??:?
-[2] #11   at ??:?
-[0] #11  ? at ??:?
-[1] #11  ??? in "/home/edo20/OpenFOAM in "/home/edo20/OpenFOAM/edo20-8 in "/home/edo20/OpenFOAM/edo20-8/platforms/linux6/edo20-8/platforms/linux64Gc/platforms/linu in "/home/edo204GccDPInt32Opt/bin/sprayFilmFoam"
-/OpenFOAM/edo20-8/platforms/linux64cDPInt32Opt/bin/sprayFilmFoam"
-x64GccDPInt32Opt/bin/sprayFilmFoam"GccDPInt32Opt/bi
-[3] #12  __libc_start_mainn/sprayFilm[1] #12  __libc_start_main[0] #12  __libc_start_mainFoam"
-[2] #12  __libc_start_main in "/lib/x86_64-linux- in "/lib/x86_64-linux-gnu/lignu/libc.so.6bc.so.6"
- in "/lib/x86_6"
-4-linux-gnu/lib[0] #13   in "/lib[1] #13  /x86_64-linc.so.6"
-ux-gnu/libc.so.[2] #13  6"
-[3] #13  ???? in "/home/edo20/Open in "/home/edo20/OpenFOFOAM/edo20-8/plaAM/edo20-8/platforms/litforms/linux64GccDnux64GccDPInPInt32Opt/bt32Opt/bi in "/home/ein/sprayFilmdo20/Openn/sprayFilmFFoam"
-oam"
-FOAM/edo20-8/platforms/linux64GccDP[edo20-HP-Pavilion-Notebook:324643] *** Process received signal ***
-[edo20-HP-Pavilion-Notebook:324644] *** Process received signal ***
-Int32Opt/bin/s[edo20-HP-Pavilion-Notebook:324643] Signal: Floating point exception (8)
-[edo20-HP-Pavilion-Notebook:324643] Signal code:  (-6)
-[edo20-HP-Pavilion-Notebook:324643] Failing at address: 0x3e80004f423
-prayFilmFoa[edo20-HP-Pavilion-Notebook:324644] Signal: Floating point exception (8)
-[edo20-HP-Pavilion-Notebook:324644] Signal code:  (-6)
-[edo20-HP-Pavilion-Notebook:324644] Failing at address: 0x3e80004f424
- in "/m"
-home/edo20/OpenFOAM/[edo20-HP-Pavilion-Notebook:324642] *** Process received signal ***
-edo20-8[edo20-HP-Pavilion-Notebook:324642] Signal: Floating point exception (8)
-[edo20-HP-Pavilion-Notebook:324642] Signal code:  (-6)
-[edo20-HP-Pavilion-Notebook:324642] Failing at address: 0x3e80004f422
-[edo20-HP-Pavilion-Notebook:324644] [ 0] /platforms/li[edo20-HP-Pavilion-Notebook:324643] [ 0] nux64Gcc/lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f9d6e868210]
-[edo20-HP-Pavilion-Notebook:324643] [ 1] DPInt32Opt/b/lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f34f6194210]
-[edo20-HP-Pavilion-Notebook:324644] [ 1] [edo20-HP-Pavilion-Notebook:324642] [ 0] in/sprayFilmFoam"/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f9d6e86818b]
-[edo20-HP-Pavilion-Notebook:324643] [ 2] 
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f34f619418b]
-[edo20-HP-Pavilion-Notebook:324644] [ 2] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7fdb9cad2210]
-[edo20-HP-Pavilion-Notebook:324642] [ 1] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f34f6194210]
-[edo20-HP-Pavilion-Notebook:324644] [ 3] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f9d6e868210]
-[edo20-HP-Pavilion-Notebook:324643] [ 3] [edo20-HP-Pavilion-Notebook:324645] *** Process received signal ***
-[edo20-HP-Pavilion-Notebook:324645] Signal: Floating point exception (8)
-[edo20-HP-Pavilion-Notebook:324645] Signal code:  (-6)
-[edo20-HP-Pavilion-Notebook:324645] Failing at address: 0x3e80004f425
-/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7fdb9cad218b]
-[edo20-HP-Pavilion-Notebook:324642] [ 2] /lib/x86_64-linux-gnu/libm.so.6(+0x7e3e0)[0x7f9d6eaaf3e0]
-[edo20-HP-Pavilion-Notebook:324643] [ 4] /lib/x86_64-linux-gnu/libm.so.6(+0x7e3e0)[0x7f34f63db3e0]
-[edo20-HP-Pavilion-Notebook:324644] [ 4] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7fdb9cad2210]
-[edo20-HP-Pavilion-Notebook:324642] [ 3] /lib/x86_64-linux-gnu/libm.so.6(powf64+0x18)[0x7f34f63a0208]
-[edo20-HP-Pavilion-Notebook:324644] [ 5] /lib/x86_64-linux-gnu/libm.so.6(powf64+0x18)[0x7f9d6ea74208]
-[edo20-HP-Pavilion-Notebook:324643] [ 5] /lib/x86_64-linux-gnu/libm.so.6(+0x7e3e0)[0x7fdb9cd193e0]
-[edo20-HP-Pavilion-Notebook:324642] [ 4] [edo20-HP-Pavilion-Notebook:324645] [ 0] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libthermophysicalProperties.so(_ZNK4Foam5C7H163rhoEdd+0x35)[0x7f34fd7350d5]
-[edo20-HP-Pavilion-Notebook:324644] [ 6] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libthermophysicalProperties.so(_ZNK4Foam5C7H163rhoEdd+0x35)[0x7f9d75e090d5]
-[edo20-HP-Pavilion-Notebook:324643] [ 6] /lib/x86_64-linux-gnu/libm.so.6(powf64+0x18)[0x7fdb9ccde208]
-[edo20-HP-Pavilion-Notebook:324642] [ 5] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f8667b00210]
-[edo20-HP-Pavilion-Notebook:324645] [ 1] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libthermophysicalProperties.so(_ZNK4Foam5C7H163rhoEdd+0x35)[0x7fdba40730d5]
-[edo20-HP-Pavilion-Notebook:324642] [ 6] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f8667b0018b]
-[edo20-HP-Pavilion-Notebook:324645] [ 2] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f8667b00210]
-[edo20-HP-Pavilion-Notebook:324645] [ 3] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZNK4Foam12regionModels17surfaceFilmModels16liquidFilmThermo3rhoEv+0x31d)[0x7f34f99d564d]
-[edo20-HP-Pavilion-Notebook:324644] [ 7] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZNK4Foam12regionModels17surfaceFilmModels16liquidFilmThermo3rhoEv+0x31d)[0x7f9d720a964d]
-[edo20-HP-Pavilion-Notebook:324643] [ 7] /lib/x86_64-linux-gnu/libm.so.6(+0x7e3e0)[0x7f8667d473e0]
-[edo20-HP-Pavilion-Notebook:324645] [ 4] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZNK4Foam12regionModels17surfaceFilmModels16liquidFilmThermo3rhoEv+0x31d)[0x7fdba031364d]
-[edo20-HP-Pavilion-Notebook:324642] [ 7] /lib/x86_64-linux-gnu/libm.so.6(powf64+0x18)[0x7f8667d0c208]
-[edo20-HP-Pavilion-Notebook:324645] [ 5] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayer19correctThermoFieldsEv+0x3e)[0x7f34f9989b7e]
-[edo20-HP-Pavilion-Notebook:324644] [ 8] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayer19correctThermoFieldsEv+0x3e)[0x7f9d7205db7e]
-[edo20-HP-Pavilion-Notebook:324643] [ 8] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libthermophysicalProperties.so(_ZNK4Foam5C7H163rhoEdd+0x35)[0x7f866f0a10d5]
-[edo20-HP-Pavilion-Notebook:324645] [ 6] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayer19correctThermoFieldsEv+0x3e)[0x7fdba02c7b7e]
-[edo20-HP-Pavilion-Notebook:324642] [ 8] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayerC1ERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES5_b+0x146f)[0x7f34f998f6cf]
-[edo20-HP-Pavilion-Notebook:324644] [ 9] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayerC1ERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES5_b+0x146f)[0x7f9d720636cf]
-[edo20-HP-Pavilion-Notebook:324643] [ 9] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZNK4Foam12regionModels17surfaceFilmModels16liquidFilmThermo3rhoEv+0x31d)[0x7f866b34164d]
-[edo20-HP-Pavilion-Notebook:324645] [ 7] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayerC1ERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES5_b+0x146f)[0x7fdba02cd6cf]
-[edo20-HP-Pavilion-Notebook:324642] [ 9] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel25addmeshConstructorToTableINS0_17surfaceFilmModels17thermoSingleLayerEE3NewERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES8_+0x48)[0x7f34f999d558]
-[edo20-HP-Pavilion-Notebook:324644] [10] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel25addmeshConstructorToTableINS0_17surfaceFilmModels17thermoSingleLayerEE3NewERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES8_+0x48)[0x7f9d72071558]
-[edo20-HP-Pavilion-Notebook:324643] [10] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel3NewERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEERKNS_4wordE+0x823)[0x7f34f98e7fd3]
-[edo20-HP-Pavilion-Notebook:324644] [11] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayer19correctThermoFieldsEv+0x3e)[0x7f866b2f5b7e]
-[edo20-HP-Pavilion-Notebook:324645] [ 8] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel25addmeshConstructorToTableINS0_17surfaceFilmModels17thermoSingleLayerEE3NewERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES8_+0x48)[0x7fdba02db558]
-[edo20-HP-Pavilion-Notebook:324642] [10] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel3NewERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEERKNS_4wordE+0x823)[0x7f9d71fbbfd3]
-[edo20-HP-Pavilion-Notebook:324643] [11] sprayFilmFoam(+0x4fc90)[0x559bb8c1ec90]
-[edo20-HP-Pavilion-Notebook:324644] [12] sprayFilmFoam(+0x4fc90)[0x5587f0913c90]
-[edo20-HP-Pavilion-Notebook:324643] [12] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f34f61750b3]
-[edo20-HP-Pavilion-Notebook:324644] [13] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel3NewERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEERKNS_4wordE+0x823)[0x7fdba0225fd3]
-[edo20-HP-Pavilion-Notebook:324642] [11] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f9d6e8490b3]
-[edo20-HP-Pavilion-Notebook:324643] [13] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayerC1ERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES5_b+0x146f)[0x7f866b2fb6cf]
-[edo20-HP-Pavilion-Notebook:324645] [ 9] sprayFilmFoam(+0x4fc90)[0x55cfcf61bc90]
-[edo20-HP-Pavilion-Notebook:324642] [12] sprayFilmFoam(+0x5618e)[0x559bb8c2518e]
-[edo20-HP-Pavilion-Notebook:324644] *** End of error message ***
-sprayFilmFoam(+0x5618e)[0x5587f091a18e]
-[edo20-HP-Pavilion-Notebook:324643] *** End of error message ***
-/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7fdb9cab30b3]
-[edo20-HP-Pavilion-Notebook:324642] [13] sprayFilmFoam(+0x5618e)[0x55cfcf62218e]
-[edo20-HP-Pavilion-Notebook:324642] *** End of error message ***
-/home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel25addmeshConstructorToTableINS0_17surfaceFilmModels17thermoSingleLayerEE3NewERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES8_+0x48)[0x7f866b309558]
-[edo20-HP-Pavilion-Notebook:324645] [10] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel3NewERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEERKNS_4wordE+0x823)[0x7f866b253fd3]
-[edo20-HP-Pavilion-Notebook:324645] [11] sprayFilmFoam(+0x4fc90)[0x562b2f4d2c90]
-[edo20-HP-Pavilion-Notebook:324645] [12] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f8667ae10b3]
-[edo20-HP-Pavilion-Notebook:324645] [13] sprayFilmFoam(+0x5618e)[0x562b2f4d918e]
-[edo20-HP-Pavilion-Notebook:324645] *** End of error message ***
+[1] #10  Foam::regionModels::surfaceFilmModel::New(Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&)[0] #10  Foam::regionModels::surfaceFilmModel::New(Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&) at ??:?
+[3] #10  Foam::regionModels::surfaceFilmModel::New(Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&) at ??:?
+[0] #11   at ??:?
+[1] #11   at ??:?
+[2] #10  Foam::regionModels::surfaceFilmModel::New(Foam::fvMesh const&, Foam::dimensioned<Foam::Vector<double> > const&, Foam::word const&)? at ??:?
+[3] #11  ? at ??:?
+[2] #11   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[0] #12  __libc_start_main in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[1] #12  __libc_start_main?? in "/lib/x86_64-linux-gnu/libc.so.6"
+[0] #13   in "/lib/x86_64-linux-gnu/libc.so.6"
+[1] #13   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[3] #12  __libc_start_main in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccD?PInt32Opt/bin/sprayFilmFoam"
+[2] #12  __libc_start_main in "/lib/x86_64-linux-gnu/libc.so.6"
+[3] #13  ?? in "/lib/x86_64-linux-gnu/libc.so.6"
+[2] #13   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[edo20-HP-Pavilion-Notebook:328427] *** Process received signal ***
+[edo20-HP-Pavilion-Notebook:328427] Signal: Floating point exception (8)
+[edo20-HP-Pavilion-Notebook:328427] Signal code:  (-6)
+[edo20-HP-Pavilion-Notebook:328427] Failing at address: 0x3e8000502eb
+[edo20-HP-Pavilion-Notebook:328427] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7efea5c41210]
+[edo20-HP-Pavilion-Notebook:328427] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7efea5c4118b]
+[edo20-HP-Pavilion-Notebook:328427] [ 2] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7efea5c41210]
+[edo20-HP-Pavilion-Notebook:328427] [ 3] /lib/x86_64-linux-gnu/libm.so.6(+0x7e3e0)[0x7efea5e883e0]
+[edo20-HP-Pavilion-Notebook:328427] [ 4] /lib/x86_64-linux-gnu/libm.so.6(powf64+0x18)[0x7efea5e4d208]
+[edo20-HP-Pavilion-Notebook:328427] [ 5] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libthermophysicalProperties.so(_ZNK4Foam5C7H163rhoEdd+0x35)[0x7efead1e20d5]
+[edo20-HP-Pavilion-Notebook:328427] [ 6]  in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64Gcc/home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZNK4Foam12regionModels17surfaceFilmModels16liquidFilmThermo3rhoEv+0x31d)[0x7efea948264d]
+[edo20-HP-Pavilion-Notebook:328427] [ 7] DPInt32Opt/bin/sprayFilmFoam"
+[edo20-HP-Pavilion-Notebook:328426] *** Process received signal ***
+[edo20-HP-Pavilion-Notebook:328426] Signal: Floating point exception (8)
+[edo20-HP-Pavilion-Notebook:328426] Signal code:  (-6)
+[edo20-HP-Pavilion-Notebook:328426] Failing at address: 0x3e8000502ea
+/home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayer19correctThermoFieldsEv+0x3e)[0x7efea9436b7e]
+[edo20-HP-Pavilion-Notebook:328427] [ 8] [edo20-HP-Pavilion-Notebook:328426] [ 0] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayerC1ERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES5_b+0x146f)[0x7efea943c6cf]
+[edo20-HP-Pavilion-Notebook:328427] [ 9] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f8b13ae4210]
+[edo20-HP-Pavilion-Notebook:328426] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f8b13ae418b]
+[edo20-HP-Pavilion-Notebook:328426] [ 2] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel25addmeshConstructorToTableINS0_17surfaceFilmModels17thermoSingleLayerEE3NewERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES8_+0x48)[0x7efea944a558]
+[edo20-HP-Pavilion-Notebook:328427] [10] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f8b13ae4210]
+[edo20-HP-Pavilion-Notebook:328426] [ 3] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel3NewERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEERKNS_4wordE+0x823)[0x7efea9394fd3]
+[edo20-HP-Pavilion-Notebook:328427] [11] /lib/x86_64-linux-gnu/libm.so.6(+0x7e3e0)[0x7f8b13d2b3e0]
+[edo20-HP-Pavilion-Notebook:328426] [ 4] sprayFilmFoam(+0x4fc90)[0x558cbae4cc90]
+[edo20-HP-Pavilion-Notebook:328427] [12] /lib/x86_64-linux-gnu/libm.so.6(powf64+0x18)[0x7f8b13cf0208]
+[edo20-HP-Pavilion-Notebook:328426] [ 5] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7efea5c220b3]
+[edo20-HP-Pavilion-Notebook:328427] [13] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libthermophysicalProperties.so(_ZNK4Foam5C7H163rhoEdd+0x35)[0x7f8b1b0850d5]
+[edo20-HP-Pavilion-Notebook:328426] [ 6] sprayFilmFoam(+0x5618e)[0x558cbae5318e]
+[edo20-HP-Pavilion-Notebook:328427] *** End of error message ***
+/home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZNK4Foam12regionModels17surfaceFilmModels16liquidFilmThermo3rhoEv+0x31d)[0x7f8b1732564d]
+[edo20-HP-Pavilion-Notebook:328426] [ 7] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayer19correctThermoFieldsEv+0x3e)[0x7f8b172d9b7e]
+[edo20-HP-Pavilion-Notebook:328426] [ 8] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayerC1ERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES5_b+0x146f)[0x7f8b172df6cf]
+[edo20-HP-Pavilion-Notebook:328426] [ 9] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel25addmeshConstructorToTableINS0_17surfaceFilmModels17thermoSingleLayerEE3NewERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES8_+0x48)[0x7f8b172ed558]
+[edo20-HP-Pavilion-Notebook:328426] [10] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel3NewERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEERKNS_4wordE+0x823)[0x7f8b17237fd3]
+[edo20-HP-Pavilion-Notebook:328426] [11] sprayFilmFoam(+0x4fc90)[0x556333a16c90]
+[edo20-HP-Pavilion-Notebook:328426] [12] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f8b13ac50b3]
+[edo20-HP-Pavilion-Notebook:328426] [13] sprayFilmFoam(+0x5618e)[0x556333a1d18e]
+[edo20-HP-Pavilion-Notebook:328426] *** End of error message ***
+? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[edo20-HP-Pavilion-Notebook:328429] *** Process received signal ***
+[edo20-HP-Pavilion-Notebook:328429] Signal: Floating point exception (8)
+[edo20-HP-Pavilion-Notebook:328429] Signal code:  (-6)
+[edo20-HP-Pavilion-Notebook:328429] Failing at address: 0x3e8000502ed
+[edo20-HP-Pavilion-Notebook:328429] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f450eaaf210]
+[edo20-HP-Pavilion-Notebook:328429] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f450eaaf18b]
+[edo20-HP-Pavilion-Notebook:328429] [ 2] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f450eaaf210]
+[edo20-HP-Pavilion-Notebook:328429] [ 3] /lib/x86_64-linux-gnu/libm.so.6(+0x7e3e0)[0x7f450ecf63e0]
+[edo20-HP-Pavilion-Notebook:328429] [ 4] /lib/x86_64-linux-gnu/libm.so.6(powf64+0x18)[0x7f450ecbb208]
+[edo20-HP-Pavilion-Notebook:328429] [ 5] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libthermophysicalProperties.so(_ZNK4Foam5C7H163rhoEdd+0x35)[0x7f45160500d5]
+[edo20-HP-Pavilion-Notebook:328429] [ 6] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZNK4Foam12regionModels17surfaceFilmModels16liquidFilmThermo3rhoEv+0x31d)[0x7f45122f064d]
+[edo20-HP-Pavilion-Notebook:328429] [ 7] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayer19correctThermoFieldsEv+0x3e)[0x7f45122a4b7e]
+[edo20-HP-Pavilion-Notebook:328429] [ 8] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayerC1ERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES5_b+0x146f)[0x7f45122aa6cf]
+[edo20-HP-Pavilion-Notebook:328429] [ 9] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel25addmeshConstructorToTableINS0_17surfaceFilmModels17thermoSingleLayerEE3NewERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES8_+0x48)[0x7f45122b8558]
+[edo20-HP-Pavilion-Notebook:328429] [10] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel3NewERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEERKNS_4wordE+0x823)[0x7f4512202fd3]
+[edo20-HP-Pavilion-Notebook:328429] [11] sprayFilmFoam(+0x4fc90)[0x55edc24fcc90]
+[edo20-HP-Pavilion-Notebook:328429] [12] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f450ea900b3]
+[edo20-HP-Pavilion-Notebook:328429] [13] sprayFilmFoam(+0x5618e)[0x55edc250318e]
+[edo20-HP-Pavilion-Notebook:328429] *** End of error message ***
+ in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[edo20-HP-Pavilion-Notebook:328428] *** Process received signal ***
+[edo20-HP-Pavilion-Notebook:328428] Signal: Floating point exception (8)
+[edo20-HP-Pavilion-Notebook:328428] Signal code:  (-6)
+[edo20-HP-Pavilion-Notebook:328428] Failing at address: 0x3e8000502ec
+[edo20-HP-Pavilion-Notebook:328428] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f870e5d6210]
+[edo20-HP-Pavilion-Notebook:328428] [ 1] /lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb)[0x7f870e5d618b]
+[edo20-HP-Pavilion-Notebook:328428] [ 2] /lib/x86_64-linux-gnu/libc.so.6(+0x46210)[0x7f870e5d6210]
+[edo20-HP-Pavilion-Notebook:328428] [ 3] /lib/x86_64-linux-gnu/libm.so.6(+0x7e3e0)[0x7f870e81d3e0]
+[edo20-HP-Pavilion-Notebook:328428] [ 4] /lib/x86_64-linux-gnu/libm.so.6(powf64+0x18)[0x7f870e7e2208]
+[edo20-HP-Pavilion-Notebook:328428] [ 5] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libthermophysicalProperties.so(_ZNK4Foam5C7H163rhoEdd+0x35)[0x7f8715b770d5]
+[edo20-HP-Pavilion-Notebook:328428] [ 6] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZNK4Foam12regionModels17surfaceFilmModels16liquidFilmThermo3rhoEv+0x31d)[0x7f8711e1764d]
+[edo20-HP-Pavilion-Notebook:328428] [ 7] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayer19correctThermoFieldsEv+0x3e)[0x7f8711dcbb7e]
+[edo20-HP-Pavilion-Notebook:328428] [ 8] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels17surfaceFilmModels17thermoSingleLayerC1ERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES5_b+0x146f)[0x7f8711dd16cf]
+[edo20-HP-Pavilion-Notebook:328428] [ 9] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel25addmeshConstructorToTableINS0_17surfaceFilmModels17thermoSingleLayerEE3NewERKNS_4wordERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEES8_+0x48)[0x7f8711ddf558]
+[edo20-HP-Pavilion-Notebook:328428] [10] /home/edo20/OpenFOAM/OpenFOAM-8/platforms/linux64GccDPInt32Opt/lib/libsurfaceFilmModels.so(_ZN4Foam12regionModels16surfaceFilmModel3NewERKNS_6fvMeshERKNS_11dimensionedINS_6VectorIdEEEERKNS_4wordE+0x823)[0x7f8711d29fd3]
+[edo20-HP-Pavilion-Notebook:328428] [11] sprayFilmFoam(+0x4fc90)[0x55c57a225c90]
+[edo20-HP-Pavilion-Notebook:328428] [12] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3)[0x7f870e5b70b3]
+[edo20-HP-Pavilion-Notebook:328428] [13] sprayFilmFoam(+0x5618e)[0x55c57a22c18e]
+[edo20-HP-Pavilion-Notebook:328428] *** End of error message ***
 --------------------------------------------------------------------------
 Primary job  terminated normally, but 1 process returned
 a non-zero exit code. Per user-direction, the job has been aborted.

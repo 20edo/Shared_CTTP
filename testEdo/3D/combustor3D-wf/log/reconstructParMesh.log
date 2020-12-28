@@ -8,9 +8,9 @@
 Build  : 8
 Exec   : reconstructParMesh -latestTime
 Date   : Dec 28 2020
-Time   : 21:32:00
+Time   : 22:07:20
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 324602
+PID    : 328370
 I/O    : uncollated
 Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf
 nProcs : 1
@@ -40,5 +40,64 @@ Reading database "combustor3D-wf/processor0"
 Reading database "combustor3D-wf/processor1"
 Reading database "combustor3D-wf/processor2"
 Reading database "combustor3D-wf/processor3"
+Time = 3e-05
+
+Reading points from "combustor3D-wf/processor0" for time = 3e-05
+
+Reading points from "combustor3D-wf/processor1" for time = 3e-05
+
+Reading points from "combustor3D-wf/processor2" for time = 3e-05
+
+Reading points from "combustor3D-wf/processor3" for time = 3e-05
+
+Overall mesh bounding box  : (-0.12 -0.3 -0.12) (0.12 0.5 0.12)
+Relative tolerance         : 1e-07
+Absolute matching distance : 8.69022e-08
+
+Merging mesh 0 with 1
+Merging mesh 2 with 3
+Merging mesh 0 with 2
+Reading mesh to add from "combustor3D-wf/processor0" for time = 3e-05
+
+
+Reading mesh to add from "combustor3D-wf/processor1" for time = 3e-05
+
+
+Reading mesh to add from "combustor3D-wf/processor2" for time = 3e-05
+
+
+Reading mesh to add from "combustor3D-wf/processor3" for time = 3e-05
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf/3e-05"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "combustor3D-wf/processor0"
+Writing pointProcAddressing to "combustor3D-wf/processor0/3e-05/polyMesh"
+Writing faceProcAddressing to "combustor3D-wf/processor0/3e-05/polyMesh"
+Writing cellProcAddressing to "combustor3D-wf/processor0/3e-05/polyMesh"
+Writing boundaryProcAddressing to "combustor3D-wf/processor0/3e-05/polyMesh"
+
+Reading processor 1 mesh from "combustor3D-wf/processor1"
+Writing pointProcAddressing to "combustor3D-wf/processor1/3e-05/polyMesh"
+Writing faceProcAddressing to "combustor3D-wf/processor1/3e-05/polyMesh"
+Writing cellProcAddressing to "combustor3D-wf/processor1/3e-05/polyMesh"
+Writing boundaryProcAddressing to "combustor3D-wf/processor1/3e-05/polyMesh"
+
+Reading processor 2 mesh from "combustor3D-wf/processor2"
+Writing pointProcAddressing to "combustor3D-wf/processor2/3e-05/polyMesh"
+Writing faceProcAddressing to "combustor3D-wf/processor2/3e-05/polyMesh"
+Writing cellProcAddressing to "combustor3D-wf/processor2/3e-05/polyMesh"
+Writing boundaryProcAddressing to "combustor3D-wf/processor2/3e-05/polyMesh"
+
+Reading processor 3 mesh from "combustor3D-wf/processor3"
+Writing pointProcAddressing to "combustor3D-wf/processor3/3e-05/polyMesh"
+Writing faceProcAddressing to "combustor3D-wf/processor3/3e-05/polyMesh"
+Writing cellProcAddressing to "combustor3D-wf/processor3/3e-05/polyMesh"
+Writing boundaryProcAddressing to "combustor3D-wf/processor3/3e-05/polyMesh"
+
 End.
 
