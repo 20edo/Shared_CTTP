@@ -1,0 +1,69 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  3.0.x                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+actions
+(
+
+ // WALLS BEGIN HERE
+ 	{
+ 		name    wallFilmFaceSet;
+		type    faceSet;
+		action  new;
+		source  patchToFace;
+		sourceInfo
+ 		{
+ 			name splitter;
+ 		}
+ 	}
+
+ 	{
+		name    wallFilmFaces;
+		type    faceZoneSet;
+		action  new;
+		source  setToFaceZone;
+ 		sourceInfo
+ 		{
+	 		faceSet wallFilmFaceSet;
+ 		}
+ 	}
+// SPLITTER BEGINS HERE
+
+	{
+		name    wallFilmFaceSet2;
+		type    faceSet;
+		action  new;
+		source  patchToFace;
+		sourceInfo
+		{
+			name ("splitter.*");
+		}
+	}
+
+	{
+		name    wallFilmFaces2;
+		type    faceZoneSet;
+		action  new;
+		source  setToFaceZone;
+		sourceInfo
+		{
+			faceSet wallFilmFaceSet2;
+		}
+	}
+
+);
+
+// ************************************************************************* //
