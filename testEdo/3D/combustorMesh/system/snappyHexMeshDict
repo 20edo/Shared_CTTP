@@ -300,7 +300,7 @@ snapControls
     //- Relative distance for points to be attracted by surface feature point
     //  or edge. True distance is this factor times local
     //  maximum edge length.
-    tolerance 8;
+    tolerance 0.8;
 
     //- Number of mesh displacement relaxation iterations.
     nSolveIter 30;
