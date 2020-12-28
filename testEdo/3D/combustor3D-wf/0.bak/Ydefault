@@ -20,7 +20,11 @@ internalField       uniform 0;
 
 boundaryField
 {
-    "(splitter.*|outerWalls|outlet)"
+    wall
+    {
+        type                zeroGradient;
+    }
+    outlet
     {
         type                zeroGradient;
     }

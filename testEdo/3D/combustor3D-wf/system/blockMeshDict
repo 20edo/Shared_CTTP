@@ -111,7 +111,7 @@ boundary
 (
     outerWalls
     {
-        type wall;
+        type 	wall;
         faces
         (
 	 	(8 9 13 12)

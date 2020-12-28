@@ -178,7 +178,7 @@ subModels
 
     standardWallInteractionCoeffs
     {
-        type            pizza;	// rebound
+        type            rebound;	// rebound
     }
 
     RanzMarshallCoeffs

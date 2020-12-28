@@ -30,11 +30,7 @@ boundaryField
     {
         type            zeroGradient;
     }
-    ("splitter.*")
-    {
-        type            noSlip;
-    }
-    outerWalls
+    wall
     {
         type            noSlip;
     }

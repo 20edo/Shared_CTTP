@@ -26,7 +26,7 @@ actions
 		source  patchToFace;
 		sourceInfo
  		{
- 			name splitter;
+ 			name wall;
  		}
  	}
 
@@ -40,30 +40,6 @@ actions
 	 		faceSet wallFilmFaceSet;
  		}
  	}
-// SPLITTER BEGINS HERE
-
-	{
-		name    wallFilmFaceSet2;
-		type    faceSet;
-		action  new;
-		source  patchToFace;
-		sourceInfo
-		{
-			name ("splitter.*");
-		}
-	}
-
-	{
-		name    wallFilmFaces2;
-		type    faceZoneSet;
-		action  new;
-		source  setToFaceZone;
-		sourceInfo
-		{
-			faceSet wallFilmFaceSet2;
-		}
-	}
-
 );
 
 // ************************************************************************* //

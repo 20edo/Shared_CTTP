@@ -33,11 +33,7 @@ boundaryField
         lInf            10;
         value           uniform 101325;
     }
-    ("splitter.*")
-    {
-        type            zeroGradient;
-    }
-    outerWalls
+    wall
     {
         type            zeroGradient;
     }

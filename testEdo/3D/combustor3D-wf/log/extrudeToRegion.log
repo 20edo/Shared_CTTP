@@ -1,0 +1,68 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : extrudeToRegionMesh -overwrite
+Date   : Dec 28 2020
+Time   : 21:32:00
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 324608
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Selecting extrudeModel linearNormal
+Extruding zones 1(wallFilmFaces) on mesh region0 into shell mesh wallFilmRegion
+Testing:"/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf/system/wallFilmRegion/fvSchemes"
+Writing meshes to constant
+
+Zone wallFilmFaces has boundary faces
+extrudePatch : faces:5760 points:5808 edges:11568
+
+Adding coupling patches:
+
+patchID	patch	type
+-------	-----	----
+3	wallFilmFaces_top	patch
+2	region0_to_wallFilmRegion_wallFilmFaces	mappedWall
+Added 1 inter-region patches.
+
+Adding coupling patches:
+
+patchID	patch	type
+-------	-----	----
+3	wallFilmFaces_top	patch
+2	region0_to_wallFilmRegion_wallFilmFaces	mappedWall
+Added 1 inter-region patches.
+
+Adding patches for sides on zones:
+
+patchID	patch
+-------	-----
+Added 0 zone-side patches.
+
+Adding processor or cyclic patches:
+
+patchID	patch
+-------	-----
+Added 0 coupled patches.
+
+Writing mesh wallFilmRegion to "constant"
+
+Deleting patch 3 name:wallFilmFaces_top
+Writing mesh region0 to "constant"
+
+End
+

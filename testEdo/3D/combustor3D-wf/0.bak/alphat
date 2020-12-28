@@ -31,13 +31,7 @@ boundaryField
         type            calculated;
         value           uniform 0;
     }
-    ("splitter.*")
-    {
-        type            compressible::alphatWallFunction;
-        Prt             0.85;
-        value           uniform 0;
-    }
-    outerWalls
+    wall
     {
         type            compressible::alphatWallFunction;
         Prt             0.85;

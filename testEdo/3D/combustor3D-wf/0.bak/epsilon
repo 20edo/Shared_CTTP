@@ -31,12 +31,7 @@ boundaryField
     {
         type            zeroGradient;
     }
-    ("splitter.*")
-    {
-        type            epsilonWallFunction;
-        value           uniform 2;
-    }
-    outerWalls
+    wall
     {
         type            epsilonWallFunction;
         value           uniform 2;

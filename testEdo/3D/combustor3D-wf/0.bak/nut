@@ -31,12 +31,7 @@ boundaryField
         type            calculated;
         value           uniform 0;
     }
-    ("splitter.*")
-    {
-        type            nutkWallFunction;
-        value           uniform 0;
-    }
-    outerWalls
+    wall
     {
         type            nutkWallFunction;
         value           uniform 0;
