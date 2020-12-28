@@ -16,7 +16,7 @@ FoamFile
 
 surfaces
 (
-    "combustor.stl"
+    "splitter.stl"
 );
 
 includedAngle	150;

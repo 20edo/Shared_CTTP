@@ -15,7 +15,7 @@ FoamFile
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 //===========================Macros definition
 
-r 	0.04; // Radius of the refinement cylinder
+r 	0.06; // Radius of the refinement cylinder
 
 //========================================
 
@@ -63,11 +63,11 @@ geometry
 		splitterTop
 		{
 			name splitterTop;
-		}
+		}	/*
 		outerWalls
 		{
 			name outerWalls;
-		}
+		}	*/
 	}
     }
 /*
@@ -169,8 +169,8 @@ castellatedMeshControls
     features
     (
         {
-            file "combustor.eMesh";
-            level 3;
+            file "splitter.eMesh";
+            level 4;
         }
     );
 
@@ -190,21 +190,21 @@ castellatedMeshControls
         combustor 
         {
             // Surface-wise min and max refinement level
-            level (0 0);
+            level (2 2);
 
 		regions
 		{
 
-			"(splitter*)"
+			"splitter.*"
 			{
-				level (4 4);
+				level (4 5);
 			}
 			
-			outerWalls
+		/*	outerWalls
 			{
-				level (0 0);
+				level (3 3);
 			}
-
+*/
 
             // Optional specification of patch type (default is wall). No
             // constraint types (cyclic, symmetry) etc. are allowed.
@@ -217,7 +217,7 @@ castellatedMeshControls
     }
 }
     // Resolve sharp angles
-    resolveFeatureAngle 30;
+    resolveFeatureAngle 10;
 
 
     // Region-wise refinement
@@ -244,7 +244,7 @@ castellatedMeshControls
 	refinementCylinderSplitter	
 	{
             mode inside; //outside, distance
-            levels ((1e15 3 ));
+            levels ((1e15 2 ));
         }
         /*refinementBoxFront
         {
@@ -254,12 +254,12 @@ castellatedMeshControls
 	refinementConeFront
         {
             mode inside; //outside, distance
-            levels ((1e15 2 ));
+            levels ((1e15 1 ));
         }
 	refinementCylinderRear
         {
             mode inside; //outside, distance
-            levels ((1e15 2 ));
+            levels ((1e15 1 ));
         }
 /*
         refinementBoxRear
@@ -300,14 +300,14 @@ snapControls
     //- Relative distance for points to be attracted by surface feature point
     //  or edge. True distance is this factor times local
     //  maximum edge length.
-    tolerance 8.0;
+    tolerance 8;
 
     //- Number of mesh displacement relaxation iterations.
-    nSolveIter 20;
+    nSolveIter 30;
 
     //- Maximum number of snapping relaxation iterations. Should stop
     //  before upon reaching a correct mesh.
-    nRelaxIter 20;
+    nRelaxIter 30;
 
     // Feature snapping
 
@@ -337,11 +337,11 @@ addLayersControls
     // Per final patch (so not geometry!) the layer information
     layers
     {
-        outerWalls
+       /* outerWalls
 	{
 	     nSurfaceLayers 0;
-	}
-        "(splitterFront|splitterLeft|splitterRight|splitterTop|splitterBottom)"
+	}*/
+        "(splitter.*)"
         {
             // firstLayerThickness 1e-4;
             // expansionRatio 1.2;
@@ -434,8 +434,8 @@ meshQualityControls
     maxNonOrtho 65;
 
     //- Max skewness allowed. Set to <0 to disable.
-    maxBoundarySkewness 20;
-    maxInternalSkewness 4;
+    maxBoundarySkewness 5;
+    maxInternalSkewness 2;
 
     //- Max concaveness allowed. Is angle (in degrees) below which concavity
     //  is allowed. 0 is straight face, <0 would be convex face.
