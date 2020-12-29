@@ -33,7 +33,7 @@ boundaryField
         lInf            10;
         value           uniform 101325;
     }
-    wall
+    region0_to_wallFilmRegion_wallFilmFaces
     {
         type            zeroGradient;
     }

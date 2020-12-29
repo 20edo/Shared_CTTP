@@ -31,7 +31,7 @@ boundaryField
     {
         type            zeroGradient;
     }
-    wall
+    region0_to_wallFilmRegion_wallFilmFaces
     {
         type            epsilonWallFunction;
         value           uniform 2;

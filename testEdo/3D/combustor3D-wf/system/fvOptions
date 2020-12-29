@@ -24,7 +24,7 @@ limitT
     {
         selectionMode   all;
         min 250;
-        max 2500;
+        max 2000;
     }
 }
 

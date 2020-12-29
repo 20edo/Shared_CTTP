@@ -31,7 +31,7 @@ boundaryField
         type            calculated;
         value           uniform 0;
     }
-    wall
+    region0_to_wallFilmRegion_wallFilmFaces
     {
         type            compressible::alphatWallFunction;
         Prt             0.85;

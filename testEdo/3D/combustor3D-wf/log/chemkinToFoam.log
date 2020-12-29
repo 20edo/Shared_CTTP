@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 8
 Exec   : chemkinToFoam chemkin/chem.inp chemkin/therm.dat chemkin/transportProperties constant/reactions constant/speciesThermo
-Date   : Dec 28 2020
-Time   : 22:07:30
+Date   : Dec 29 2020
+Time   : 10:40:56
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 328393
+PID    : 12687
 I/O    : uncollated
 Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf
 nProcs : 1
@@ -19,5 +19,15 @@ fileModificationChecking : Monitoring run-time modified files using timeStampMas
 allowSystemOperations : Allowing user-supplied system call operations
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
-End
+
+
+--> FOAM FATAL IO ERROR: 
+file "chemkin/transportProperties" does not exist
+
+file: chemkin/transportProperties at line 1.
+
+    From function Foam::IFstream& Foam::IFstream::operator()() const
+    in file db/IOstreams/Fstreams/IFstream.C at line 185.
+
+FOAM exiting
 

@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 8
 Exec   : decomposePar -force -latestTime
-Date   : Dec 28 2020
-Time   : 22:07:30
+Date   : Dec 29 2020
+Time   : 10:40:56
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 328396
+PID    : 12690
 I/O    : uncollated
 Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf
 nProcs : 1
@@ -31,7 +31,7 @@ Create mesh
 Calculating distribution of cells
 Selecting decompositionMethod simple
 
-Finished decomposition in 0.68 s
+Finished decomposition in 0.88 s
 
 Calculating original mesh data
 
@@ -82,10 +82,14 @@ Max number of faces between processors = 21253 (0.13192% above average 21225)
 
 Time = 0
 
-Processor 0: field transfer
-Processor 1: field transfer
-Processor 2: field transfer
-Processor 3: field transfer
 
-End
+--> FOAM FATAL IO ERROR: 
+Cannot find patchField entry for region0_to_wallFilmRegion_wallFilmFaces
+
+file: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf/0/N2/boundaryField from line 25 to line 19.
+
+    From function void Foam::GeometricField<Type, PatchField, GeoMesh>::Boundary::readField(const Foam::DimensionedField<TypeR, GeoMesh>&, const Foam::dictionary&) [with Type = double; PatchField = Foam::fvPatchField; GeoMesh = Foam::volMesh]
+    in file /home/edo20/OpenFOAM/OpenFOAM-8/src/OpenFOAM/lnInclude/GeometricBoundaryField.C at line 184.
+
+FOAM exiting
 
