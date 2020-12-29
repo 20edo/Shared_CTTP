@@ -8,9 +8,9 @@
 Build  : 8
 Exec   : decomposePar -region wallFilmRegion -latestTime
 Date   : Dec 29 2020
-Time   : 10:40:59
+Time   : 11:31:15
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 12692
+PID    : 16048
 I/O    : uncollated
 Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf
 nProcs : 1
@@ -30,7 +30,7 @@ Create mesh
 Calculating distribution of cells
 Selecting decompositionMethod scotch
 
-Finished decomposition in 0.1 s
+Finished decomposition in 0.11 s
 
 Calculating original mesh data
 

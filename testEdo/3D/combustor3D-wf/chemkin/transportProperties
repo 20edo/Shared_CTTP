@@ -8,23 +8,20 @@
 FoamFile
 {
     version     2.0;
-    format      binary;
+    format      ascii;
     class       dictionary;
-    location    "constant";
-    object      combustionProperties;
+    location    "chemkin";
+    object      transportProperties;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-combustionModel PaSR;
-
-active yes;
-
-semiImplicit no;
-
-PaSRCoeffs
+".*"
 {
-    Cmix                1.0;
+    transport
+    {
+        As 1.67212e-6;
+        Ts 170.672;
+    }
 }
-
 
 // ************************************************************************* //

@@ -22,11 +22,11 @@ topoSet		2>&1	| tee log/topoSet.log
 extrudeToRegionMesh	-overwrite	2>&1	| tee log/extrudeToRegion.log
 
 # Set the coupling bc for the wall film (based on the splitter bcs used before)
-for i in 0/*; do
-    if [ -f $i ]; then
-        sed -i s/wall/region0_to_wallFilmRegion_wallFilmFaces/g $i
-    fi
-done
+#for i in 0/*; do
+#    if [ -f $i ]; then
+#        sed -i s/wall/region0_to_wallFilmRegion_wallFilmFaces/g $i
+#    fi
+#done
 
 # Generate thermo files 
 chemkinToFoam	chemkin/chem.inp	chemkin/therm.dat	chemkin/transportProperties	constant/reactions	constant/speciesThermo 2>&1	| tee log/chemkinToFoam.log

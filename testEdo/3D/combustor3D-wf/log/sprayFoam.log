@@ -8,18 +8,18 @@ Invalid MIT-MAGIC-COOKIE-1 key/*------------------------------------------------
 Build  : 8
 Exec   : sprayFilmFoam -parallel
 Date   : Dec 29 2020
-Time   : 10:41:05
+Time   : 11:31:22
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 12720
+PID    : 16078
 I/O    : uncollated
 Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf
 nProcs : 4
 Slaves : 
 3
 (
-"edo20-HP-Pavilion-Notebook.12721"
-"edo20-HP-Pavilion-Notebook.12722"
-"edo20-HP-Pavilion-Notebook.12723"
+"edo20-HP-Pavilion-Notebook.16079"
+"edo20-HP-Pavilion-Notebook.16080"
+"edo20-HP-Pavilion-Notebook.16081"
 )
 
 Pstream initialized with:
@@ -64,56 +64,167 @@ Selecting thermodynamics package
     specie          specie;
 }
 
-[0] 
-[0] 
-[0] --> FOAM FATAL ERROR: 
-[0] cannot find file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf/processor0/0/T"
-[0] 
-[0]     From function virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
-[0]     in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 538.
-[0] 
-FOAM parallel run exiting
-[0] 
+Creating component thermo properties:
+    multi-component carrier - 5 species
+    liquids - 1 components
+    solids - 0 components
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kEpsilon
+RAS
+{
+    RASModel        kEpsilon;
+    turbulence      on;
+    printCoeffs     on;
+    Cmu             0.09;
+    C1              1.44;
+    C2              1.92;
+    C3              0;
+    sigmak          1;
+    sigmaEps        1.3;
+}
+
+Creating thermophysical transport model
+
+Selecting thermophysical transport type RAS
+Selecting default RAS thermophysical transport model eddyDiffusivity
+Creating combustion model
+
+Selecting combustion model PaSR
+Selecting chemistry solver 
+{
+    solver          EulerImplicit;
+    method          standard;
+}
+
+StandardChemistryModel: Number of species = 5 and reactions = 1
+    using integrated reaction rate
+Creating field dpdt
+
+Creating field kinetic energy K
+
+No MRF models present
+
+
+Constructing reacting cloud
 [1] 
 [1] 
 [1] --> FOAM FATAL ERROR: 
-[1] cannot find file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf/processor1/0/T"
+[1] Attempt to return primitive entry ITstream : IOstream/subModels/injectionModels/timeStart, line 0, IOstream: Version 2.0, format ASCII, line 0, OPENED, GOOD
+    primitiveEntry 'timeStart' comprises 
+        on line 0 the word 'pizza'
+ as a sub-dictionary
 [1] 
-[1]     From function virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
-[1]     in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 538.
+[1]     From function virtual const Foam::dictionary& Foam::primitiveEntry::dict() const
+[1]     in file db/dictionary/primitiveEntry/primitiveEntry.C at line 190.
 [1] 
-FOAM parallel run exiting
+FOAM parallel run aborting
 [1] 
 [2] 
 [2] 
 [2] --> FOAM FATAL ERROR: 
-[2] cannot find file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf/processor2/0/T"
+[2] Attempt to return primitive entry ITstream : IOstream/subModels/injectionModels/timeStart, line 0, IOstream: Version 2.0, format ASCII, line 0, OPENED, GOOD
+    primitiveEntry 'timeStart' comprises 
+        on line 0 the word 'pizza'
+ as a sub-dictionary
 [2] 
-[2]     From function virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
-[2]     in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 538.
+[2]     From function virtual const Foam::dictionary& Foam::primitiveEntry::dict() const
+[2]     in file db/dictionary/primitiveEntry/primitiveEntry.C at line 190.
 [2] 
-FOAM parallel run exiting
+FOAM parallel run aborting
 [2] 
+[3] 
+[3] 
+[3] --> FOAM FATAL ERROR: 
+[3] Attempt to return primitive entry ITstream : IOstream/subModels/injectionModels/timeStart, line 0, IOstream: Version 2.0, format ASCII, line 0, OPENED, GOOD
+    primitiveEntry 'timeStart' comprises 
+        on line 0 the word 'pizza'
+ as a sub-dictionary
+[3] 
+[3]     From function virtual const Foam::dictionary& Foam::primitiveEntry::dict() const
+[3]     in file db/dictionary/primitiveEntry/primitiveEntry.C at line 190.
+[3] 
+FOAM parallel run aborting
+[3] 
+Constructing particle forces
+    Selecting particle force sphereDrag
+Constructing cloud functions
+    Selecting cloud function facePostProcessing of type facePostProcessing
+    Selecting cloud function particleTrack1 of type particleTracks
+    Selecting cloud function voidFraction1 of type voidFraction
+    Selecting cloud function patchPostProcessing of type patchPostProcessing
+Constructing particle injection models
+Creating injector: timeStart
+[0] 
+[0] 
+[0] --> FOAM FATAL ERROR: 
+[0] Attempt to return primitive entry ITstream : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf/constant/sprayCloudProperties/subModels/injectionModels/timeStart, line 79, IOstream: Version 2.0, format ASCII, line 0, OPENED, GOOD
+    primitiveEntry 'timeStart' comprises 
+        on line 79 the word 'pizza'
+ as a sub-dictionary
+[0] 
+[0]     From function virtual const Foam::dictionary& Foam::primitiveEntry::dict() const
+[0]     in file db/dictionary/primitiveEntry/primitiveEntry.C at line 190.
+[0] 
+FOAM parallel run aborting
+[0] 
+[3] #0  [1] #0  [2] #0  Foam::error::printStack(Foam::Ostream&)Foam::error::printStack(Foam::Ostream&)Foam::error::printStack(Foam::Ostream&)[0] #0  Foam::error::printStack(Foam::Ostream&) at ??:?
+[3] #1  Foam::error::abort() at ??:?
+[1] #1  Foam::error::abort() at ??:?
+ at ??:?
+[0] #1  Foam::error::abort()[2] #1  Foam::error::abort() at ??:?
+[1] #2  Foam::primitiveEntry::dict() const at ??:?
+[3] #2  Foam::primitiveEntry::dict() const at ??:?
+[2] #2  Foam::primitiveEntry::dict() const at ??:?
+[0] #2  Foam::primitiveEntry::dict() const at primitiveEntry.C:?
+[1] #3   at primitiveEntry.C:?
+[3] #3   at primitiveEntry.C:?
+?[2] #3   at primitiveEntry.C:?
+[0] #3  ?? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[1] #4  ? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[3] #4  ? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[2] #4  ? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[0] #4  ? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[1] #5  ?? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[2] #5   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[3] #5   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[0] #5  ? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+?[1] #6  ? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[2] #6   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[3] #6   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[0] #6  ???? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[1] #7   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[2] #7   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[0] #7  ?? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[3] #7  ? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[1] #8   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[2] #8  ? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[0] #8  ?? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[3] #8  ? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[2] #9  __libc_start_main? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[1] #9  __libc_start_main in "/lib/x86_64-linux-gnu/libc.so.6"
+[2] #10   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[0] #9  __libc_start_main in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+[3] #9  __libc_start_main in "/lib/x86_64-linux-gnu/libc.so.6"
+[1] #10  ? in "/lib/x86_64-linux-gnu/libc.so.6"
+[0] #10  ? in "/lib/x86_64-linux-gnu/libc.so.6"
+[3] #10   in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+?? in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+ in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
+ in "/home/edo20/OpenFOAM/edo20-8/platforms/linux64GccDPInt32Opt/bin/sprayFilmFoam"
 --------------------------------------------------------------------------
-MPI_ABORT was invoked on rank 0 in communicator MPI COMMUNICATOR 3 SPLIT FROM 0
+MPI_ABORT was invoked on rank 2 in communicator MPI COMMUNICATOR 3 SPLIT FROM 0
 with errorcode 1.
 
 NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
 You may or may not see output from other processes, depending on
 exactly when Open MPI kills them.
 --------------------------------------------------------------------------
-[3] 
-[3] 
-[3] --> FOAM FATAL ERROR: 
-[3] cannot find file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustor3D-wf/processor3/0/T"
-[3] 
-[3]     From function virtual Foam::autoPtr<Foam::ISstream> Foam::fileOperations::uncollatedFileOperation::readStream(Foam::regIOobject&, const Foam::fileName&, const Foam::word&, bool) const
-[3]     in file global/fileOperations/uncollatedFileOperation/uncollatedFileOperation.C at line 538.
-[3] 
-FOAM parallel run exiting
-[3] 
-[edo20-HP-Pavilion-Notebook:12714] PMIX ERROR: UNREACHABLE in file ../../../src/server/pmix_server.c at line 2193
-[edo20-HP-Pavilion-Notebook:12714] PMIX ERROR: UNREACHABLE in file ../../../src/server/pmix_server.c at line 2193
-[edo20-HP-Pavilion-Notebook:12714] PMIX ERROR: UNREACHABLE in file ../../../src/server/pmix_server.c at line 2193
-[edo20-HP-Pavilion-Notebook:12714] 3 more processes have sent help message help-mpi-api.txt / mpi-abort
-[edo20-HP-Pavilion-Notebook:12714] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[edo20-HP-Pavilion-Notebook:16072] 3 more processes have sent help message help-mpi-api.txt / mpi-abort
+[edo20-HP-Pavilion-Notebook:16072] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
