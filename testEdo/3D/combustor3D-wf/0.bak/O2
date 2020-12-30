@@ -20,7 +20,7 @@ internalField       uniform 0.233;
 
 boundaryField
 {
-    region0_to_wallFilmRegion_wallFilmFaces
+    wall
     {
         type                zeroGradient;
     }

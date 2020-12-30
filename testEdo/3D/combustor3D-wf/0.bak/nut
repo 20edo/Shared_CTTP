@@ -31,7 +31,7 @@ boundaryField
         type            calculated;
         value           uniform 0;
     }
-    region0_to_wallFilmRegion_wallFilmFaces
+    wall
     {
         type            nutkWallFunction;
         value           uniform 0;

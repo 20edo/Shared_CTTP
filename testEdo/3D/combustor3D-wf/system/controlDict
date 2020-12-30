@@ -30,7 +30,7 @@ endTime         0.1;
 
 adjustTimeStep	yes;
 
-maxCo		0.9;
+maxCo		5;
 
 writeControl    adjustableRunTime;
 
@@ -53,13 +53,14 @@ runTimeModifiable true;
 functions
 {
 	#includeFunc	residuals(p,U,k,epsilon,h)
-/*	#include	"functionObjects/fieldAverage.cpp"
-	#include 	"functionObjects/forces.cpp"
-	#include	"functionObjects/machNumber.cpp"
+	#includeFunc	Qdot
+//	#include	"functionObjects/fieldAverage.cpp"
+//	#include 	"functionObjects/forces.cpp"
+//	#include	"functionObjects/machNumber.cpp"
 	#include	"functionObjects/pressure.cpp"
 	#include	"functionObjects/temperature.cpp"
 	#include	"functionObjects/yPlus.cpp"
-*/
+	#include	"functionObjects/courant.cpp"
 }
 
 

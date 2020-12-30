@@ -90,16 +90,6 @@ subModels
             position        (0 -0.295 0);
             direction       (0 1 0);
             parcelsPerSecond 2e6;
-            /*flowRateProfile table	// Funziona ma non è quello che voglio
-            (
-                (0               0)
-                (0.001         0.5)
-                (0.002           1)
-                (0.005           1)
-                (0.05            1)
-                (0.09            1)
-                (0.1             0)
-            );*/
             flowRateProfile // Funziona solo se level è "sufficientemente lontano" da 0
 	    {
 		    type	sine;
@@ -108,28 +98,6 @@ subModels
 		    scale	1;
 		    level	1e-4;
 	    };
-	    /*flowRateProfile	// Funziona ma non è quello che voglio (penso)
-	    {
-		    type	scale;
-		    scale	quarterSineRamp;
-		    start	0;
-		    duration	0.1;
-		    value	1;
-	    }*/
-	    /*flowRateProfile	coded; // Not finished
-	    name		mysin;
-	    codeInclude
-		#{
-			#include "mathematicalConstants.H"
-		#};
-		code
-		#{
-			return scalar
-				(
-				 	sin(constant::mathematical::twoPi*time)
-				);
-		#};
-		*/
             Cd              constant 0.9;
 
             thetaInner      constant 0.0;
@@ -170,7 +138,7 @@ subModels
 
     atomizationModel none;
 
-    breakupModel	ReitzKHRT; // ReitzDiwakar;
+    breakupModel	ReitzKHRT; 
 
     stochasticCollisionModel none;
 
@@ -178,7 +146,7 @@ subModels
 
     standardWallInteractionCoeffs
     {
-        type            rebound;	// rebound
+        type            rebound;	
     }
 
     RanzMarshallCoeffs
@@ -203,17 +171,6 @@ subModels
 
         activeLiquids    ( C7H16 );
     }
-/*
-    ReitzDiwakarCoeffs
-    {
-        solveOscillationEq yes;
-        Cbag            6;
-        Cb              0.785;
-        Cstrip          0.5;
-        Cs              10;
-    }
-*/
-
     ReitzKHRTCoeffs
     {
         solveOscillationEq yes;
@@ -237,13 +194,7 @@ subModels
 
 
 cloudFunctions
-{   
-#include	"cloudFunctionObjects/facePostProcessing.cpp"
-//#include	"cloudFunctionObjects/particleCollector.cpp"
-#include	"cloudFunctionObjects/particleTrack.cpp"
-#include	"cloudFunctionObjects/voidFraction.cpp"
-#include	"cloudFunctionObjects/patchPostProcessing.cpp"
-}
+{}
 
 
 // ************************************************************************* //

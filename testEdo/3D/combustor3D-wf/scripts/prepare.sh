@@ -9,14 +9,17 @@ cd $cwd
 pwd
 
 # Reconstruct Mesh
-reconstructParMesh	-latestTime	2>&1	| tee log/reconstructParMesh.log
+reconstructParMesh	-latestTime 	2>&1	| tee log/reconstructParMesh.log
 
 # Copy the boundary conditions to the folder containing the mesh
-#cp -r 0.bak/* 3e-05
+cp -r 0.bak/* 3e-05
 mv 3e-05 0
 cp -r 3e-05/polyMesh constant
 cp -r 0.bak/*	0
 rm -r 3e-05
+
+# Map fields from initialization simulation
+mapFields  ../combustorRhoPimpleMidday  -consistent 	-sourceTime 	latestTime	2>&1	| tee log/mapFields.log
 # Generate faceZones and faceSets and extrude to create the wallFilm region
 topoSet		2>&1	| tee log/topoSet.log
 extrudeToRegionMesh	-overwrite	2>&1	| tee log/extrudeToRegion.log

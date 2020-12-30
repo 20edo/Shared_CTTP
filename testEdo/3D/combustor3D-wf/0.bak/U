@@ -30,7 +30,7 @@ boundaryField
     {
         type            zeroGradient;
     }
-    region0_to_wallFilmRegion_wallFilmFaces
+    wall
     {
         type            noSlip;
     }
