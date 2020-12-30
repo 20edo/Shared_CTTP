@@ -65,8 +65,8 @@ solvers
 
 PIMPLE
 {
-	nCorrectors			2;
-	nOuterCorrectors		25; 
+	nCorrectors			1;
+	nOuterCorrectors		50; 
 	turbOnFinalIterOnly		no;
 	nNonOrthogonalCorrectors	0;
 	consistent			yes;
@@ -86,14 +86,14 @@ relaxationFactors
 {
 	fields
 	{
-		"p.*"			0.6;
+		"p.*"			0.7;
 	}
 
 	equations
        	{
-        	"U.*"               	0.5;
-       		"(k|epsilon).*"         0.5;
-		"(h|e)"			0.5;
+        	"U.*"               	0.6;
+       		"(k|epsilon).*"         0.6;
+		"(h|e)"			0.6;
     	}
 }
 

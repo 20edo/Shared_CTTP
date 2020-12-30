@@ -65,8 +65,8 @@ solvers
 
 PIMPLE
 {
-	nCorrectors			2;
-	nOuterCorrectors		25; 
+	nCorrectors			1;
+	nOuterCorrectors		50; 
 	turbOnFinalIterOnly		no;
 	nNonOrthogonalCorrectors	0;
 	consistent			yes;
