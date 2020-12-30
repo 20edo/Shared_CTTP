@@ -15,10 +15,6 @@ runApplication renumberMesh -overwrite
 
 runApplication mapFields ../initialConditions/ -case . -parallelSource -sourceTime latestTime
 
-runApplication chemkinToFoam \
-	       chemkin/chem.inp chemkin/therm.dat chemkin/transportProperties \
-	       constant/reactions constant/speciesThermo # to be modified accordingly to methane combustion
-
 runApplication decomposePar
 runParallel reactingFoam
 

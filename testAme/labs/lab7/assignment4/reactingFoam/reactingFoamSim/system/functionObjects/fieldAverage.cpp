@@ -58,8 +58,8 @@ fieldAverage1
     	// Optional (inherited) entries
     	enabled         true;
     	log             false;
-    	timeStart       0.3;
-    	timeEnd         1.0;
+    	timeStart       0.005;
+    	timeEnd         0.1;
     	writeControl    writeTime;
     	writeInterval   1;
  	}

@@ -3,14 +3,10 @@ pInlet
 	type		surfaceFieldValue;
 	enabled		yes;
 	log		false;
-	
-	    
-        executeControl  timeStep;
-        executeInterval 1;
-        graphFormat     raw;
 
+        graphFormat     raw;
 	writeControl	timeStep;
-	writeInterval	1;
+	writeInterval	10;
 
 	regionType	patch;
 	writeFields	no;
@@ -26,13 +22,9 @@ pOutlet
 	enabled		yes;
 	log		false;
 	
-
-        executeControl  timeStep;
-        executeInterval 1;
         graphFormat     raw;
-
 	writeControl	timeStep;
-	writeInterval	1;
+	writeInterval	10;
 
 	regionType	patch;
 	writeFields	no;

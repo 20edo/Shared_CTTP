@@ -3,12 +3,10 @@ TOutlet
 	type		surfaceFieldValue;
 	enabled		yes;
 	log		false;
-		
-	executeControl	timeStep;
-	executeInterval	1;
+
 	graphFormat	raw;		
 	writeControl	timeStep;
-	writeInterval	1;
+	writeInterval	10;
 
 	regionType	patch;
 	writeFields	no;
@@ -24,20 +22,76 @@ isoT
 	enabled 		yes;
 	log			false;
 	
-	writeControl 		timeStep;
-	writeInterval 		1;
+	writeControl 		adjustableRunTime;
+	writeInterval 		0.002;
 	
 	fields 			(T);
 	interpolationScheme 	cellPoint;
 	surfaceFormat 		vtk;
 	surfaces
 	(
-		isoT
+		isoT600
 		{
 			type 		isoSurface;
 			isoField 	T;
-			isoValue 	900;
+			isoValue 	600;
 			interpolate	true;
+		}
+		isoT700
+		{
+		        type            isoSurface;
+		        isoField        T;
+		        isoValue        700;
+		        interpolate     true;
+		}
+		isoT800
+		{
+		        type            isoSurface;
+		        isoField        T;
+		        isoValue        800;
+		        interpolate     true;
+		}
+		isoT900
+		{
+		        type            isoSurface;
+		        isoField        T;
+		        isoValue        900;
+		        interpolate     true;
+		}
+		isoT1000
+		{
+			type            isoSurface;
+			isoField        T;
+			isoValue        1000;
+			interpolate     true;
+		}
+		isoT1100
+		{
+		        type            isoSurface;
+		        isoField        T;
+		        isoValue        1100;
+		        interpolate     true;
+		}
+		isoT1200
+		{
+			type            isoSurface;
+			isoField        T;
+			isoValue        1200;
+			interpolate     true;
+		}
+		isoT1300
+		{
+			type            isoSurface;
+			isoField        T;
+			isoValue        1300;
+			interpolate     true;
+		}
+		isoT1400
+		{
+			type            isoSurface;
+			isoField        T;
+			isoValue        1400;
+			interpolate     true;
 		}
 	);
 }

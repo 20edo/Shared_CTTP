@@ -25,13 +25,7 @@ deltaT		5e-7;
 
 stopAt          endTime;
 
-endTime         0.1;
-
-/*
-writeControl 	timeStep;
-
-writeInterval 	1;
-*/
+endTime         0.05;
 
 writeControl    adjustableRunTime;
 
@@ -58,8 +52,4 @@ maxCo           0.9;
 functions
 {
 	#includeFunc	residuals(p,U,k,epsilon)
-	#include	"functionObjects/forces"
-	#include	"functionObjects/integralValues"
-	#include	"functionObjects/surfaces"
-	#include	"functionObjects/boundaryLayer"
 }

@@ -9,7 +9,7 @@ force
 	rhoInf		1.18;
 
 	writeControl	timeStep;
-	writeInterval	1;
+	writeInterval	10;
 
 	liftDir		(1 0 0);
 	dragDir		(0 1 0);

@@ -6,16 +6,10 @@ cd ${0%/*} || exit 1    # run from this directory
 
 mkdir log
 touch initialConditionsRF.foam
-rm -r 0
-cp -r 0.bak 0
 
 runApplication blockMesh  
 runApplication checkMesh
 runApplication renumberMesh -overwrite
-
-runApplication chemkinToFoam \
-	       chemkin/chem.inp chemkin/therm.dat chemkin/transportProperties \
-	       constant/reactions constant/speciesThermo # to be modified accordingly to methane combustion
 
 runApplication decomposePar
 runParallel reactingFoam

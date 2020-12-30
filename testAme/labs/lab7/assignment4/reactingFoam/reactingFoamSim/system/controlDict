@@ -29,7 +29,7 @@ endTime         0.1;
 
 writeControl    adjustableRunTime;
 
-writeInterval   0.002;
+writeInterval   0.005;
 
 purgeWrite      0;
 
@@ -55,7 +55,7 @@ functions
 	#include	"functionObjects/forces.cpp"
 	#include	"functionObjects/machNumber.cpp"
 	#include	"functionObjects/pressure.cpp"
-	#include	"functionObjects/isoAF.cpp"
+	#include	"functionObjects/fieldA.cpp"
 	#include	"functionObjects/temperature.cpp"
 	#include	"functionObjects/fieldAverage.cpp"
 	#include	"functionObjects/yPlus.cpp"
