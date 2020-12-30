@@ -1,0 +1,73 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : surfaceFeatures
+Date   : Dec 30 2020
+Time   : 11:09:43
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 86548
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleRemesh
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surfaceFeaturesDict
+
+Surface            : "combustor.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 492
+Vertices     : 464
+Bounding Box : (-0.12 -0.30000001 -0.12) (0.12 0.5 0.12)
+
+
+Constructing feature set from included angle 150
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 8
+    feature edges  : 468
+    of which
+        region edges   : 468
+        external edges : 0
+        internal edges : 0
+
+
+Final feature set:
+points      : 464
+edges       : 468
+boundingBox : (-0.12 -0.30000001 -0.12) (0.12 0.5 0.12)
+point classification :
+    convex feature points          :        8
+    concave feature points         :        0
+    mixed feature points           :        0
+    other (non-feature) points     :      456
+edge classification :
+    external (convex angle) edges  :       36
+    internal (concave angle) edges :        0
+    flat region edges              :        0
+    open edges                     :      432
+    multiply connected edges       :        0
+
+Writing extendedFeatureEdgeMesh to "constant/extendedFeatureEdgeMesh/combustor.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleRemesh/constant/extendedFeatureEdgeMesh/combustor"
+
+Writing featureEdgeMesh to "constant/triSurface/combustor.eMesh"
+
+ExecutionTime = 0 s  ClockTime = 0 s
+
+End
+
