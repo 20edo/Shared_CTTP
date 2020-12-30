@@ -1,0 +1,301 @@
+Invalid MIT-MAGIC-COOKIE-1 key/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : checkMesh -parallel
+Date   : Dec 30 2020
+Time   : 14:49:12
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 41026
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday
+nProcs : 4
+Slaves : 
+3
+(
+"edo20-HP-Pavilion-Notebook.41027"
+"edo20-HP-Pavilion-Notebook.41028"
+"edo20-HP-Pavilion-Notebook.41029"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create polyMesh for time = 0
+
+Time = 0
+
+Mesh stats
+    points:           43880
+    faces:            116340
+    internal faces:   102360
+    cells:            36450
+    faces per cell:   6
+    boundary patches: 5
+    point zones:      0
+    face zones:       0
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     36450
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     0
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking basic patch addressing...
+    Patch               Faces    Points   
+    outerWalls          3240     3644     
+    outlet              405      481      
+    inlet               405      481      
+
+Checking geometry...
+    Overall domain bounding box (-0.11954336 -0.3 -0.11954336) (0.11954336 0.5 0.11954336)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (-9.9982328e-16 -4.4709998e-17 -3.3116773e-16) OK.
+    Max cell openness = 3.0303858e-16 OK.
+    Max aspect ratio = 8.8568597 OK.
+    Minimum face area = 1.6740781e-05. Maximum face area = 0.00021333371.  Face area magnitudes OK.
+    Min volume = 3.6099525e-07. Max volume = 1.8962997e-06.  Total volume = 0.036007686.  Cell volumes OK.
+    Mesh non-orthogonality Max: 27.258944 average: 5.7084445
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.56676045 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+--> FOAM Warning : 
+    From function virtual Foam::polyMesh::readUpdateState Foam::polyMesh::readUpdate()
+    in file meshes/polyMesh/polyMeshIO.C at line 209
+    unexpected consequences.  Proceed with care.
+Time = 1e-05
+
+Mesh stats
+    points:           1332337
+    faces:            3779298
+    internal faces:   3667569
+    cells:            1224522
+    faces per cell:   6.0814481
+    boundary patches: 11
+    point zones:      0
+    face zones:       0
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     1193851
+    prisms:        0
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     30671
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            6   5664
+            9   17383
+           12   7084
+           15   466
+           18   74
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking basic patch addressing...
+                   Patch    Faces   Points
+              outerWalls     3240     3644
+                  outlet     1848     2068
+                   inlet      405      481
+           splitterFront     3224     3528
+           splitterRight      234      280
+            splitterRear     3224     3528
+            splitterLeft      234      280
+          splitterBottom      646      790
+             splitterTop      646      790
+
+Checking geometry...
+    Overall domain bounding box (-0.11954336 -0.3 -0.11954336) (0.11954336 0.5 0.11954336)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (-9.765089e-16 -5.0590235e-16 -6.1152935e-16) OK.
+    Max cell openness = 3.4304834e-16 OK.
+    Max aspect ratio = 8.8568597 OK.
+    Minimum face area = 1.2345679e-06. Maximum face area = 0.00021333371.  Face area magnitudes OK.
+    Min volume = 1.3717421e-09. Max volume = 1.8962997e-06.  Total volume = 0.035984646.  Cell volumes OK.
+    Mesh non-orthogonality Max: 48.501546 average: 6.0676444
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 0.69505151 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+Time = 2e-05
+
+Mesh stats
+    points:           1329633
+    faces:            3776594
+    internal faces:   3667569
+    cells:            1224522
+    faces per cell:   6.0792399
+    boundary patches: 11
+    point zones:      0
+    face zones:       0
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     1191147
+    prisms:        2496
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     30879
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            5   208
+            6   5664
+            9   17383
+           12   7084
+           15   466
+           18   74
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking basic patch addressing...
+                   Patch    Faces   Points
+              outerWalls     3240     3644
+                  outlet     1848     2068
+                   inlet      405      481
+           splitterFront     1908     2212
+           splitterRight      234      280
+            splitterRear     1910     2214
+            splitterLeft      234      280
+          splitterBottom      609      750
+             splitterTop      609      750
+
+Checking geometry...
+    Overall domain bounding box (-0.1195742 -0.3 -0.1195742) (0.11957418 0.5 0.11957418)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (4.5339434e-16 5.3236486e-18 -5.8224991e-17) OK.
+    Max cell openness = 5.6740817e-15 OK.
+    Max aspect ratio = 142.23632 OK.
+    Minimum face area = 8.9025337e-08. Maximum face area = 0.00022410108.  Face area magnitudes OK.
+    Min volume = 9.8955193e-11. Max volume = 1.9918784e-06.  Total volume = 0.035983317.  Cell volumes OK.
+    Mesh non-orthogonality Max: 64.999968 average: 6.383211
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 3.6205114 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+Time = 3e-05
+
+Mesh stats
+    points:           1335813
+    faces:            3794142
+    internal faces:   3684337
+    cells:            1230210
+    faces per cell:   6.0790263
+    boundary patches: 11
+    point zones:      0
+    face zones:       0
+    cell zones:       0
+
+Overall number of cells of each type:
+    hexahedra:     1196631
+    prisms:        2496
+    wedges:        0
+    pyramids:      0
+    tet wedges:    0
+    tetrahedra:    0
+    polyhedra:     31083
+    Breakdown of polyhedra by number of faces:
+        faces   number of cells
+            4   8
+            5   208
+            6   5672
+            7   172
+            8   16
+            9   17383
+           12   7084
+           15   466
+           18   74
+
+Checking topology...
+    Boundary definition OK.
+    Cell to face addressing OK.
+    Point usage OK.
+    Upper triangular ordering OK.
+    Face vertices OK.
+    Number of regions: 1 (OK).
+
+Checking basic patch addressing...
+                   Patch    Faces   Points
+              outerWalls     3240     3644
+                  outlet     1848     2068
+                   inlet      405      481
+           splitterFront     1908     2212
+           splitterRight      234      280
+            splitterRear     2018     2330
+            splitterLeft      234      280
+          splitterBottom      609      750
+             splitterTop      609      750
+
+Checking geometry...
+    Overall domain bounding box (-0.1195742 -0.3 -0.1195742) (0.11957418 0.5 0.11957418)
+    Mesh has 3 geometric (non-empty/wedge) directions (1 1 1)
+    Mesh has 3 solution (non-empty) directions (1 1 1)
+    Boundary openness (6.540533e-16 -1.0204449e-17 -6.1993106e-17) OK.
+    Max cell openness = 5.6740817e-15 OK.
+    Max aspect ratio = 142.56889 OK.
+    Minimum face area = 5.5479891e-08. Maximum face area = 0.0002241172.  Face area magnitudes OK.
+    Min volume = 5.1012955e-11. Max volume = 1.9920268e-06.  Total volume = 0.035983317.  Cell volumes OK.
+    Mesh non-orthogonality Max: 64.999968 average: 6.3941033
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 3.6205114 OK.
+    Coupled point location match (average 0) OK.
+
+Mesh OK.
+
+End
+
+Finalising parallel run

@@ -1,0 +1,221 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : reconstructParMesh -mergeTol 1e-10
+Date   : Dec 30 2020
+Time   : 14:49:24
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 41040
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+This is an experimental tool which tries to merge individual processor
+meshes back into one master mesh. Use it if the original master mesh has
+been deleted or if the processor meshes have been modified (topology change).
+This tool will write the resulting mesh to a new time step and construct
+xxxxProcAddressing files in the processor meshes so reconstructPar can be
+used to regenerate the fields on the master mesh.
+
+Not well tested & use at your own risk!
+
+Merge tolerance : 1e-10
+Write tolerance : 1e-08
+Doing geometric matching on correct procBoundaries only.
+This assumes a correct decomposition.
+Found 4 processor directories
+
+Reading database "combustorRhoPimpleMidday/processor0"
+Reading database "combustorRhoPimpleMidday/processor1"
+Reading database "combustorRhoPimpleMidday/processor2"
+Reading database "combustorRhoPimpleMidday/processor3"
+Time = 1e-05
+
+Reading points from "combustorRhoPimpleMidday/processor0" for time = 1e-05
+
+Reading points from "combustorRhoPimpleMidday/processor1" for time = 1e-05
+
+Reading points from "combustorRhoPimpleMidday/processor2" for time = 1e-05
+
+Reading points from "combustorRhoPimpleMidday/processor3" for time = 1e-05
+
+Overall mesh bounding box  : (-0.11954336 -0.3 -0.11954336) (0.11954336 0.5 0.11954336)
+Relative tolerance         : 1e-10
+Absolute matching distance : 8.6851881e-11
+
+Merging mesh 0 with 1
+Merging mesh 2 with 3
+Merging mesh 0 with 2
+Reading mesh to add from "combustorRhoPimpleMidday/processor0" for time = 1e-05
+
+
+Reading mesh to add from "combustorRhoPimpleMidday/processor1" for time = 1e-05
+
+
+Reading mesh to add from "combustorRhoPimpleMidday/processor2" for time = 1e-05
+
+
+Reading mesh to add from "combustorRhoPimpleMidday/processor3" for time = 1e-05
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/1e-05"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "combustorRhoPimpleMidday/processor0"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor0/1e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor0/1e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor0/1e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor0/1e-05/polyMesh"
+
+Reading processor 1 mesh from "combustorRhoPimpleMidday/processor1"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor1/1e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor1/1e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor1/1e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor1/1e-05/polyMesh"
+
+Reading processor 2 mesh from "combustorRhoPimpleMidday/processor2"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor2/1e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor2/1e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor2/1e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor2/1e-05/polyMesh"
+
+Reading processor 3 mesh from "combustorRhoPimpleMidday/processor3"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor3/1e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor3/1e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor3/1e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor3/1e-05/polyMesh"
+
+Time = 2e-05
+
+Reading points from "combustorRhoPimpleMidday/processor0" for time = 2e-05
+
+Reading points from "combustorRhoPimpleMidday/processor1" for time = 2e-05
+
+Reading points from "combustorRhoPimpleMidday/processor2" for time = 2e-05
+
+Reading points from "combustorRhoPimpleMidday/processor3" for time = 2e-05
+
+Overall mesh bounding box  : (-0.1195742 -0.3 -0.1195742) (0.11957418 0.5 0.11957418)
+Relative tolerance         : 1e-10
+Absolute matching distance : 8.6855276e-11
+
+Merging mesh 0 with 1
+Merging mesh 2 with 3
+Merging mesh 0 with 2
+Reading mesh to add from "combustorRhoPimpleMidday/processor0" for time = 2e-05
+
+
+Reading mesh to add from "combustorRhoPimpleMidday/processor1" for time = 2e-05
+
+
+Reading mesh to add from "combustorRhoPimpleMidday/processor2" for time = 2e-05
+
+
+Reading mesh to add from "combustorRhoPimpleMidday/processor3" for time = 2e-05
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/2e-05"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "combustorRhoPimpleMidday/processor0"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor0/2e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor0/2e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor0/2e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor0/2e-05/polyMesh"
+
+Reading processor 1 mesh from "combustorRhoPimpleMidday/processor1"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor1/2e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor1/2e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor1/2e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor1/2e-05/polyMesh"
+
+Reading processor 2 mesh from "combustorRhoPimpleMidday/processor2"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor2/2e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor2/2e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor2/2e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor2/2e-05/polyMesh"
+
+Reading processor 3 mesh from "combustorRhoPimpleMidday/processor3"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor3/2e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor3/2e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor3/2e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor3/2e-05/polyMesh"
+
+Time = 3e-05
+
+Reading points from "combustorRhoPimpleMidday/processor0" for time = 3e-05
+
+Reading points from "combustorRhoPimpleMidday/processor1" for time = 3e-05
+
+Reading points from "combustorRhoPimpleMidday/processor2" for time = 3e-05
+
+Reading points from "combustorRhoPimpleMidday/processor3" for time = 3e-05
+
+Overall mesh bounding box  : (-0.1195742 -0.3 -0.1195742) (0.11957418 0.5 0.11957418)
+Relative tolerance         : 1e-10
+Absolute matching distance : 8.6855276e-11
+
+Merging mesh 0 with 1
+Merging mesh 2 with 3
+Merging mesh 0 with 2
+Reading mesh to add from "combustorRhoPimpleMidday/processor0" for time = 3e-05
+
+
+Reading mesh to add from "combustorRhoPimpleMidday/processor1" for time = 3e-05
+
+
+Reading mesh to add from "combustorRhoPimpleMidday/processor2" for time = 3e-05
+
+
+Reading mesh to add from "combustorRhoPimpleMidday/processor3" for time = 3e-05
+
+
+mergeSharedPoints : detected 0 points that are to be merged.
+
+Writing merged mesh to "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/3e-05"
+
+Reconstructing the addressing from the processor meshes to the newly reconstructed mesh
+
+Reading processor 0 mesh from "combustorRhoPimpleMidday/processor0"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor0/3e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor0/3e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor0/3e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor0/3e-05/polyMesh"
+
+Reading processor 1 mesh from "combustorRhoPimpleMidday/processor1"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor1/3e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor1/3e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor1/3e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor1/3e-05/polyMesh"
+
+Reading processor 2 mesh from "combustorRhoPimpleMidday/processor2"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor2/3e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor2/3e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor2/3e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor2/3e-05/polyMesh"
+
+Reading processor 3 mesh from "combustorRhoPimpleMidday/processor3"
+Writing pointProcAddressing to "combustorRhoPimpleMidday/processor3/3e-05/polyMesh"
+Writing faceProcAddressing to "combustorRhoPimpleMidday/processor3/3e-05/polyMesh"
+Writing cellProcAddressing to "combustorRhoPimpleMidday/processor3/3e-05/polyMesh"
+Writing boundaryProcAddressing to "combustorRhoPimpleMidday/processor3/3e-05/polyMesh"
+
+End.
+

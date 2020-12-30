@@ -1,0 +1,241 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : blockMesh
+Date   : Dec 30 2020
+Time   : 14:38:06
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 36056
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from
+    "system/blockMeshDict"
+Using #calcEntry at line 34 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_8351c5822e1517b5a3fdd73a9819fa16b643b5d3.so"
+Creating new library in "dynamicCode/_8351c5822e1517b5a3fdd73a9819fa16b643b5d3/platforms/linux64GccDPInt32Opt/lib/libcodeStream_8351c5822e1517b5a3fdd73a9819fa16b643b5d3.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_8351c5822e1517b5a3fdd73a9819fa16b643b5d3"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_8351c5822e1517b5a3fdd73a9819fa16b643b5d3
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_8351c5822e1517b5a3fdd73a9819fa16b643b5d3/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_8351c5822e1517b5a3fdd73a9819fa16b643b5d3.so
+Using #calcEntry at line 36 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #calcEntry at line 41 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_1283c7ea48ddf1639d1027acf7c5d599bb046a6c.so"
+Creating new library in "dynamicCode/_1283c7ea48ddf1639d1027acf7c5d599bb046a6c/platforms/linux64GccDPInt32Opt/lib/libcodeStream_1283c7ea48ddf1639d1027acf7c5d599bb046a6c.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_1283c7ea48ddf1639d1027acf7c5d599bb046a6c"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_1283c7ea48ddf1639d1027acf7c5d599bb046a6c
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_1283c7ea48ddf1639d1027acf7c5d599bb046a6c/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_1283c7ea48ddf1639d1027acf7c5d599bb046a6c.so
+Using #calcEntry at line 42 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_7d6d16e3d53df7257bfc1afc3c24416980df2fa8.so"
+Creating new library in "dynamicCode/_7d6d16e3d53df7257bfc1afc3c24416980df2fa8/platforms/linux64GccDPInt32Opt/lib/libcodeStream_7d6d16e3d53df7257bfc1afc3c24416980df2fa8.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_7d6d16e3d53df7257bfc1afc3c24416980df2fa8"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_7d6d16e3d53df7257bfc1afc3c24416980df2fa8
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_7d6d16e3d53df7257bfc1afc3c24416980df2fa8/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_7d6d16e3d53df7257bfc1afc3c24416980df2fa8.so
+Using #calcEntry at line 43 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_5876bf2d81433c7149171ab1fc9750a7519e6307.so"
+Creating new library in "dynamicCode/_5876bf2d81433c7149171ab1fc9750a7519e6307/platforms/linux64GccDPInt32Opt/lib/libcodeStream_5876bf2d81433c7149171ab1fc9750a7519e6307.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_5876bf2d81433c7149171ab1fc9750a7519e6307"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_5876bf2d81433c7149171ab1fc9750a7519e6307
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_5876bf2d81433c7149171ab1fc9750a7519e6307/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_5876bf2d81433c7149171ab1fc9750a7519e6307.so
+Using #calcEntry at line 44 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_0161e636e3c56f591226fb177689e415a95a58a1.so"
+Creating new library in "dynamicCode/_0161e636e3c56f591226fb177689e415a95a58a1/platforms/linux64GccDPInt32Opt/lib/libcodeStream_0161e636e3c56f591226fb177689e415a95a58a1.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_0161e636e3c56f591226fb177689e415a95a58a1"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_0161e636e3c56f591226fb177689e415a95a58a1
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_0161e636e3c56f591226fb177689e415a95a58a1/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_0161e636e3c56f591226fb177689e415a95a58a1.so
+Using #calcEntry at line 45 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a2d84c6a07d8460e26638db8084516d3dfe23584.so"
+Creating new library in "dynamicCode/_a2d84c6a07d8460e26638db8084516d3dfe23584/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a2d84c6a07d8460e26638db8084516d3dfe23584.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_a2d84c6a07d8460e26638db8084516d3dfe23584"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_a2d84c6a07d8460e26638db8084516d3dfe23584
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_a2d84c6a07d8460e26638db8084516d3dfe23584/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_a2d84c6a07d8460e26638db8084516d3dfe23584.so
+Using #calcEntry at line 46 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_48fd93fd77a8d99b642a885117e1c968c6508950.so"
+Creating new library in "dynamicCode/_48fd93fd77a8d99b642a885117e1c968c6508950/platforms/linux64GccDPInt32Opt/lib/libcodeStream_48fd93fd77a8d99b642a885117e1c968c6508950.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_48fd93fd77a8d99b642a885117e1c968c6508950"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_48fd93fd77a8d99b642a885117e1c968c6508950
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_48fd93fd77a8d99b642a885117e1c968c6508950/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_48fd93fd77a8d99b642a885117e1c968c6508950.so
+Using #calcEntry at line 47 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_c7fbd5f4926b5959cf655c1b8dbc60ec931ee3d0.so"
+Creating new library in "dynamicCode/_c7fbd5f4926b5959cf655c1b8dbc60ec931ee3d0/platforms/linux64GccDPInt32Opt/lib/libcodeStream_c7fbd5f4926b5959cf655c1b8dbc60ec931ee3d0.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_c7fbd5f4926b5959cf655c1b8dbc60ec931ee3d0"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_c7fbd5f4926b5959cf655c1b8dbc60ec931ee3d0
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_c7fbd5f4926b5959cf655c1b8dbc60ec931ee3d0/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_c7fbd5f4926b5959cf655c1b8dbc60ec931ee3d0.so
+Using #calcEntry at line 48 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a194736bd8f2697eb1fbfa0dda535c40fd43db4d.so"
+Creating new library in "dynamicCode/_a194736bd8f2697eb1fbfa0dda535c40fd43db4d/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a194736bd8f2697eb1fbfa0dda535c40fd43db4d.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_a194736bd8f2697eb1fbfa0dda535c40fd43db4d"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_a194736bd8f2697eb1fbfa0dda535c40fd43db4d
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_a194736bd8f2697eb1fbfa0dda535c40fd43db4d/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_a194736bd8f2697eb1fbfa0dda535c40fd43db4d.so
+Using #calcEntry at line 52 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_cbbcc730e59c60c88d5fd08c803f4bab27783fc4.so"
+Creating new library in "dynamicCode/_cbbcc730e59c60c88d5fd08c803f4bab27783fc4/platforms/linux64GccDPInt32Opt/lib/libcodeStream_cbbcc730e59c60c88d5fd08c803f4bab27783fc4.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_cbbcc730e59c60c88d5fd08c803f4bab27783fc4"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_cbbcc730e59c60c88d5fd08c803f4bab27783fc4
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_cbbcc730e59c60c88d5fd08c803f4bab27783fc4/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_cbbcc730e59c60c88d5fd08c803f4bab27783fc4.so
+Using #calcEntry at line 53 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a1de9cf22d748025a7d80c88f762654bb2cb523d.so"
+Creating new library in "dynamicCode/_a1de9cf22d748025a7d80c88f762654bb2cb523d/platforms/linux64GccDPInt32Opt/lib/libcodeStream_a1de9cf22d748025a7d80c88f762654bb2cb523d.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_a1de9cf22d748025a7d80c88f762654bb2cb523d"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_a1de9cf22d748025a7d80c88f762654bb2cb523d
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_a1de9cf22d748025a7d80c88f762654bb2cb523d/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_a1de9cf22d748025a7d80c88f762654bb2cb523d.so
+Using #calcEntry at line 54 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_bda8307b3ed62a05ec6036a9900363b3b14a7f0f.so"
+Creating new library in "dynamicCode/_bda8307b3ed62a05ec6036a9900363b3b14a7f0f/platforms/linux64GccDPInt32Opt/lib/libcodeStream_bda8307b3ed62a05ec6036a9900363b3b14a7f0f.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_bda8307b3ed62a05ec6036a9900363b3b14a7f0f"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_bda8307b3ed62a05ec6036a9900363b3b14a7f0f
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_bda8307b3ed62a05ec6036a9900363b3b14a7f0f/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_bda8307b3ed62a05ec6036a9900363b3b14a7f0f.so
+Using #calcEntry at line 55 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_10ee2a7bee1507236f7d2c8b406152c3489d4f7d.so"
+Creating new library in "dynamicCode/_10ee2a7bee1507236f7d2c8b406152c3489d4f7d/platforms/linux64GccDPInt32Opt/lib/libcodeStream_10ee2a7bee1507236f7d2c8b406152c3489d4f7d.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_10ee2a7bee1507236f7d2c8b406152c3489d4f7d"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_10ee2a7bee1507236f7d2c8b406152c3489d4f7d
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_10ee2a7bee1507236f7d2c8b406152c3489d4f7d/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_10ee2a7bee1507236f7d2c8b406152c3489d4f7d.so
+Using #calcEntry at line 56 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_c034471d45521d8a057081d09ce6551211520a42.so"
+Creating new library in "dynamicCode/_c034471d45521d8a057081d09ce6551211520a42/platforms/linux64GccDPInt32Opt/lib/libcodeStream_c034471d45521d8a057081d09ce6551211520a42.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_c034471d45521d8a057081d09ce6551211520a42"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_c034471d45521d8a057081d09ce6551211520a42
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_c034471d45521d8a057081d09ce6551211520a42/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_c034471d45521d8a057081d09ce6551211520a42.so
+Using #calcEntry at line 57 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_8336bd8ec5c7be22584bd0b70faf58e9cc3a14ac.so"
+Creating new library in "dynamicCode/_8336bd8ec5c7be22584bd0b70faf58e9cc3a14ac/platforms/linux64GccDPInt32Opt/lib/libcodeStream_8336bd8ec5c7be22584bd0b70faf58e9cc3a14ac.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_8336bd8ec5c7be22584bd0b70faf58e9cc3a14ac"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_8336bd8ec5c7be22584bd0b70faf58e9cc3a14ac
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_8336bd8ec5c7be22584bd0b70faf58e9cc3a14ac/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_8336bd8ec5c7be22584bd0b70faf58e9cc3a14ac.so
+Using #calcEntry at line 58 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_7e3d3cf3a82099e16aa4c8bddca34ee2a241ca74.so"
+Creating new library in "dynamicCode/_7e3d3cf3a82099e16aa4c8bddca34ee2a241ca74/platforms/linux64GccDPInt32Opt/lib/libcodeStream_7e3d3cf3a82099e16aa4c8bddca34ee2a241ca74.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_7e3d3cf3a82099e16aa4c8bddca34ee2a241ca74"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_7e3d3cf3a82099e16aa4c8bddca34ee2a241ca74
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_7e3d3cf3a82099e16aa4c8bddca34ee2a241ca74/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_7e3d3cf3a82099e16aa4c8bddca34ee2a241ca74.so
+Using #calcEntry at line 59 in file "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/system/blockMeshDict"
+Using #codeStream with "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_da1eb6dcb93e55f9536a6287dd325937764cc732.so"
+Creating new library in "dynamicCode/_da1eb6dcb93e55f9536a6287dd325937764cc732/platforms/linux64GccDPInt32Opt/lib/libcodeStream_da1eb6dcb93e55f9536a6287dd325937764cc732.so"
+Invoking "wmake -s libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_da1eb6dcb93e55f9536a6287dd325937764cc732"
+wmake libso /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_da1eb6dcb93e55f9536a6287dd325937764cc732
+    ln: ./lnInclude
+    wmkdep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    ld: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimpleMidday/dynamicCode/_da1eb6dcb93e55f9536a6287dd325937764cc732/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_da1eb6dcb93e55f9536a6287dd325937764cc732.so
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+Creating topology patches
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 8
+		Number of boundary faces : 14
+		Number of defined boundary faces : 14
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list .
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale 1
+    Block 0 cell size :
+        i : 0.0088888889
+        j : 0.0088888889
+        k : 0.0088888889 .. 0.0088888889
+    Block 1 cell size :
+        i : 0.010022903 .. 0.0018833378 0.010971666 .. 0.0020616138 0.010022903 .. 0.0018833378 0.010971666 .. 0.0020616138 
+        j : 0.0088888889 0.010239099 .. 0.010239099 0.0088888889 .. 0.0088888889 0.010239099 .. 0.010239099 
+        k : 0.0088888889 .. 0.0088888889
+    Block 2 cell size :
+        i : 0.010022903 .. 0.0018833378 0.010971666 .. 0.0020616138 0.010022903 .. 0.0018833378 0.010971666 .. 0.0020616138 
+        j : 0.0088888889 0.010239099 .. 0.010239099 0.0088888889 .. 0.0088888889 0.010239099 .. 0.010239099 
+        k : 0.0088888889 .. 0.0088888889
+    Block 3 cell size :
+        i : 0.010022903 .. 0.0018833378 0.010971666 .. 0.0020616138 0.010022903 .. 0.0018833378 0.010971666 .. 0.0020616138 
+        j : 0.0088888889 0.010239099 .. 0.010239099 0.0088888889 .. 0.0088888889 0.010239099 .. 0.010239099 
+        k : 0.0088888889 .. 0.0088888889
+    Block 4 cell size :
+        i : 0.010022903 .. 0.0018833378 0.010971666 .. 0.0020616138 0.010022903 .. 0.0018833378 0.010971666 .. 0.0020616138 
+        j : 0.0088888889 0.010239099 .. 0.010239099 0.0088888889 .. 0.0088888889 0.010239099 .. 0.010239099 
+        k : 0.0088888889 .. 0.0088888889
+
+Writing polyMesh
+----------------
+Mesh Information
+----------------
+  boundingBox: (-0.11954336 -0.11954336 -0.3) (0.11954336 0.11954336 0.5)
+  nPoints: 38584
+  nCells: 36450
+  nFaces: 111375
+  nInternalFaces: 107325
+----------------
+Patches
+----------------
+  patch 0 (start: 107325 size: 3240) name: outerWalls
+  patch 1 (start: 110565 size: 405) name: outlet
+  patch 2 (start: 110970 size: 405) name: inlet
+
+End
+
