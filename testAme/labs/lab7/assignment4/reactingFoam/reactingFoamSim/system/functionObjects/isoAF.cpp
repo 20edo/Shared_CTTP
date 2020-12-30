@@ -1,22 +1,45 @@
-surfaces
+add
 {
-	type            surfaces;
-	functionObjectLibs ("libsampling.so");
-	writeControl   outputTime;
+        type                    add;
+        libs                    ("libfieldFunctionObjects.so");
+        enabled                 yes;
+        log                     false;
 
-	surfaceFormat   vtk;
-	fields          (T A/F);
+        fields                  (O2 N2);
+        result                  A;
+        
+/*	writeControl		timeStep;
+	writeInterval		1;*/
+	writeControl            adjustableRunTime;
+        writeInterval           0.005;
+}
 
-	interpolationScheme cellPoint;
-	surfaces
-	(
-		isoAF
-		{
-			type            isoSurface;
-			isoField        A/F;
-			isoValue        8.58;
-			interpolate     true;
-		}
-	);
+
+
+
+isoAoverF
+{
+        type                    surfaces;
+        enabled                 yes;
+        log                     false;
+
+/*	writeControl		timeStep;
+	writeInterval		1;*/
+        writeControl            adjustableRunTime;
+        writeInterval           0.005;
+
+        fields                  (CH4 A);
+        interpolationScheme     cellPoint;
+        surfaceFormat           vtk;
+        surfaces
+        (
+                 isoAoverF
+                 {
+                         type            isoSurface;
+                         isoField        A/CH4;
+                         isoValue        8.58;
+                         interpolate     true;
+                 }
+        );
 }
 

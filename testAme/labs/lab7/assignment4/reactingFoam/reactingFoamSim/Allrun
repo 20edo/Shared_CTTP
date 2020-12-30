@@ -13,7 +13,7 @@ runApplication blockMesh
 runApplication checkMesh
 runApplication renumberMesh -overwrite
 
-runApplication mapFields ../../lab7/initialConditions/ -case . -parallelSource -sourceTime latestTime
+runApplication mapFields ../initialConditions/ -case . -parallelSource -sourceTime latestTime
 
 runApplication chemkinToFoam \
 	       chemkin/chem.inp chemkin/therm.dat chemkin/transportProperties \

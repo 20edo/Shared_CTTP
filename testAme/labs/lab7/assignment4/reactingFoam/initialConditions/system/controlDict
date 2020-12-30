@@ -25,7 +25,13 @@ deltaT		5e-7;
 
 stopAt          endTime;
 
-endTime         0.5;
+endTime         0.1;
+
+/*
+writeControl 	timeStep;
+
+writeInterval 	1;
+*/
 
 writeControl    adjustableRunTime;
 
