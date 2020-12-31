@@ -1,0 +1,92 @@
+/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : decomposePar
+Date   : Dec 31 2020
+Time   : 13:03:13
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 152544
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimple2
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh region0
+
+Create mesh
+
+Calculating distribution of cells
+Selecting decompositionMethod simple
+
+Finished decomposition in 0.01 s
+
+Calculating original mesh data
+
+Distributing cells to processors
+
+Distributing faces to processors
+
+Distributing points to processors
+
+Constructing processor meshes
+
+Processor 0
+    Number of cells = 4536
+    Number of faces shared with processor 1 = 649
+    Number of faces shared with processor 2 = 649
+    Number of processor patches = 2
+    Number of processor faces = 1298
+    Number of boundary faces = 706
+
+Processor 1
+    Number of cells = 4374
+    Number of faces shared with processor 0 = 649
+    Number of faces shared with processor 2 = 1
+    Number of faces shared with processor 3 = 649
+    Number of processor patches = 3
+    Number of processor faces = 1299
+    Number of boundary faces = 671
+
+Processor 2
+    Number of cells = 4374
+    Number of faces shared with processor 0 = 649
+    Number of faces shared with processor 1 = 1
+    Number of faces shared with processor 3 = 649
+    Number of processor patches = 3
+    Number of processor faces = 1299
+    Number of boundary faces = 671
+
+Processor 3
+    Number of cells = 4536
+    Number of faces shared with processor 1 = 649
+    Number of faces shared with processor 2 = 649
+    Number of processor patches = 2
+    Number of processor faces = 1298
+    Number of boundary faces = 706
+
+Number of processor faces = 2597
+Max number of cells = 4536 (1.8181818% above average 4455)
+Max number of processor patches = 3 (20% above average 2.5)
+Max number of faces between processors = 1299 (0.038505968% above average 1298.5)
+
+Time = 0
+
+Processor 0: field transfer
+Processor 1: field transfer
+Processor 2: field transfer
+Processor 3: field transfer
+
+End
+

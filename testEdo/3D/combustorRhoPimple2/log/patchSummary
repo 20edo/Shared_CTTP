@@ -1,0 +1,88 @@
+Invalid MIT-MAGIC-COOKIE-1 key/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : patchSummary -parallel
+Date   : Dec 31 2020
+Time   : 13:06:53
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 152638
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimple2
+nProcs : 4
+Slaves : 
+3
+(
+"edo20-HP-Pavilion-Notebook.152639"
+"edo20-HP-Pavilion-Notebook.152640"
+"edo20-HP-Pavilion-Notebook.152641"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Time = 0
+
+Valid fields:
+    volScalarField	nut
+    volVectorField	U
+    volScalarField	k
+    volScalarField	alphat
+    volScalarField	p
+    volScalarField	T
+    volScalarField	epsilon
+
+group	: wall
+    scalar		nut		nutkWallFunction
+    scalar		k		kqRWallFunction
+    scalar		alphat		compressible::alphatWallFunction
+    scalar		p		zeroGradient
+    scalar		T		zeroGradient
+    scalar		epsilon		epsilonWallFunction
+    vector		U		noSlip
+
+genericPatch	: outlet
+    scalar		nut		calculated
+    scalar		k		zeroGradient
+    scalar		alphat		calculated
+    scalar		p		waveTransmissive
+    scalar		T		zeroGradient
+    scalar		epsilon		zeroGradient
+    vector		U		zeroGradient
+
+genericPatch	: inlet
+    scalar		nut		calculated
+    scalar		k		turbulentIntensityKineticEnergyInlet
+    scalar		alphat		calculated
+    scalar		p		zeroGradient
+    scalar		T		fixedValue
+    scalar		epsilon		turbulentMixingLengthDissipationRateInlet
+    vector		U		fixedValue
+
+group	: processor
+    scalar		nut		processor
+    scalar		k		processor
+    scalar		alphat		processor
+    scalar		p		processor
+    scalar		T		processor
+    scalar		epsilon		processor
+    vector		U		processor
+
+End
+
+Finalising parallel run

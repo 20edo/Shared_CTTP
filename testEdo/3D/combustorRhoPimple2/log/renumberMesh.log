@@ -1,0 +1,108 @@
+Invalid MIT-MAGIC-COOKIE-1 key/*---------------------------------------------------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+Build  : 8
+Exec   : renumberMesh -parallel -overwrite
+Date   : Dec 31 2020
+Time   : 13:06:50
+Host   : "edo20-HP-Pavilion-Notebook"
+PID    : 152610
+I/O    : uncollated
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimple2
+nProcs : 4
+Slaves : 
+3
+(
+"edo20-HP-Pavilion-Notebook.152611"
+"edo20-HP-Pavilion-Notebook.152612"
+"edo20-HP-Pavilion-Notebook.152613"
+)
+
+Pstream initialized with:
+    floatTransfer      : 0
+    nProcsSimpleSum    : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Mesh size: 491520
+Before renumbering :
+    band           : 122327
+    profile        : 1.1663404e+10
+
+Using default renumberMethod.
+
+Selecting renumberMethod CuthillMcKee
+
+Reading geometric fields
+
+Reading volScalarField alphat
+[0] 
+[0] 
+[0] --> FOAM FATAL IO ERROR: 
+[0] Cannot find patchField entry for splitterFront
+[0] [1] 
+[1] 
+[1] --> FOAM FATAL IO ERROR: 
+[1] Cannot find patchField entry for splitterFront
+[1] 
+[1] file: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimple2/processor1/0/alphat/boundaryField from line 26 to line 53[2] 
+[2] 
+[2] --> FOAM FATAL IO ERROR: 
+[2] Cannot find patchField entry for splitterFront
+[2] 
+[2] file: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimple2/processor2/0/alphat/boundaryField from line 26 to line 53[3] 
+[3] 
+[3] --> FOAM FATAL IO ERROR: 
+[3] Cannot find patchField entry for splitterFront
+[3] 
+[3] file: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimple2/processor3/0/alphat/boundaryField from line 26 to line 48.
+[3] 
+[3]     From function void Foam::GeometricField<Type, PatchField, GeoMesh>::Boundary::readField(const Foam::DimensionedField<TypeR, GeoMesh>&, const Foam::dictionary&) [with Type = double; PatchField = Foam::fvPatchField; GeoMesh = Foam::volMesh]
+[3]     in file /home/edo20/OpenFOAM/OpenFOAM-8/src/OpenFOAM/lnInclude/GeometricBoundaryField.C
+[0] file: /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/3D/combustorRhoPimple2/processor0/0/alphat/boundaryField from line 26 to line 48.
+[0] 
+[0]     From function void Foam::GeometricField<Type, PatchField, GeoMesh>::Boundary::readField(const Foam::DimensionedField<TypeR, GeoMesh>&, const Foam::dictionary&) [with Type = double; PatchField = Foam::fvPatchField; GeoMesh = Foam::volMesh]
+[0]     in file /home/edo20/OpenFOAM/OpenFOAM-8/src/OpenFOAM/lnInclude/GeometricBoundaryField.C at line 184.
+[0] 
+FOAM parallel run exiting
+[0] 
+.
+[1] 
+[1]     From function void Foam::GeometricField<Type, PatchField, GeoMesh>::Boundary::readField(const Foam::DimensionedField<TypeR, GeoMesh>&, const Foam::dictionary&) [with Type = double; PatchField = Foam::fvPatchField; GeoMesh = Foam::volMesh]
+[1]     in file /home/edo20/OpenFOAM/OpenFOAM-8/src/OpenFOAM/lnInclude/GeometricBoundaryField.C at line 184.
+[1] 
+FOAM parallel run exiting
+[1] 
+.
+[2] 
+[2]     From function void Foam::GeometricField<Type, PatchField, GeoMesh>::Boundary::readField(const Foam::DimensionedField<TypeR, GeoMesh>&, const Foam::dictionary&) [with Type = double; PatchField = Foam::fvPatchField; GeoMesh = Foam::volMesh]
+[2]     in file /home/edo20/OpenFOAM/OpenFOAM-8/src/OpenFOAM/lnInclude/GeometricBoundaryField.C at line 184.
+[2] 
+FOAM parallel run exiting
+[2] 
+ at line 184.
+[3] 
+FOAM parallel run exiting
+[3] 
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI COMMUNICATOR 3 SPLIT FROM 0
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[edo20-HP-Pavilion-Notebook:152604] 3 more processes have sent help message help-mpi-api.txt / mpi-abort
+[edo20-HP-Pavilion-Notebook:152604] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
