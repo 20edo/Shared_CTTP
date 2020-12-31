@@ -61,6 +61,7 @@ functions
 	#include	"functionObjects/temperature.cpp"
 	#include	"functionObjects/yPlus.cpp"
 	#include	"functionObjects/courant.cpp"
+	#include	"functionObjects/yPlanes.cpp"
 }
 
 

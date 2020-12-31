@@ -94,6 +94,84 @@ isoT
                         isoValue        1400;
                         interpolate     true;
                 }
+		isoT1500
+                {
+                        type            isoSurface;
+                        isoField        T;
+                        isoValue        1500;
+                        interpolate     true;
+                }
+                isoT1600
+                {
+                        type            isoSurface;
+                        isoField        T;
+                        isoValue        1600;
+                        interpolate     true;
+                }
+                isoT1700
+                {
+                        type            isoSurface;
+                        isoField        T;
+                        isoValue        1700;
+                        interpolate     true;
+                }
+                isoT1800
+                {
+                        type            isoSurface;
+                        isoField        T;
+                        isoValue        1800;
+                        interpolate     true;
+                }
+                isoT1900
+                {
+                        type            isoSurface;
+                        isoField        T;
+                        isoValue        1900;
+                        interpolate     true;
+                }
+                isoT2000
+                {
+                        type            isoSurface;
+                        isoField        T;
+                        isoValue        2000;
+                        interpolate     true;
+                }
+                isoT2100
+                {
+                        type            isoSurface;
+                        isoField        T;
+                        isoValue        2100;
+                        interpolate     true;
+                }
+                isoT2200
+                {
+                        type            isoSurface;
+                        isoField        T;
+                        isoValue        2200;
+                        interpolate     true;
+                }
+                isoT2300
+                {
+                        type            isoSurface;
+                        isoField        T;
+                        isoValue        2300;
+                        interpolate     true;
+                }
+                isoT2400
+                {
+                        type            isoSurface;
+                        isoField        T;
+                        isoValue        2400;
+                        interpolate     true;
+                }
+                isoT2500
+                {
+                        type            isoSurface;
+                        isoField        T;
+                        isoValue        2500;
+                        interpolate     true;
+                }
+
         );
 }
 
