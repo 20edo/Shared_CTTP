@@ -7,12 +7,12 @@
 \*---------------------------------------------------------------------------*/
 Build  : 8
 Exec   : mapFields ../combustor2D-RPF -case . -sourceTime latestTime
-Date   : Dec 22 2020
-Time   : 14:36:31
+Date   : Jan 03 2021
+Time   : 14:06:41
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 19049
+PID    : 22258
 I/O    : uncollated
-Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-ReitzDiwakar
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
@@ -20,7 +20,7 @@ allowSystemOperations : Allowing user-supplied system call operations
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 Source: "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506" "combustor2D-RPF"
-Target: "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506" "combustor2D-wf"
+Target: "/home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506" "combustor2D-wf-ReitzDiwakar"
 
 Create databases as time
 

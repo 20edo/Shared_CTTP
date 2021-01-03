@@ -7,10 +7,10 @@
 \*---------------------------------------------------------------------------*/
 Build  : 8
 Exec   : chemkinToFoam chemkin/chem.inp chemkin/therm.dat chemkin/transportProperties constant/reactions constant/speciesThermo
-Date   : Dec 22 2020
-Time   : 19:45:57
+Date   : Jan 03 2021
+Time   : 12:31:17
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 28956
+PID    : 19433
 I/O    : uncollated
 Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT-highT
 nProcs : 1

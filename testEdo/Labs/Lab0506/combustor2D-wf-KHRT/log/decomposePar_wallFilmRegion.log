@@ -7,12 +7,12 @@
 \*---------------------------------------------------------------------------*/
 Build  : 8
 Exec   : decomposePar -region wallFilmRegion
-Date   : Dec 22 2020
-Time   : 17:36:34
+Date   : Jan 03 2021
+Time   : 10:32:07
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 25568
+PID    : 12573
 I/O    : uncollated
-Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)

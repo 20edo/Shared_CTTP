@@ -238,11 +238,11 @@ subModels
 
 cloudFunctions
 {   
-#include	"cloudFunctionObjects/facePostProcessing.cpp"
+//#include	"cloudFunctionObjects/facePostProcessing.cpp"
 //#include	"cloudFunctionObjects/particleCollector.cpp"
-#include	"cloudFunctionObjects/particleTrack.cpp"
-#include	"cloudFunctionObjects/voidFraction.cpp"
-#include	"cloudFunctionObjects/patchPostProcessing.cpp"
+//#include	"cloudFunctionObjects/particleTrack.cpp"
+//#include	"cloudFunctionObjects/voidFraction.cpp"
+//#include	"cloudFunctionObjects/patchPostProcessing.cpp"
 }
 
 

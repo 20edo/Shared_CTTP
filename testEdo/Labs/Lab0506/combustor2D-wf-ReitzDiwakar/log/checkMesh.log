@@ -7,12 +7,12 @@
 \*---------------------------------------------------------------------------*/
 Build  : 8
 Exec   : checkMesh
-Date   : Dec 22 2020
-Time   : 14:36:32
+Date   : Jan 03 2021
+Time   : 14:06:42
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 19072
+PID    : 22281
 I/O    : uncollated
-Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-ReitzDiwakar
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)

@@ -7,12 +7,12 @@
 \*---------------------------------------------------------------------------*/
 Build  : 8
 Exec   : decomposePar
-Date   : Dec 22 2020
-Time   : 17:36:34
+Date   : Jan 03 2021
+Time   : 10:32:07
 Host   : "edo20-HP-Pavilion-Notebook"
-PID    : 25565
+PID    : 12571
 I/O    : uncollated
-Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf
+Case   : /home/edo20/Piscaglia/Shared_docker_folder/Shared_CTTP/testEdo/Labs/Lab0506/combustor2D-wf-KHRT
 nProcs : 1
 sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
 fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
@@ -30,7 +30,7 @@ Create mesh
 Calculating distribution of cells
 Selecting decompositionMethod scotch
 
-Finished decomposition in 0.02 s
+Finished decomposition in 0.01 s
 
 Calculating original mesh data
 
