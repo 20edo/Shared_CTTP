@@ -1,0 +1,76 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  7                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      binary;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     sprayFilmFoam;
+
+
+startFrom       startTime;
+
+startTime       0;
+
+deltaT		1e-5;
+
+stopAt          endTime;
+
+endTime         0.2;
+
+adjustTimeStep	yes;
+
+maxCo		1;
+
+writeControl    adjustableRunTime;
+
+writeInterval   0.01;
+
+purgeWrite      0;
+
+writeFormat     binary;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+runTimeModifiable true;
+
+functions
+{
+	#includeFunc	residuals(p,U,k,epsilon,h)
+	#includeFunc	Qdot
+//	#include	"functionObjects/fieldAverage.cpp"
+//	#include 	"functionObjects/forces.cpp"
+//	#include	"functionObjects/machNumber.cpp"
+	#include	"functionObjects/courant.cpp"
+	#include	"functionObjects/pressure.cpp"
+	#include	"functionObjects/sampledPatches.cpp"
+	#include	"functionObjects/temperature.cpp"
+	#include	"functionObjects/yPlanes.cpp"
+	#include	"functionObjects/yPlus.cpp"
+}
+
+
+
+
+// Add libraries compiled by the user
+libs
+(
+ 	"searchableCone.so"
+);
+// ************************************************************************* //

@@ -1,0 +1,36 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  8
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      mapFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+// Map data from source patch to target coincident patch
+patchMap
+(
+ 	inlet		inlet
+	outlet		outlet
+	splitterFront	region0_to_wallFilmRegion_wallFilmFaces
+	splitterLeft	region0_to_wallFilmRegion_wallFilmFaces
+	splitterRight	region0_to_wallFilmRegion_wallFilmFaces
+	splitterTop	region0_to_wallFilmRegion_wallFilmFaces
+	splitterBottom	region0_to_wallFilmRegion_wallFilmFaces
+	splitterRear	region0_to_wallFilmRegion_wallFilmFaces
+	outerWalls	region0_to_wallFilmRegion_wallFilmFaces
+);
+
+// Target patches whose field values are mapped from the internal source mesh
+cuttingPatches
+(
+);
+
+// ************************************************************************* //
